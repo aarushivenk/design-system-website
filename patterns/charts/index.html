@@ -1,0 +1,2663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/patterns/charts/">
+      
+      
+        <link rel="prev" href="../calendar-widget/">
+      
+      
+        <link rel="next" href="../comment-thread/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Charts - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#charts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Charts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-labeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Labeling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbreviated-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbreviated Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-label-with-help-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Label with Help Icon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbreviate-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbreviate Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-limits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-labeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Labeling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbreviated-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbreviated Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-ordering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Ordering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-label-with-help-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Label with Help Icon
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Legend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbreviate-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbreviate Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-limits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="charts">Charts</h1>
+<p>Charts can be a useful tool in interfaces to get a high level view of data and the state of processes in a visual manner.</p>
+<h2 id="design">Design</h2>
+<h3 id="chart-labeling">Chart Labeling</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/bfb04812-eee2-4bbc-b734-d6deca56a949" /></p>
+<p>Follow labeling that is consistent with other sections in the interface.
+* If a help tooltip is needed, use a rich text header in a side by side layout with a help icon.  The icon size must match the size of the title text.
+  * Use of tooltip should be reserved for chart titles that include terms that may not be universally understood.</p>
+<blockquote>
+<p>[!Note]
+<strong>Accessibility:</strong> In addition to the tooltip text on the richTextIcon, to ensure the text is read to screen readers, set the help icon CAPTION to the same text as the tooltip.</p>
+</blockquote>
+<h3 id="legend">Legend</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/64d44c7c-0475-4050-81f2-8a0bea504b80" /></p>
+<p>For more styling flexibility, we recommend using a custom legend instead of the OOTB legend.
+* Note that the functionality to toggle a series on and off using the legend will be lost when choosing to use a custom legend.</p>
+<h3 id="abbreviated-numbers">Abbreviated Numbers</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/e8c4b3e8-3d7f-4510-89fb-f68c59f5be4b" /></p>
+<p>For charts that plot large numbers (above 1 million), consider abbreviating the numbers to make the chart cleaner and easier to scan.
+* When abbreviating numbers in the axis, make sure to include the units used in the axis label.</p>
+<h3 id="data-limits">Data Limits</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/e91722a7-4025-4dd3-a6d1-09b785f8053e" /></p>
+<p>For bar charts, if there are many distinct categories, consider creating an “other” bar that is an aggregate of the smaller values. This way, the bars and labels can stay at a readable size.</p>
+<h3 id="chart-ordering">Chart Ordering</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/0a360f7f-8624-4149-8797-bc7bee5104a3" /></p>
+<p>All charts should have an intentional order. Some charts have a natural ordering (ex. a process with a clear beginning and end), while others do not. If there is no natural ordering, have the order be displayed based on value (ex. highest to lowest).</p>
+<h3 id="chart-colors">Chart Colors</h3>
+<p>Use ASDS defined <a href="../../branding/colors/#charts">chart color themes</a></p>
+<h3 id="empty-state">Empty State</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/d196d931-a3d3-4e9c-8edd-b44d6f96aee0" /></p>
+<p>Use custom empty states for charts with no data to add visual interest.
+* Consider pairing the empty state image with text with additional information on why the chart may be empty or a call to action on how to add data.
+* Choose an icon that best represents the type of chart that will be shown</p>
+<h2 id="development">Development</h2>
+<h3 id="chart-label-with-help-icon">Chart Label with Help Icon</h3>
+<pre><code>a!sectionLayout(
+    label: &quot;&quot;,
+    contents: {
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: &quot;COLLAPSED&quot;,
+              value: {
+                a!richTextHeader(
+                  text: {
+                    &quot;Chart Header&quot;
+                  },
+                  size: &quot;SMALL&quot;
+                )
+              }
+            ),
+            width: &quot;MINIMIZE&quot;
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: &quot;COLLAPSED&quot;,
+              helpTooltip: &quot;&quot;,
+              value: {
+                a!richTextIcon(
+                  icon: &quot;question-circle&quot;,
+                  color: &quot;ACCENT&quot;
+                )
+              },
+              tooltip: &quot;Information that would show up in the tooltip.&quot;,
+              accessibilityText: &quot;Information that would show up in the tooltip.&quot;
+            )
+          )
+        },
+        alignVertical: &quot;MIDDLE&quot;,
+        spacing: &quot;DENSE&quot;
+      ),
+      a!cardLayout(
+        contents: {},
+        height: &quot;AUTO&quot;,
+        style: &quot;TRANSPARENT&quot;,
+        shape: &quot;SEMI_ROUNDED&quot;,
+        padding: &quot;STANDARD&quot;,
+        marginBelow: &quot;STANDARD&quot;,
+        showBorder: false,
+        showShadow: true
+      )
+    }
+  )
+</code></pre>
+<h3 id="custom-legend">Custom Legend</h3>
+<pre><code>a!columnsLayout(
+  columns: {
+    a!columnLayout(
+      contents: {
+        a!sectionLayout(
+          label: &quot;Chart with Custom Legend &quot;,
+          labelSize: &quot;SMALL&quot;,
+          labelHeadingTag: &quot;H2&quot;,
+          labelColor: &quot;STANDARD&quot;,
+          contents: {
+            a!cardLayout(
+              contents: {
+                a!pieChartField(
+                  label: &quot;&quot;,
+                  labelPosition: &quot;COLLAPSED&quot;,
+                  series: {
+                    a!chartSeries(label: &quot;Soccer&quot;, data: 10),
+                    a!chartSeries(label: &quot;Ultimate Frisbee&quot;, data: 24),
+                    a!chartSeries(label: &quot;Volleyball&quot;, data: 39),
+                    a!chartSeries(label: &quot;Tennis&quot;, data: 42),
+                    a!chartSeries(label: &quot;Football&quot;, data: 51)
+                  },
+                  showDataLabels: false,
+                  showTooltips: true,
+                  allowImageDownload: false,
+                  colorScheme: a!colorSchemeCustom(
+                    colors: {
+                      &quot;#2322F0&quot;,
+                      &quot;#B561FF&quot;,
+                      &quot;#FAA92F&quot;,
+                      &quot;#A5E8E8&quot;,
+                      &quot;#AFBFF8&quot;
+                    }
+                  ),
+                  style: &quot;DONUT&quot;,
+                  seriesLabelStyle: &quot;NONE&quot;,
+                  height: &quot;SHORT&quot;
+                ),
+                a!cardLayout(
+                  contents: {
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          a!richTextIcon(
+                                            icon: &quot;circle&quot;
+                                          ),
+                                          &quot; &quot;
+                                        },
+                                        color: &quot;#2322F0&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          &quot;Soccer&quot;
+                                        },
+                                        size: &quot;STANDARD&quot;
+                                      )
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          &quot;(10)&quot;
+                                        },
+                                        size: &quot;STANDARD&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          a!richTextIcon(
+                                            icon: &quot;circle&quot;
+                                          ),
+                                          &quot; &quot;
+                                        },
+                                        color: &quot;#FAA92F&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;Volleyball&quot;
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;(39)&quot;
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          a!richTextIcon(
+                                            icon: &quot;circle&quot;
+                                          ),
+                                          &quot; &quot;
+                                        },
+                                        color: &quot;#AFBFF8&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;Football&quot;
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;(51)&quot;
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;
+                            )
+                          }
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          a!richTextIcon(
+                                            icon: &quot;circle&quot;
+                                          ),
+                                          &quot; &quot;
+                                        },
+                                        color: &quot;#B561FF&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    },
+                                    marginBelow: &quot;NONE&quot;
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          &quot;Ultimate Frisbee&quot;
+                                        },
+                                        size: &quot;STANDARD&quot;
+                                      )
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;AUTO&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          &quot;(24)&quot;
+                                        },
+                                        size: &quot;STANDARD&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextIcon(
+                                        icon: &quot;circle&quot;,
+                                        color: &quot;#A5E8E8&quot;,
+                                        size: &quot;SMALL&quot;
+                                      ),
+                                      a!richTextItem(
+                                        text: {
+                                          &quot; &quot;
+                                        },
+                                        color: &quot;#FAA92F&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;Tennis&quot;
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      &quot;(42)&quot;
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            )
+                          }
+                        )
+                      },
+                      spacing: &quot;DENSE&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;TRANSPARENT&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  showBorder: false
+                )
+              },
+              height: &quot;AUTO&quot;,
+              style: &quot;NONE&quot;,
+              shape: &quot;SEMI_ROUNDED&quot;,
+              padding: &quot;STANDARD&quot;,
+              marginBelow: &quot;STANDARD&quot;,
+              borderColor: &quot;#EDEEFA&quot;
+            )
+          }
+        )
+      },
+      width: &quot;MEDIUM&quot;
+    ),
+    a!columnLayout(
+      contents: {},
+      width: &quot;MEDIUM&quot;
+    ),
+    a!columnLayout(
+      contents: {}
+    )
+  }
+)
+</code></pre>
+<h3 id="abbreviate-numbers">Abbreviate Numbers</h3>
+<pre><code>a!columnsLayout(
+  columns: {
+    a!columnLayout(
+      contents: {
+        a!sectionLayout(
+          label: &quot;Fiscal Year Obligated Spend&quot;,
+          labelSize: &quot;SMALL&quot;,
+          labelHeadingTag: &quot;H2&quot;,
+          labelColor: &quot;STANDARD&quot;,
+          contents: {
+            a!cardLayout(
+              contents: {
+                a!lineChartField(
+                  label: &quot;&quot;,
+                  labelPosition: &quot;COLLAPSED&quot;,
+                  categories: { &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;, &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot; },
+                  series: {
+                    a!chartSeries(label: &quot;2023 Fiscal Year&quot;, data: { 460, 560,660,769,860,930,963,1060,1260,1460,null() ,null()})
+                  },
+                  xAxisTitle: &quot;&quot;,
+                  yAxisTitle: &quot;Obligated Spend (M)&quot;,
+                  yAxisMax: 2.0E3,
+                  referenceLines: a!chartReferenceLine(label: &quot;2023 Fiscal Year Budget&quot;, value: 1.85E3, color: &quot;#2E2E35&quot;, style: &quot;SHORTDASH&quot;),
+                  showLegend: true,
+                  showDataLabels: false,
+                  showTooltips: true,
+                  allowDecimalAxisLabels: false,
+                  connectNulls: true,
+                  colorScheme: a!colorSchemeCustom(
+                    colors: {
+                      &quot;#073DC4&quot;,
+                      &quot;#9d4de3&quot;,
+                      &quot;#F3961F&quot;,
+                      &quot;#18b4ab&quot;,
+                      &quot;#F9CC00&quot;
+                    }
+                  ),
+                  height: &quot;MEDIUM&quot;,
+                  xAxisStyle: &quot;STANDARD&quot;,
+                  yAxisStyle: &quot;STANDARD&quot;
+                )
+              },
+              height: &quot;AUTO&quot;,
+              style: &quot;NONE&quot;,
+              shape: &quot;SEMI_ROUNDED&quot;,
+              padding: &quot;STANDARD&quot;,
+              marginBelow: &quot;STANDARD&quot;,
+              borderColor: &quot;#EDEEFA&quot;
+            )
+          }
+        )
+      }
+    )
+  }
+)
+</code></pre>
+<h3 id="data-limits_1">Data Limits</h3>
+<pre><code>a!columnsLayout(
+  columns: {
+    a!columnLayout(
+      contents: {
+        a!sectionLayout(
+          label: &quot;&quot;&quot;Other&quot;&quot; Chart&quot;,
+          labelSize: &quot;SMALL&quot;,
+          labelColor: &quot;STANDARD&quot;,
+          contents: {
+            a!cardLayout(
+              contents: {
+                a!columnChartField(
+                  label: &quot;&quot;,
+                  categories: { &quot;Sports&quot;, &quot;Category 2&quot;, &quot;Category 3&quot; },
+                  series: {
+                    a!chartSeries(label: &quot;Soccer&quot;, data: { 29 }),
+                    a!chartSeries(label: &quot;Football&quot;, data: { 27 }),
+                    a!chartSeries(label: &quot;Basketball&quot;, data: { 19 }),
+                    a!chartSeries(label: &quot;Tennis&quot;, data: { 16 }),
+                    a!chartSeries(label: &quot;Wrestling&quot;, data: { 10 }),
+                    a!chartSeries(
+                      label: &quot;Gymnastics [3], Skiing [2], Track [1]&quot;,
+                      data: { 6 }
+                    )
+                  },
+                  stacking: &quot;NONE&quot;,
+                  showLegend: false,
+                  showTooltips: true,
+                  labelPosition: &quot;ABOVE&quot;,
+                  allowImageDownload: false,
+                  colorScheme: a!colorSchemeCustom(
+                    colors: {
+                      &quot;#2322F0&quot;,
+                      &quot;#B561FF&quot;,
+                      &quot;#FAA92F&quot;,
+                      &quot;#A5E8E8&quot;,
+                      &quot;#AFBFF8&quot;,
+                      &quot;#6C6C75&quot;,
+                      &quot;#56ADC0&quot;,
+                      &quot;#FFDCA3&quot;
+                    }
+                  ),
+                  height: &quot;SHORT&quot;,
+                  xAxisStyle: &quot;NONE&quot;,
+                  yAxisStyle: &quot;STANDARD&quot;
+                ),
+                a!cardLayout(
+                  contents: {
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: { a!richTextIcon(icon: &quot;circle&quot;), &quot; &quot; },
+                                        color: &quot;#2322F0&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(text: { &quot;Soccer&quot; }, size: &quot;STANDARD&quot;)
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(text: { &quot;(29)&quot; }, size: &quot;STANDARD&quot;)
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextIcon(
+                                        icon: &quot;circle&quot;,
+                                        color: &quot;#A5E8E8&quot;,
+                                        size: &quot;SMALL&quot;
+                                      ),
+                                      a!richTextItem(
+                                        text: { &quot; &quot; },
+                                        color: &quot;#FAA92F&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;Tennis&quot; },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;(16)&quot; }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            )
+                          }
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: { a!richTextIcon(icon: &quot;circle&quot;), &quot; &quot; },
+                                        color: &quot;#B561FF&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    },
+                                    marginBelow: &quot;NONE&quot;
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(text: { &quot;Football&quot; }, size: &quot;STANDARD&quot;)
+                                    },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(text: { &quot;(27)&quot; }, size: &quot;STANDARD&quot;)
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: { a!richTextIcon(icon: &quot;circle&quot;), &quot; &quot; },
+                                        color: &quot;#AFBFF8&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;Wrestling&quot; },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;(10)&quot; }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;
+                            )
+                          }
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: { a!richTextIcon(icon: &quot;circle&quot;), &quot; &quot; },
+                                        color: &quot;#FAA92F&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;Basketball&quot; },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;(19)&quot; }
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;,
+                              marginBelow: &quot;EVEN_LESS&quot;
+                            ),
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: { a!richTextIcon(icon: &quot;circle&quot;), &quot; &quot; },
+                                        color: &quot;#6C6C75&quot;,
+                                        size: &quot;SMALL&quot;
+                                      )
+                                    },
+                                    tooltip: &quot;&quot;
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;Other&quot; },
+                                    preventWrapping: true
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: { &quot;(6)&quot; },
+                                    preventWrapping: true,
+                                    tooltip: &quot;Gymnastics [3], Skiing [2], Track [1]&quot;
+                                  ),
+                                  width: &quot;MINIMIZE&quot;
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;,
+                              spacing: &quot;DENSE&quot;
+                            )
+                          }
+                        )
+                      },
+                      spacing: &quot;DENSE&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;TRANSPARENT&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  showBorder: false
+                )
+              },
+              height: &quot;AUTO&quot;,
+              style: &quot;NONE&quot;,
+              shape: &quot;SEMI_ROUNDED&quot;,
+              padding: &quot;STANDARD&quot;,
+              marginBelow: &quot;STANDARD&quot;,
+              borderColor: &quot;#EDEEFA&quot;
+            )
+          }
+        )
+      }
+    ),
+    a!columnLayout(contents: {})
+  }
+)
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3640 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/layouts/messaging-module/">
+      
+      
+        <link rel="prev" href="../landing-pages/">
+      
+      
+        <link rel="next" href="../pane-layouts/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Messaging Module - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#messaging-module" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Messaging Module
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Empty State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-messages-found-on-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Messages Found On Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-messages-received-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Messages Received / Sent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-summary-error-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Summary Error State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Empty State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-messages-found-on-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Messages Found On Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-messages-received-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Messages Received / Sent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-summary-error-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Summary Error State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="messaging-module">Messaging Module</h1>
+<h2 id="design">Design</h2>
+<p><img alt="" src="https://github.com/user-attachments/assets/c4a563e1-fb73-4ac3-8233-44b4182c5f9d" /></p>
+<h3 id="guidance">Guidance</h3>
+<ul>
+<li>Put the number of unread messages next to the site tab name (i.e. “Messages (3)”)</li>
+<li>Messages should be truncated at 300 characters </li>
+<li>For the site tab the user will only see threads in which they are a sender or recipient</li>
+</ul>
+<h3 id="empty-state">Empty State</h3>
+<h4 id="no-messages-found-on-search">No Messages Found On Search</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/5d207b88-d8a3-4ab2-be13-8d2706354c96" /></p>
+<p>If the user searched for a message and no messages are found.</p>
+<h4 id="no-messages-received-sent">No Messages Received / Sent</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/7d442db6-72cd-4ed5-b001-cff0c55325ed" /></p>
+<p>A simple message to let the user know they have have no received or sent messages.</p>
+<h4 id="smart-summary-error-state">Smart Summary Error State</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/32e83b3c-f523-4999-8760-8d59e062650b" /></p>
+<p>Show this error state if the AI Smart Summary feature encounters any issues.</p>
+<h3 id="accessibility">Accessibility</h3>
+<h4 id="accessibility-text">Accessibility Text</h4>
+<ul>
+<li>Specify 'Selected' in the AccessibilityText parameter of the Tab’s a!CardLayout to ensure screen readers identify the selected tab.</li>
+<li>Specify 'Selected' in the AccessibilityText parameter of the message’s a!CardLayout in the message list column to ensure screen readers identify the selected message.</li>
+<li>Ensure accessibility text of 'opens in a new window' for the 'external-link' icon in the body of the message underneath the subject of the message.</li>
+<li>The 'View Full Message / View Less' links have accessibility text of the 'Name of the sender, date/time the message was sent.'</li>
+<li>'View All' links needs accessibility text of the # of attachments (i.e. '5 attachments').</li>
+</ul>
+<h4 id="captions">Captions</h4>
+<p>Ensure captions are on the pagination arrows of the list of messages.</p>
+<h2 id="development">Development</h2>
+<h3 id="example">Example</h3>
+<pre><code>a!localVariables(
+  local!showHeaderFooter: false,
+  local!summaryError: false,
+  local!showEmptyList: 1,
+  {
+    a!cardLayout(
+      contents: {
+        a!sideBySideLayout(
+          items: {
+            a!sideBySideItem(
+              item: a!richTextDisplayField(
+                labelPosition: &quot;COLLAPSED&quot;,
+                value: a!richTextItem(
+                  text: &quot;Inbox&quot;,
+                  size: &quot;LARGE&quot;,
+                  style: &quot;STRONG&quot;
+                )
+              ),
+              width: &quot;AUTO&quot;
+            ),
+            a!sideBySideItem(
+              item: a!buttonArrayLayout(
+                buttons: {
+                  a!buttonWidget(
+                    label: &quot;Compose Message&quot;,
+                    saveInto: {
+                      a!save(local!showHeaderFooter, true)
+
+                    },
+                    style: &quot;SOLID&quot;
+                  )
+                },
+                marginAbove: &quot;EVEN_LESS&quot;
+              ),
+              width: &quot;MINIMIZE&quot;
+            )
+          },
+          marginAbove: &quot;MORE&quot;,
+          marginBelow: &quot;NONE&quot;
+        ),
+        /*Compose Message Form Here*/
+        /* ----------- */
+        a!cardLayout(
+          contents: {
+            a!columnsLayout(
+              columns: {
+                /*MESSAGES LIST*/
+                a!columnLayout(
+                  contents: {
+                    /*SEARCH*/
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: { a!richTextIcon(icon: &quot;search&quot;), &quot;  &quot; }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        ),
+                        a!sideBySideItem(
+                          item: a!textField(
+                            label: &quot;Search Messages&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            placeholder: &quot;Search by Message Subject or Opportunity Title&quot;,
+                            value: &quot;Overdue request for proposals&quot;,
+                            refreshAfter: &quot;UNFOCUS&quot;,
+                            validations: {}
+                          ),
+                          width: &quot;AUTO&quot;
+                        ),
+                        a!sideBySideItem(
+                          item: a!buttonArrayLayout(
+                            buttons: {
+                              a!buttonWidget(
+                                label: &quot;Search&quot;,
+                                size: &quot;SMALL&quot;,
+                                width: &quot;MINIMIZE&quot;,
+                                style: &quot;OUTLINE&quot;,
+                                color: &quot;SECONDARY&quot;
+                              )
+                            },
+                            align: &quot;START&quot;,
+                            marginBelow: &quot;NONE&quot;
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      alignVertical: &quot;MIDDLE&quot;,
+                      spacing: &quot;DENSE&quot;,
+                      marginAbove: &quot;STANDARD&quot;,
+                      marginBelow: &quot;MORE&quot;
+                    ),
+                    choose(
+                      local!showEmptyList,
+                      {
+                        /*INBOX MESSAGE BODY*/
+                        a!localVariables(
+                          local!inboxListPagingInfo: a!pagingInfo(
+                            startIndex: 1,
+                            batchSize: 6,
+                            sort: a!sortInfo(field: &quot;user&quot;, ascending: true)
+                          ),
+                          local!inboxDetails: {
+                            {
+                              id: 1,
+                              subject: &quot;Attach New Documents&quot;,
+                              people: &quot;Julie Daniel, Reueben Humphrey, Merrick Kranz&quot;,
+                              count: 9,
+                              opportunity: &quot;2031JW0000000043 | IT Operations Support&quot;,
+                              receivedOn: &quot;&quot;,
+                              receivedTime: &quot;3:20 PM&quot;,
+                              isRead: true,
+                              attachmentsPresent: true,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 2,
+                              subject: &quot;Request for Proposals Needed&quot;,
+                              people: &quot;Julie Daniel, Reueben Humphrey, Eve Villa, Aubrey Cain, Angel Pierce&quot;,
+                              count: 10,
+                              opportunity: &quot;F019--Bird Abatement Services at VA Central California Health Care System&quot;,
+                              receivedOn: &quot;&quot;,
+                              receivedTime: &quot;2:30 PM&quot;,
+                              isRead: false,
+                              attachmentsPresent: true,
+                              numOfAttachments: 2,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 3,
+                              subject: &quot;Strategic RFI for Advanced Integrated C4ISR Solutions to Enhance Net-Centricity in Multifaceted Battlespace Environments&quot;,
+                              people: &quot;Angel Pierce&quot;,
+                              count: 4,
+                              opportunity: &quot;AMD 0001: Saudi Personal Service Contract (PSC) for Monitoring Construction Projects&quot;,
+                              receivedOn: &quot;&quot;,
+                              receivedTime: &quot;2:10 PM&quot;,
+                              isRead: false,
+                              attachmentsPresent: true,
+                              numOfAttachments: 3,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 4,
+                              subject: &quot;Request to Add Required Documents&quot;,
+                              people: &quot;Julie Daniel, Eve Villa&quot;,
+                              count: 10,
+                              opportunity: &quot;DA10--AP4783 Software-Electronic Health Records-Image Sharing-VISN22&quot;,
+                              receivedOn: &quot;Oct 4&quot;,
+                              isRead: false,
+                              attachmentsPresent: false,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 5,
+                              subject: &quot;New Description Added&quot;,
+                              people: &quot;Reueben Humphrey&quot;,
+                              count: 7,
+                              opportunity: &quot;Q999--FY23: Locum Tenens Services- Infectious Diseases Physicians&quot;,
+                              receivedOn: &quot;Sep 23&quot;,
+                              isRead: false,
+                              attachmentsPresent: false,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 6,
+                              subject: &quot;Request to Update Details&quot;,
+                              people: &quot;Aubrey Cain, Angel Pierce&quot;,
+                              count: 6,
+                              opportunity: &quot;R606--Court Reporter Services Western States Network Consortium (WSNC)&quot;,
+                              receivedOn: &quot;Sep 22&quot;,
+                              isRead: true,
+                              attachmentsPresent: true,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 7,
+                              subject: &quot;Request to check newly attached documents &quot;,
+                              people: &quot;Eve Villa&quot;,
+                              count: 14,
+                              opportunity: &quot;6515--Yakima CBOC Equipment Expansion/Replacement&quot;,
+                              receivedOn: &quot;Sep 21&quot;,
+                              isRead: true,
+                              attachmentsPresent: true,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 8,
+                              subject: &quot;Request for Proposals Needed&quot;,
+                              people: &quot;Reueben Humphrey&quot;,
+                              count: 14,
+                              opportunity: &quot;Design-Build for the Potter Stewart U.S. Courthouse Elevator Modernization&quot;,
+                              receivedOn: &quot;Sep 21&quot;,
+                              isRead: true,
+                              attachmentsPresent: false,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 9,
+                              subject: &quot;New attachments added&quot;,
+                              people: &quot;Julie Daniel, Aubrey Cain&quot;,
+                              count: 4,
+                              opportunity: &quot;AMD 0001: Saudi Personal Service Contract (PSC) for Monitoring Construction Projects&quot;,
+                              receivedOn: &quot;Sep 20&quot;,
+                              receivedTime: &quot;2:10 PM&quot;,
+                              isRead: true,
+                              attachmentsPresent: true,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 10,
+                              subject: &quot;Request to add required documents&quot;,
+                              people: &quot;Angel Pierce&quot;,
+                              count: 10,
+                              opportunity: &quot;DA10--AP4783 Software-Electronic Health Records-Image Sharing-VISN22&quot;,
+                              receivedOn: &quot;Sep 20&quot;,
+                              isRead: true,
+                              attachmentsPresent: false,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+                            {
+                              id: 11,
+                              subject: &quot;New description added&quot;,
+                              people: &quot;Eve Villa, Aubrey Cain, Angel Pierce&quot;,
+                              count: 7,
+                              opportunity: &quot;Q999--FY23: Locum Tenens Services- Infectious Diseases Physicians&quot;,
+                              receivedOn: &quot;Sep 18&quot;,
+                              isRead: true,
+                              attachmentsPresent: true,
+                              numOfAttachments: 5,
+                              messageSelected: null()
+                            },
+
+                          },
+                          local!pagedInboxList: todatasubset(
+                            local!inboxDetails,
+                            local!inboxListPagingInfo
+                          ),
+                          local!inboxSelectedId: 1,
+                          {
+                            a!forEach(
+                              items: local!pagedInboxList,
+                              expression: {
+                                a!cardLayout(
+                                  contents: {
+                                    /*PEOPLE*/
+                                    a!sideBySideLayout(
+                                      items: {
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: a!richTextItem(text: fv!item.people),
+                                            preventWrapping: true
+                                          )
+                                        ),
+                                        a!sideBySideItem(width: &quot;MINIMIZE&quot;),
+                                        a!sideBySideItem(width: &quot;MINIMIZE&quot;),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: a!richTextItem(
+                                              text: if(
+                                                a!isNullOrEmpty(fv!item.receivedOn),
+                                                fv!item.receivedTime,
+                                                fv!item.receivedOn
+                                              )
+                                            )
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        )
+                                      }
+                                    ),
+                                    /*SUBJECT*/
+                                    a!sideBySideLayout(
+                                      items: {
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextIcon(
+                                                icon: if(
+                                                  toboolean(fv!item.isRead),
+                                                  &quot;circle-o&quot;,
+                                                  &quot;circle&quot;
+                                                ),
+                                                caption: if(
+                                                  toboolean(fv!item.isRead),
+                                                  &quot;Read&quot;,
+                                                  &quot;Unread&quot;
+                                                ),
+                                                color: if(
+                                                  toboolean(fv!item.isRead),
+                                                  &quot;SECONDARY&quot;,
+                                                  &quot;ACCENT&quot;
+                                                ),
+                                                size: &quot;STANDARD&quot;
+                                              )
+                                            },
+                                            preventWrapping: true
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        ),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: fv!item.subject,
+                                                size: &quot;MEDIUM&quot;,
+                                                style: &quot;STRONG&quot;
+                                              )
+                                            },
+                                            preventWrapping: true
+                                          ),
+                                          width: &quot;AUTO&quot;
+                                        )
+                                      },
+                                      alignVertical: &quot;MIDDLE&quot;
+                                    ),
+                                    /*REQUIREMENT*/
+                                    a!sideBySideLayout(
+                                      items: {
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: fv!item.opportunity,
+                                                color: &quot;STANDARD&quot;
+                                              )
+                                            },
+                                            preventWrapping: true
+                                          ),
+                                          width: &quot;AUTO&quot;
+                                        ),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextIcon(
+                                                icon: &quot;paperclip&quot;,
+                                                caption: &quot;Contains &quot; &amp; fv!item.numOfAttachments &amp; &quot; attachment(s)&quot;,
+                                                /*color: &quot;#6C6C75&quot;,*/
+                                                showWhen: if(
+                                                  toboolean(fv!item.attachmentsPresent) = true,
+                                                  true,
+                                                  false
+                                                ),
+                                                size: &quot;STANDARD&quot;
+                                              ),
+                                              &quot; &quot;,
+                                              a!richTextItem(
+                                                text: fv!item.numOfAttachments,
+                                                /*color: &quot;#6C6C75&quot;,*/
+                                                showWhen: if(
+                                                  toboolean(fv!item.attachmentsPresent) = true,
+                                                  true,
+                                                  false
+                                                )
+                                              )
+                                            }
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        ),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: &quot;•&quot;,
+                                                showWhen: if(
+                                                  toboolean(fv!item.attachmentsPresent) = true,
+                                                  true,
+                                                  false
+                                                )
+                                              )
+                                            }
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        ),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextIcon(
+                                                icon: &quot;comments-o&quot;,
+                                                caption: &quot;Contains &quot; &amp; fv!item.count &amp; &quot; message(s) in this thread&quot;,
+                                                size: &quot;STANDARD&quot;
+                                              ),
+                                              &quot; &quot;,
+                                              a!richTextItem(
+                                                text: fv!item.count
+
+                                              )
+                                            }
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        )
+                                      },
+                                      alignVertical: &quot;MIDDLE&quot;
+                                    )
+                                  },
+                                  link: a!dynamicLink(
+                                    value: if(
+                                      toboolean(fv!item.isRead) = true,
+                                      true,
+                                      not(fv!item.isRead)
+                                    ),
+                                    saveInto: {
+                                      fv!item.isRead,
+                                      a!save(local!inboxSelectedId, fv!item.id),
+                                      a!save(
+                                        local!inboxDetails[local!inboxSelectedId].isRead,
+                                        save!value
+                                      )
+                                    }
+                                  ),
+                                  style: if(
+                                    tointeger(fv!item.id) = tointeger(local!inboxSelectedId),
+                                    &quot;#F5F9FF&quot;,
+                                    &quot;#FFFFFF&quot;
+                                  ),
+                                  shape: &quot;SQUARED&quot;,
+                                  padding: &quot;STANDARD&quot;,
+                                  marginAbove: if(fv!isFirst, &quot;NONE&quot;, &quot;STANDARD&quot;),
+                                  marginBelow: &quot;NONE&quot;,
+                                  showBorder: false,
+                                  showShadow: false,
+                                  decorativeBarPosition: if(
+                                    tointeger(fv!item.id) = tointeger(local!inboxSelectedId),
+                                    &quot;START&quot;,
+                                    &quot;NONE&quot;
+                                  ),
+                                  decorativeBarColor: if(
+                                    tointeger(fv!item.id) = tointeger(local!inboxSelectedId),
+                                    &quot;ACCENT&quot;,
+                                    &quot;#FFFFFF&quot;
+                                  ),
+                                  accessibilityText: {
+                                    if(
+                                      and(
+                                        toboolean(fv!item.isRead) = true,
+                                        tointeger(fv!item.id) = tointeger(local!inboxSelectedId)
+                                      ),
+                                      &quot;This message is selected and read&quot;,
+                                      if(
+                                        and(
+                                          toboolean(fv!item.isRead) = false,
+                                          tointeger(fv!item.id) = tointeger(local!inboxSelectedId)
+                                        ),
+                                        &quot;This message is selected and unread&quot;,
+                                        if(
+                                          and(
+                                            toboolean(fv!item.isRead) = true,
+                                            tointeger(fv!item.id) &lt;&gt; tointeger(local!inboxSelectedId)
+                                          ),
+                                          &quot;This message is not selected and read&quot;,
+                                          &quot;This message is not selected and unread&quot;
+                                        )
+                                      )
+                                    )
+                                  }
+                                ),
+                                a!horizontalLine(
+                                  marginAbove: &quot;STANDARD&quot;,
+                                  marginBelow: &quot;NONE&quot;,
+                                  showWhen: if(fv!isLast, false, true)
+                                )
+                              }
+                            ),
+                            /* INBOX MESSAGES PAGINATION*/
+                            a!cardLayout(
+                              contents: {
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;ABOVE&quot;,
+                                  value: {
+                                    a!richTextIcon(
+                                      icon: &quot;angle-left-bold&quot;,
+                                      caption: if(
+                                        local!inboxListPagingInfo.startIndex &lt;&gt; 1,
+                                        &quot;First page&quot;,
+                                        &quot;&quot;
+                                      ),
+                                      link: a!dynamicLink(
+                                        saveInto: {
+                                          a!save(local!inboxListPagingInfo.startIndex, 1),
+                                          a!save(
+                                            local!pagedInboxList,
+                                            todatasubset(
+                                              arrayToPage: local!inboxDetails,
+                                              pagingConfiguration: local!inboxListPagingInfo
+                                            )
+                                          )
+                                        },
+                                        showWhen: local!inboxListPagingInfo.startIndex &lt;&gt; 1
+                                      ),
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      color: if(
+                                        local!inboxListPagingInfo.startIndex &lt;&gt; 1,
+                                        &quot;ACCENT&quot;,
+                                        &quot;SECONDARY&quot;
+                                      )
+                                    ),
+                                    &quot; &quot;,
+                                    a!richTextIcon(
+                                      icon: &quot;angle-left&quot;,
+                                      caption: if(
+                                        local!inboxListPagingInfo.startIndex &lt;&gt; 1,
+                                        &quot;Previous Page&quot;,
+                                        &quot;&quot;
+                                      ),
+                                      link: a!dynamicLink(
+                                        saveInto: {
+                                          a!save(
+                                            local!inboxListPagingInfo.startIndex,
+                                            if(
+                                              local!inboxListPagingInfo.startIndex - local!inboxListPagingInfo.batchSize &lt; 1,
+                                              1,
+                                              local!inboxListPagingInfo.startIndex - local!inboxListPagingInfo.batchSize
+                                            )
+                                          )
+                                        },
+                                        showWhen: local!inboxListPagingInfo.startIndex &lt;&gt; 1
+                                      ),
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      color: if(
+                                        local!inboxListPagingInfo.startIndex &lt;&gt; 1,
+                                        &quot;ACCENT&quot;,
+                                        &quot;SECONDARY&quot;
+                                      )
+                                    ),
+                                    &quot; &quot;,
+                                    a!richTextItem(
+                                      text: {
+                                        local!inboxListPagingInfo.startIndex,
+                                        &quot; - &quot;,
+                                        if(
+                                          local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &gt; local!pagedInboxList.totalCount,
+                                          local!pagedInboxList.totalCount,
+                                          local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1
+                                        )
+                                      },
+                                      style: &quot;STRONG&quot;
+                                    ),
+                                    a!richTextItem(
+                                      text: {
+                                        &quot; of &quot;,
+                                        fixed(local!pagedInboxList.totalCount, 0)
+                                      }
+                                    ),
+                                    &quot; &quot;,
+                                    a!richTextIcon(
+                                      icon: &quot;angle-right&quot;,
+                                      caption: if(
+                                        local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount,
+                                        &quot;Next Page&quot;,
+                                        &quot;&quot;
+                                      ),
+                                      link: a!dynamicLink(
+                                        saveInto: {
+                                          a!save(
+                                            local!inboxListPagingInfo,
+                                            a!pagingInfo(
+                                              startIndex: local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize,
+                                              batchSize: local!inboxListPagingInfo.batchSize
+                                            )
+                                          )
+                                        },
+                                        showWhen: local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount
+                                      ),
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      color: if(
+                                        local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount,
+                                        &quot;ACCENT&quot;,
+                                        &quot;SECONDARY&quot;
+                                      )
+                                    ),
+                                    &quot; &quot;,
+                                    a!richTextIcon(
+                                      icon: &quot;angle-right-bold&quot;,
+                                      caption: if(
+                                        local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount,
+                                        &quot;Last Page&quot;,
+                                        &quot;&quot;
+                                      ),
+                                      link: a!dynamicLink(
+                                        saveInto: {
+                                          a!save(
+                                            local!inboxListPagingInfo.startIndex,
+                                            if(
+                                              mod(
+                                                local!pagedInboxList.totalCount,
+                                                local!inboxListPagingInfo.batchSize
+                                              ) = 0,
+                                              local!pagedInboxList.totalCount - local!inboxListPagingInfo.batchSize + 1,
+                                              local!pagedInboxList.totalCount - mod(
+                                                local!pagedInboxList.totalCount,
+                                                local!inboxListPagingInfo.batchSize
+                                              ) + 1
+                                            )
+                                          )
+                                        },
+                                        showWhen: local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount
+                                      ),
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      color: if(
+                                        local!inboxListPagingInfo.startIndex + local!inboxListPagingInfo.batchSize - 1 &lt; local!pagedInboxList.totalCount,
+                                        &quot;ACCENT&quot;,
+                                        &quot;SECONDARY&quot;
+                                      )
+                                    )
+                                  },
+                                  align: &quot;RIGHT&quot;
+                                )
+                              },
+                              height: &quot;AUTO&quot;,
+                              style: &quot;NONE&quot;,
+                              padding: &quot;NONE&quot;,
+                              marginAbove: &quot;STANDARD&quot;,
+                              marginBelow: &quot;NONE&quot;,
+                              showBorder: false
+                            )
+                          }
+                        )
+                      },
+                      {
+                        a!cardLayout(
+                          contents: {
+                            a!richTextDisplayField(
+                              labelPosition: &quot;COLLAPSED&quot;,
+                              value: {
+                                a!richTextIcon(
+                                  icon: &quot;box-open&quot;,
+                                  color: &quot;#6C6C75&quot;,
+                                  size: &quot;LARGE_PLUS&quot;
+                                )
+                              },
+                              align: &quot;CENTER&quot;,
+                              marginAbove: &quot;MORE&quot;
+                            ),
+                            a!richTextDisplayField(
+                              labelPosition: &quot;COLLAPSED&quot;,
+                              value: {
+                                a!richTextItem(text: &quot;No messages found&quot;)
+                              },
+                              align: &quot;CENTER&quot;,
+                              marginBelow: &quot;MORE&quot;
+                            )
+                          },
+                          shape: &quot;SEMI_ROUNDED&quot;,
+                          padding: &quot;STANDARD&quot;,
+                          showBorder: true,
+                          showShadow: false
+                        )
+                      }
+                    )
+                  },
+                  width: if(
+                    a!isPageWidth({ &quot;DESKTOP_NARROW&quot; }),
+                    &quot;7X&quot;,
+                    &quot;MEDIUM_PLUS&quot;
+                  )
+                ),
+                /*MESSAGE BODY*/
+                a!columnLayout(
+                  contents: {
+                    choose(
+                      local!showEmptyList,
+                      /*INBOX MESSAGES FULL CONVERSATION LIST*/
+                      a!localVariables(
+                        local!messageDetails: {
+                          {
+                            id: 1,
+                            initials: &quot;BA&quot;,
+                            sentBy: &quot;Reuben Humphrey&quot;,
+                            sentTime: &quot;1:00 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&quot;,
+                            isAttachmentsPresent: true,
+                            showMore: false
+                          },
+                          {
+                            id: 2,
+                            initials: &quot;LW&quot;,
+                            sentBy: &quot;Julie Daniel&quot;,
+                            sentTime: &quot;1:15 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 3,
+                            initials: &quot;BA&quot;,
+                            sentBy: &quot;Reuben Humphrey&quot;,
+                            sentTime: &quot;1:30 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis mattis nisl nec semper lacinia diam ac, maximus tortor. Proin fermentum vel ligula id volutpat.&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 4,
+                            initials: &quot;LW&quot;,
+                            sentBy: &quot;Julie Daniel&quot;,
+                            sentTime: &quot;1:50 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis mattis nisl nec semper lacinia diam ac, maximus tortor. Proin fermentum vel ligula id volutpat.&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 5,
+                            initials: &quot;BA&quot;,
+                            sentBy: &quot;Reuben Humphrey&quot;,
+                            sentTime: &quot;2:15 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&quot;,
+                            isAttachmentsPresent: false(),
+                            showMore: false
+                          },
+                          {
+                            id: 6,
+                            initials: &quot;LW&quot;,
+                            sentBy: &quot;Julie Daniel&quot;,
+                            sentTime: &quot;2:30 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis mattis nisl nec semper lacinia diam ac, maximus tortor. Proin fermentum vel ligula id volutpat.&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 7,
+                            initials: &quot;LW&quot;,
+                            sentBy: &quot;Julie Daniel&quot;,
+                            sentTime: &quot;2:35 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis mattis nisl nec semper lacinia diam ac, maximus tortor. Proin fermentum vel ligula id volutpat.&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 8,
+                            initials: &quot;BA&quot;,
+                            sentBy: &quot;Reuben Humphrey&quot;,
+                            sentTime: &quot;2:45 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis mattis nisl nec semper lacinia diam ac, maximus tortor. Proin fermentum vel ligula id volutpat.&quot;,
+                            isAttachmentsPresent: false,
+                            showMore: false
+                          },
+                          {
+                            id: 9,
+                            initials: &quot;LW&quot;,
+                            sentBy: &quot;Julie Daniel&quot;,
+                            sentTime: &quot;3:00 PM&quot;,
+                            message: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&quot;,
+                            isAttachmentsPresent: true,
+                            showMore: false
+                          }
+                        },
+                        local!count: count(local!messageDetails),
+                        local!showReply: false,
+                        local!showAllMessages: false,
+                        local!composeType: { 1, 2 },
+                        local!typeSave: 1,
+                        local!templateNames: {
+                          &quot;Request for Proposal (RFP) Submission Deadline Reminder&quot;,
+                          &quot;Invitation to Bid on [Project Name]&quot;,
+                          &quot;Notice of Contract Award: [Contractor Name]&quot;,
+                          &quot;Important Update: Contract Modification [Contract Number]&quot;,
+                          &quot;Pre-Bid Conference Announcement for [Project Name]&quot;,
+                          &quot;Vendor Registration and Certification Process&quot;,
+                          &quot;Contract Performance Review Meeting Request&quot;,
+                          &quot;Upcoming Government Contract Opportunities&quot;,
+                          &quot;Solicitation Amendment Incoming&quot;,
+                          &quot;Notice of Intent to Sole Source Procurement&quot;
+                        },
+                        local!savedTemplated,
+                        local!row1Docs: {
+                          a!map(
+                            docName: &quot;Strategic Defense Procurement Plan&quot;
+                          ),
+                          a!map(
+                            docName: &quot;Infrastructure Expansion Blueprint&quot;
+                          ),
+                          a!map(
+                            docName: &quot;Energy Grid Sustainability Report&quot;
+                          )
+                        },
+                        local!row2Docs: {
+                          a!map(docName: &quot;Maritime Security Assessment&quot;),
+                          a!map(
+                            docName: &quot;Cybersecurity Enhancement Proposal&quot;
+                          ),
+                          a!map(docName: &quot;Disaster Response Framework&quot;)
+                        },
+                        local!row3Docs: {
+                          a!map(docName: &quot;Aircraft Fleet Modernization&quot;),
+                          a!map(docName: &quot;Resource Allocation Strategy&quot;),
+                          a!map(docName: &quot;Satellite Communication Plan&quot;)
+                        },
+                        local!replyValue,
+                        local!replySave,
+                        {
+                          a!cardLayout(
+                            style: &quot;NONE&quot;,
+                            padding: &quot;NONE&quot;,
+                            showBorder: false,
+                            contents: {
+                              a!sectionLayout(
+                                label: &quot;Attach New Documents&quot;,
+                                labelHeadingTag: &quot;H2&quot;,
+                                labelColor: &quot;STANDARD&quot;,
+                                marginAbove: &quot;STANDARD&quot;,
+                                marginBelow: &quot;NONE&quot;,
+                                contents: {
+                                  a!richTextDisplayField(
+                                    labelPosition: &quot;COLLAPSED&quot;,
+                                    value: {
+                                      a!richTextItem(
+                                        text: {
+                                          a!richTextItem(
+                                            text: {
+                                              &quot;NAVIFOR MOC TYCOM Support &amp; IW Requirements and Programs&quot;
+                                            },
+
+                                          ),
+                                          &quot;  &quot;,
+                                          a!richTextIcon(
+                                            icon: &quot;external-link&quot;,
+                                            size: &quot;SMALL&quot;,
+                                            altText: &quot;opens in a new window&quot;
+                                          )
+                                        },
+                                        link: a!dynamicLink(),
+                                        linkStyle: &quot;STANDALONE&quot;
+                                      )
+                                    }
+                                  ),
+                                  a!buttonArrayLayout(
+                                    align: &quot;START&quot;,
+                                    marginAbove: &quot;LESS&quot;,
+                                    buttons: {
+                                      a!buttonWidget(
+                                        label: &quot;Reply&quot;,
+                                        /*icon: &quot;reply&quot;,*/
+                                        style: &quot;OUTLINE&quot;,
+                                        color: &quot;SECONDARY&quot;,
+                                        size: &quot;SMALL&quot;,
+                                        saveInto: { a!save(local!showReply, true) },
+                                        disabled: if(local!showReply = true, true, false)
+                                      ),
+                                      a!buttonWidget(
+                                        label: &quot;Mark as Unread&quot;,
+                                        /*icon: &quot;envelope-open&quot;,*/
+                                        style: &quot;OUTLINE&quot;,
+                                        color: &quot;SECONDARY&quot;,
+                                        size: &quot;SMALL&quot;,
+                                        disabled: if(local!showReply = true, true, false)
+                                      ),
+                                      a!buttonWidget(
+                                        label: &quot;Expand&quot;,
+                                        /*icon: &quot;expand-alt&quot;,*/
+                                        style: &quot;OUTLINE&quot;,
+                                        color: &quot;SECONDARY&quot;,
+                                        size: &quot;SMALL&quot;,
+                                        disabled: if(local!showReply = true, true, false)
+                                      ),
+
+                                    }
+                                  ),
+                                  /*REPLY MESSAGE FORM*/
+                                  a!cardLayout(
+                                    contents: {
+                                      a!columnsLayout(
+                                        columns: {
+                                          a!columnLayout(
+                                            contents: {
+                                              a!textField(
+                                                label: &quot;Reply to&quot;,
+                                                value: &quot;Julie Daniel, Reuben Humphrey&quot;,
+                                                readOnly: true,
+
+                                              )
+                                            }
+                                          ),
+                                          a!columnLayout(
+                                            contents: {
+                                              a!multipleDropdownField(
+                                                label: &quot;Additional Recipients&quot;,
+                                                choiceValues: { 1, 2 },
+                                                choiceLabels: { 1, 2 },
+                                                value: local!replyValue,
+                                                saveInto: local!replySave,
+                                                placeholder: &quot;Select additional recipients to reply to&quot;
+                                              ),
+
+                                            }
+                                          )
+                                        }
+                                      ),
+                                      a!radioButtonField(
+                                        label: &quot;Compose a message using a...&quot;,
+                                        /*labelPosition: &quot;COLLAPSED&quot;,*/
+                                        choiceLabels: { &quot;Custom Message&quot;, &quot;Templated Message&quot; },
+                                        choiceValues: local!composeType,
+                                        value: local!typeSave,
+                                        saveInto: local!typeSave,
+                                        choiceLayout: &quot;COMPACT&quot;,
+                                        choiceStyle: &quot;CARDS&quot;
+                                      ),
+                                      a!dropdownField(
+                                        label: &quot;Template&quot;,
+                                        labelPosition: &quot;ABOVE&quot;,
+                                        placeholder: &quot;Select a Template&quot;,
+                                        choiceLabels: local!templateNames,
+                                        choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+                                        value: local!savedTemplated,
+                                        saveInto: local!savedTemplated,
+                                        searchDisplay: &quot;AUTO&quot;,
+                                        required: true,
+                                        showWhen: local!typeSave = 2
+                                      ),
+                                      richTextFieldWithTables(
+                                        label: &quot;Message&quot;,
+                                        labelPosition: &quot;ABOVE&quot;,
+                                        required: true,
+                                        validations: {},
+                                        height: &quot;AUTO&quot;,
+                                        richTextValue: null,
+                                        richTextSaveInto: null,
+                                        readOnly: null,
+                                        maxSize: null,
+                                        placeholder: null,
+                                        tableBorderStyle: null,
+                                        disabled: if(local!typeSave = 2, true, false)
+                                      ),
+                                      a!fileUploadField(
+                                        label: &quot;Attachments&quot;,
+                                        labelPosition: &quot;ABOVE&quot;,
+                                        disabled: if(local!typeSave = 2, true, false),
+                                        saveInto: {},
+                                        validations: {}
+                                      ),
+                                      /*REPLY BUTTONS*/
+                                      a!sectionLayout(
+                                        label: &quot;&quot;,
+                                        contents: {
+                                          /*BUTTONS*/
+                                          a!sideBySideLayout(
+                                            items: {
+                                              a!sideBySideItem(
+                                                item: a!buttonArrayLayout(
+                                                  buttons: {
+                                                    a!buttonWidget(
+                                                      label: &quot;Cancel&quot;,
+                                                      saveInto: { a!save(local!showReply, false),  },
+                                                      size: &quot;SMALL&quot;,
+                                                      style: &quot;LINK&quot;
+                                                    )
+                                                  },
+                                                  align: &quot;START&quot;
+                                                )
+                                              ),
+                                              a!sideBySideItem(
+                                                item: a!buttonArrayLayout(
+                                                  buttons: {
+                                                    a!buttonWidget(
+                                                      label: &quot;Reply&quot;,
+                                                      saveInto: { a!save(local!showReply, false) },
+                                                      size: &quot;SMALL&quot;,
+                                                      style: &quot;SOLID&quot;
+                                                    )
+                                                  },
+                                                  align: &quot;END&quot;
+                                                )
+                                              )
+                                            },
+                                            marginBelow: &quot;NONE&quot;
+                                          )
+                                        },
+                                        divider: &quot;ABOVE&quot;,
+                                        marginAbove: &quot;NONE&quot;,
+                                        marginBelow: &quot;NONE&quot;
+                                      )
+                                    },
+                                    marginBelow: &quot;STANDARD&quot;,
+                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                    padding: &quot;STANDARD&quot;,
+                                    showBorder: true,
+                                    style: &quot;#F5F5F5&quot;,
+                                    showWhen: local!showReply = true,
+
+                                  ),
+                                  /*SUMMARIZATION*/
+                                  a!cardLayout(
+                                    padding: &quot;NONE&quot;,
+                                    showBorder: false,
+                                    marginAbove: &quot;LESS&quot;,
+                                    marginBelow: &quot;LESS&quot;,
+                                    contents: {
+                                      /*SUMMARY CARD*/
+                                      a!cardLayout(
+                                        shape: &quot;SEMI_ROUNDED&quot;,
+                                        padding: &quot;LESS&quot;,
+                                        marginAbove: &quot;NONE&quot;,
+                                        style: &quot;#F2F4FD&quot;,
+                                        showBorder: false,
+                                        showWhen: local!summaryError = false,
+                                        contents: {
+                                          a!richTextDisplayField(
+                                            marginAbove: &quot;LESS&quot;,
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextImage(
+                                                image: a!webImage(
+                                                  source: &quot;https://raw.githubusercontent.com/pglevy/design-system-docs/main/assets/images/ai-imagery/sparkle-light-1.png&quot;
+                                                )
+                                              ),
+                                              &quot; &quot;,
+                                              a!richTextItem(
+                                                text: &quot;AI Smart Summary&quot;,
+                                                style: &quot;STRONG&quot;,
+                                                color: &quot;#080887&quot;
+                                              ),
+                                              &quot; &quot;,
+                                              a!richTextIcon(
+                                                icon: &quot;question-circle&quot;,
+                                                color: &quot;ACCENT&quot;,
+                                                caption: &quot;This summary summarizes up to 11,000 characters in the thread&quot;
+                                              )
+                                            }
+                                          ),
+                                          a!cardLayout(
+                                            showBorder: false,
+                                            shape: &quot;SEMI_ROUNDED&quot;,
+                                            marginBelow: &quot;LESS&quot;,
+                                            contents: {
+                                              a!richTextDisplayField(
+                                                labelPosition: &quot;COLLAPSED&quot;,
+                                                value: {
+                                                  a!richTextItem(
+                                                    text: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna neque viverra justo nec ultrices dui.&quot;
+                                                  )
+                                                }
+                                              )
+                                            }
+                                          )
+                                        }
+                                      ),
+                                      /*SUMMARY CARD ERROR BANNER*/
+                                      if(
+                                        local!summaryError = true,
+                                        rule!ASDS_Message_Banner_Component(
+                                          type: &quot;ERROR&quot;,
+                                          contents: {
+                                            a!richTextItem(
+                                              text: &quot;Summary Load Error. &quot;,
+                                              style: &quot;STRONG&quot;
+                                            ),
+                                            char(10),
+                                            a!richTextItem(
+                                              text: &quot;Try again or contact your system administer to resolve the issue.&quot;,
+
+                                            ),
+
+                                          },
+                                          link: &quot;Learn more&quot;,
+                                          buttons: null,
+                                          showBackground: false,
+                                          showIcon: false,
+
+                                        ),
+                                        null
+                                      )
+                                    }
+                                  ),
+                                  /*ALL ATTACHMENTS*/
+                                  a!boxLayout(
+                                    label: &quot;All Attachments&quot;,
+                                    isCollapsible: true,
+                                    isInitiallyCollapsed: true,
+                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                    style: &quot;#FFF&quot;,
+                                    showBorder: true,
+                                    marginAbove: &quot;LESS&quot;,
+                                    marginBelow: &quot;LESS&quot;,
+                                    padding: &quot;LESS&quot;,
+                                    contents: {
+                                      a!columnsLayout(
+                                        columns: {
+                                          a!forEach(
+                                            items: local!row1Docs,
+                                            expression: {
+                                              a!columnLayout(
+                                                contents: {
+                                                  a!cardLayout(
+                                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                                    padding: &quot;STANDARD&quot;,
+                                                    link: a!dynamicLink(),
+                                                    contents: {
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: { a!richTextItem(text: fv!item.docName) },
+                                                        preventWrapping: true,
+                                                        marginBelow: &quot;NONE&quot;
+                                                      ),
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: {
+                                                          a!richTextIcon(
+                                                            icon: &quot;cloud-download&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          ),
+                                                          &quot; &quot;,
+                                                          a!richTextItem(
+                                                            text: &quot;Download • 2MB&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          )
+                                                        },
+                                                        preventWrapping: true
+                                                      )
+                                                    }
+                                                  )
+                                                }
+                                              )
+                                            }
+                                          ),
+
+                                        },
+                                        spacing: &quot;DENSE&quot;
+                                      ),
+                                      a!columnsLayout(
+                                        columns: {
+                                          a!forEach(
+                                            items: local!row2Docs,
+                                            expression: {
+                                              a!columnLayout(
+                                                contents: {
+                                                  a!cardLayout(
+                                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                                    padding: &quot;STANDARD&quot;,
+                                                    link: a!dynamicLink(),
+                                                    contents: {
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: { a!richTextItem(text: fv!item.docName) },
+                                                        preventWrapping: true,
+                                                        marginBelow: &quot;NONE&quot;
+                                                      ),
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: {
+                                                          a!richTextIcon(
+                                                            icon: &quot;cloud-download&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          ),
+                                                          &quot; &quot;,
+                                                          a!richTextItem(
+                                                            text: &quot;Download • 2MB&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          )
+                                                        },
+                                                        preventWrapping: true
+                                                      )
+                                                    }
+                                                  )
+                                                }
+                                              )
+                                            }
+                                          ),
+
+                                        },
+                                        spacing: &quot;DENSE&quot;
+                                      ),
+                                      a!columnsLayout(
+                                        columns: {
+                                          a!forEach(
+                                            items: local!row3Docs,
+                                            expression: {
+                                              a!columnLayout(
+                                                contents: {
+                                                  a!cardLayout(
+                                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                                    padding: &quot;STANDARD&quot;,
+                                                    link: a!dynamicLink(),
+                                                    contents: {
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: { a!richTextItem(text: fv!item.docName) },
+                                                        preventWrapping: true,
+                                                        marginBelow: &quot;NONE&quot;
+                                                      ),
+                                                      a!richTextDisplayField(
+                                                        labelPosition: &quot;COLLAPSED&quot;,
+                                                        value: {
+                                                          a!richTextIcon(
+                                                            icon: &quot;cloud-download&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          ),
+                                                          &quot; &quot;,
+                                                          a!richTextItem(
+                                                            text: &quot;Download • 2MB&quot;,
+                                                            color: &quot;ACCENT&quot;,
+                                                            linkStyle: &quot;STANDALONE&quot;,
+                                                            size: &quot;SMALL&quot;
+                                                          )
+                                                        },
+                                                        preventWrapping: true
+                                                      )
+                                                    }
+                                                  )
+                                                }
+                                              )
+                                            }
+                                          ),
+
+                                        },
+                                        spacing: &quot;DENSE&quot;
+                                      )
+                                    }
+                                  ),
+                                  /*MESSAGES LIST*/
+                                  a!forEach(
+                                    items: if(
+                                      toboolean(local!showAllMessages) = true,
+                                      reverse(
+                                        a!forEach(
+                                          items: (enumerate(local!count - 1) + 2),
+                                          expression: local!messageDetails[fv!item]
+                                        )
+                                      ),
+                                      {
+                                        reverse(
+                                          local!messageDetails[(enumerate(3) + (local!count - 4 + 2))]
+                                        )
+                                      }
+                                    ),
+                                    expression: {
+                                      a!cardLayout(
+                                        contents: {
+                                          /*SENDER*/
+                                          a!sideBySideLayout(
+                                            items: {
+                                              a!sideBySideItem(
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  marginBelow: &quot;NONE&quot;,
+                                                  value: {
+                                                    a!richTextItem(
+                                                      text: fv!item.sentBy,
+                                                      color: &quot;STANDARD&quot;,
+                                                      size: &quot;MEDIUM&quot;,
+                                                      style: &quot;STRONG&quot;
+                                                    ),
+
+                                                  }
+                                                ),
+                                                width: &quot;AUTO&quot;
+                                              ),
+                                              a!sideBySideItem(
+                                                width: &quot;MINIMIZE&quot;,
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  value: {
+                                                    a!richTextItem(
+                                                      text: if(
+                                                        local!messageDetails[fv!item.id].showMore,
+                                                        &quot;View Less&quot;,
+                                                        &quot;View Full Message&quot;
+                                                      ),
+                                                      link: a!dynamicLink(
+                                                        saveInto: {
+                                                          a!save(
+                                                            local!messageDetails[fv!item.id].showMore,
+                                                            not(
+                                                              local!messageDetails[fv!item.id].showMore
+                                                            )
+                                                          )
+                                                        }
+                                                      ),
+                                                      linkStyle: &quot;STANDALONE&quot;,
+
+                                                    )
+                                                  },
+                                                  accessibilityText: &quot;[insert name of sender, date/time the message was sent]&quot;
+                                                ),
+                                                showWhen: len(fv!item.message) &gt; 300
+                                              ),
+                                              a!sideBySideItem(
+                                                width: &quot;MINIMIZE&quot;,
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  value: {
+                                                    a!richTextItem(
+                                                      text: { &quot; May 18, 2023 • &quot;, fv!item.sentTime },
+                                                      color: &quot;SECONDARY&quot;,
+                                                      size: &quot;STANDARD&quot;
+                                                    )
+                                                  },
+
+                                                ),
+
+                                              ),
+
+                                            },
+                                            alignVertical: &quot;MIDDLE&quot;,
+                                            marginAbove: &quot;STANDARD&quot;,
+
+                                          ),
+                                          /*MESSAGE*/
+                                          a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: {
+                                                  if(
+                                                    len(fv!item.message) &lt;= 300,
+                                                    fv!item.message,
+                                                    if(
+                                                      and(
+                                                        toboolean(
+                                                          local!messageDetails[fv!item.id].showMore
+                                                        ) = true,
+                                                        len(fv!item.message) &gt; 300
+                                                      ),
+                                                      fv!item.message,
+                                                      {
+                                                        a!richTextItem(text: { leftb(fv!item.message, 300) }),
+                                                        &quot;...&quot;
+                                                      }
+                                                    )
+                                                  )
+                                                }
+                                              )
+                                            },
+                                            preventWrapping: false,
+                                            marginAbove: &quot;LESS&quot;,
+                                            marginBelow: &quot;STANDARD&quot;
+                                          ),
+                                          /*ATTACHMENTS*/
+                                          a!sideBySideLayout(
+                                            items: {
+                                              a!sideBySideItem(
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  marginAbove: &quot;NONE&quot;,
+                                                  marginBelow: &quot;NONE&quot;,
+                                                  value: {
+                                                    a!richTextItem(text: &quot;5 attachments&quot;, style: &quot;STRONG&quot;)
+                                                  }
+                                                ),
+
+                                              ),
+                                              a!sideBySideItem(
+                                                width: &quot;MINIMIZE&quot;,
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  marginAbove: &quot;NONE&quot;,
+                                                  marginBelow: &quot;NONE&quot;,
+                                                  accessibilityText: &quot;[insert number of attachments (i.e. 5 attachments)]&quot;,
+                                                  value: a!richTextItem(
+                                                    text: &quot;View All&quot;,
+                                                    link: a!dynamicLink(),
+                                                    linkStyle: &quot;STANDALONE&quot;
+                                                  )
+                                                ),
+
+                                              )
+                                            },
+                                            alignVertical: &quot;MIDDLE&quot;,
+                                            showWhen: toboolean(fv!item.isAttachmentsPresent) = true,
+                                            marginAbove: &quot;LESS&quot;,
+                                            marginBelow: &quot;NONE&quot;
+                                          ),
+                                          a!columnsLayout(
+                                            columns: {
+                                              a!columnLayout(
+                                                contents: {
+                                                  a!cardLayout(
+                                                    contents: {
+                                                      a!columnsLayout(
+                                                        columns: {
+                                                          a!columnLayout(
+                                                            contents: {
+                                                              a!cardLayout(
+                                                                contents: {
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: a!richTextIcon(
+                                                                      icon: &quot;file-text-o&quot;,
+                                                                      color: &quot;#6C6C75&quot;,
+                                                                      size: &quot;MEDIUM_PLUS&quot;
+                                                                    ),
+                                                                    align: &quot;CENTER&quot;,
+                                                                    marginAbove: &quot;LESS&quot;,
+                                                                    marginBelow: &quot;LESS&quot;
+                                                                  )
+                                                                },
+                                                                style: &quot;#EDEEF2&quot;,
+                                                                /*padding: &quot;STANDARD&quot;,*/
+                                                                showBorder: false
+                                                              )
+                                                            },
+                                                            width: &quot;EXTRA_NARROW&quot;
+                                                          ),
+                                                          a!columnLayout(
+                                                            contents: {
+                                                              a!cardLayout(
+                                                                contents: {
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: {
+                                                                      a!richTextItem(text: &quot;Proposal Addendum&quot;)
+                                                                    },
+                                                                    preventWrapping: true,
+                                                                    marginBelow: &quot;NONE&quot;
+                                                                  ),
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: {
+                                                                      a!richTextIcon(
+                                                                        icon: &quot;cloud-download&quot;,
+                                                                        color: &quot;ACCENT&quot;,
+                                                                        linkStyle: &quot;STANDALONE&quot;,
+                                                                        size: &quot;SMALL&quot;
+                                                                      ),
+                                                                      &quot; &quot;,
+                                                                      a!richTextItem(
+                                                                        text: &quot;Download • 2MB&quot;,
+                                                                        color: &quot;ACCENT&quot;,
+                                                                        linkStyle: &quot;STANDALONE&quot;,
+                                                                        size: &quot;SMALL&quot;
+                                                                      )
+                                                                    },
+                                                                    preventWrapping: true
+                                                                  )
+                                                                },
+                                                                padding: &quot;LESS&quot;,
+                                                                showBorder: false
+                                                              )
+                                                            }
+                                                          )
+                                                        },
+                                                        alignVertical: &quot;MIDDLE&quot;,
+                                                        spacing: &quot;NONE&quot;
+                                                      )
+                                                    },
+                                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                                    padding: &quot;NONE&quot;,
+                                                    marginBelow: &quot;NONE&quot;,
+                                                    showBorder: true,
+                                                    showShadow: false,
+                                                    link: a!dynamicLink()
+                                                  )
+                                                }
+                                              ),
+                                              a!columnLayout(
+                                                contents: {
+                                                  a!cardLayout(
+                                                    contents: {
+                                                      a!columnsLayout(
+                                                        columns: {
+                                                          a!columnLayout(
+                                                            contents: {
+                                                              a!cardLayout(
+                                                                contents: {
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: a!richTextIcon(
+                                                                      icon: &quot;file-text-o&quot;,
+                                                                      color: &quot;#6C6C75&quot;,
+                                                                      size: &quot;MEDIUM_PLUS&quot;
+                                                                    ),
+                                                                    align: &quot;CENTER&quot;,
+                                                                    marginAbove: &quot;LESS&quot;,
+                                                                    marginBelow: &quot;LESS&quot;
+                                                                  )
+                                                                },
+                                                                style: &quot;#EDEEF2&quot;,
+                                                                /*padding: &quot;STANDARD&quot;,*/
+                                                                showBorder: false
+                                                              )
+                                                            },
+                                                            width: &quot;EXTRA_NARROW&quot;
+                                                          ),
+                                                          a!columnLayout(
+                                                            contents: {
+                                                              a!cardLayout(
+                                                                contents: {
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: {
+                                                                      a!richTextItem(
+                                                                        text: &quot;CLOUD-29980 - Appian InfoSec Security Impact Analysis&quot;
+                                                                      )
+                                                                    },
+                                                                    preventWrapping: true,
+                                                                    marginBelow: &quot;NONE&quot;
+                                                                  ),
+                                                                  a!richTextDisplayField(
+                                                                    labelPosition: &quot;COLLAPSED&quot;,
+                                                                    value: {
+                                                                      a!richTextIcon(
+                                                                        icon: &quot;cloud-download&quot;,
+                                                                        color: &quot;ACCENT&quot;,
+                                                                        linkStyle: &quot;STANDALONE&quot;,
+                                                                        size: &quot;SMALL&quot;
+                                                                      ),
+                                                                      &quot; &quot;,
+                                                                      a!richTextItem(
+                                                                        text: &quot;Download • 2MB&quot;,
+                                                                        color: &quot;ACCENT&quot;,
+                                                                        linkStyle: &quot;STANDALONE&quot;,
+                                                                        size: &quot;SMALL&quot;
+                                                                      )
+                                                                    },
+                                                                    preventWrapping: true
+                                                                  )
+                                                                },
+                                                                padding: &quot;LESS&quot;,
+                                                                showBorder: false
+                                                              )
+                                                            }
+                                                          )
+                                                        },
+                                                        alignVertical: &quot;MIDDLE&quot;,
+                                                        spacing: &quot;NONE&quot;
+                                                      )
+                                                    },
+                                                    shape: &quot;SEMI_ROUNDED&quot;,
+                                                    padding: &quot;NONE&quot;,
+                                                    marginBelow: &quot;NONE&quot;,
+                                                    showBorder: true,
+                                                    showShadow: false,
+                                                    link: a!dynamicLink()
+                                                  )
+                                                }
+                                              ),
+
+                                            },
+                                            marginAbove: &quot;STANDARD&quot;,
+                                            marginBelow: &quot;STANDARD&quot;,
+                                            showWhen: toboolean(fv!item.isAttachmentsPresent) = true,
+
+                                          ),
+                                          /*HORIZONTAL LINE*/
+                                          a!horizontalLine(
+                                            marginAbove: &quot;STANDARD&quot;,
+                                            marginBelow: &quot;NONE&quot;,
+                                            showWhen: if(
+                                              and(fv!isLast, not(local!showAllMessages)),
+                                              false,
+                                              true
+                                            )
+                                          )
+                                        },
+                                        height: &quot;AUTO&quot;,
+                                        style: &quot;TRANSPARENT&quot;,
+                                        padding: &quot;LESS&quot;,
+                                        marginBelow: &quot;NONE&quot;,
+                                        marginAbove: &quot;NONE&quot;,
+                                        showBorder: false
+                                      )
+                                    }
+                                  ),
+                                  /*MESSAGE EXPANDER*/
+                                  a!columnsLayout(
+                                    columns: {
+                                      a!columnLayout(
+                                        contents: {
+                                          a!horizontalLine(marginAbove: &quot;STANDARD&quot;)
+                                        }
+                                      ),
+                                      a!columnLayout(
+                                        width: &quot;NARROW&quot;,
+                                        contents: {
+                                          a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            align: &quot;CENTER&quot;,
+                                            marginAbove: &quot;NONE&quot;,
+                                            marginBelow: &quot;NONE&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: &quot;View 4 more messages&quot;,
+                                                color: &quot;ACCENT&quot;,
+                                                style: &quot;STRONG&quot;,
+                                                link: a!dynamicLink(
+                                                  saveInto: { a!save(local!showAllMessages, true) }
+                                                ),
+                                                linkStyle: &quot;STANDALONE&quot;,
+                                                showWhen: local!showAllMessages = false,
+
+                                              )
+                                            }
+                                          )
+                                        }
+                                      ),
+                                      a!columnLayout(
+                                        contents: {
+                                          a!horizontalLine(marginAbove: &quot;STANDARD&quot;)
+                                        }
+                                      )
+                                    },
+                                    spacing: &quot;NONE&quot;,
+                                    alignVertical: &quot;MIDDLE&quot;,
+                                    marginAbove: &quot;STANDARD&quot;,
+                                    marginBelow: &quot;STANDARD&quot;,
+                                    showWhen: local!showAllMessages = false,
+
+                                  ),
+                                  /*FIRST MESSAGES*/
+                                  a!cardLayout(
+                                    contents: {
+                                      a!sectionLayout(
+                                        label: &quot;&quot;,
+                                        contents: {
+                                          /*SENDER*/
+                                          a!sideBySideLayout(
+                                            items: {
+                                              a!sideBySideItem(
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  marginBelow: &quot;NONE&quot;,
+                                                  value: {
+                                                    a!richTextItem(
+                                                      text: &quot;Reuben Humphrey&quot;,
+                                                      color: &quot;STANDARD&quot;,
+                                                      size: &quot;MEDIUM&quot;,
+                                                      style: &quot;STRONG&quot;
+                                                    ),
+
+                                                  }
+                                                ),
+                                                width: &quot;AUTO&quot;
+                                              ),
+                                              a!sideBySideItem(
+                                                width: &quot;MINIMIZE&quot;,
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  value: {
+                                                    a!richTextItem(
+                                                      text: { &quot; May 18, 2023 • &quot;, &quot;12:00 PM&quot; },
+                                                      color: &quot;SECONDARY&quot;,
+                                                      size: &quot;STANDARD&quot;
+                                                    )
+                                                  },
+
+                                                ),
+
+                                              ),
+
+                                            },
+                                            alignVertical: &quot;MIDDLE&quot;,
+                                            marginAbove: &quot;STANDARD&quot;,
+
+                                          ),
+                                          /*MESSAGE*/
+                                          a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: &quot;But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects,&quot;,
+
+                                              )
+                                            },
+                                            preventWrapping: false,
+                                            marginAbove: &quot;LESS&quot;,
+                                            marginBelow: &quot;STANDARD&quot;
+                                          ),
+
+                                        },
+                                        marginBelow: &quot;NONE&quot;
+                                      )
+                                    },
+                                    height: &quot;AUTO&quot;,
+                                    style: &quot;TRANSPARENT&quot;,
+                                    padding: &quot;LESS&quot;,
+                                    marginBelow: &quot;NONE&quot;,
+                                    marginAbove: &quot;NONE&quot;,
+                                    showBorder: false
+                                  ),
+
+                                }
+                              ),
+
+                            }
+                          )
+                        }
+                      ),
+                      {}
+                    )
+                  },
+                  width: if(
+                    a!isPageWidth({ &quot;DESKTOP_NARROW&quot; }),
+                    &quot;10X&quot;,
+                    &quot;AUTO&quot;
+                  )
+                )
+              },
+              marginBelow: &quot;NONE&quot;,
+              spacing: &quot;SPARSE&quot;,
+              stackWhen: {
+                &quot;TABLET_LANDSCAPE&quot;,
+                &quot;TABLET_PORTRAIT&quot;,
+                &quot;PHONE&quot;
+              },
+              showDividers: true
+            )
+          },
+          height: &quot;AUTO&quot;,
+          style: &quot;TRANSPARENT&quot;,
+          padding: &quot;NONE&quot;,
+          marginBelow: &quot;NONE&quot;,
+          showBorder: false,
+          showShadow: false
+        )
+      },
+      style: &quot;NONE&quot;,
+      padding: &quot;NONE&quot;,
+      marginAbove: &quot;NONE&quot;,
+      showBorder: false
+    )
+  }
+)
+</code></pre>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

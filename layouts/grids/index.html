@@ -1,0 +1,4024 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/layouts/grids/">
+      
+      
+        <link rel="prev" href="../forms/">
+      
+      
+        <link rel="next" href="../landing-pages/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Grids - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grids" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Grids
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-section-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Section Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-grid-with-side-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Grid with Side Content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-section-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Section Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-grid-with-side-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Grid with Side Content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="grids">Grids</h1>
+<p>Display tabular information in a scannable and digestible format
+<img alt="" src="https://github.com/user-attachments/assets/69c875e4-59f6-432b-9517-4810ac2b86d7" /></p>
+<h2 id="design">Design</h2>
+<p><img alt="" src="https://github.com/user-attachments/assets/69c875e4-59f6-432b-9517-4810ac2b86d7" /></p>
+<p>In a full page</p>
+<p><img alt="" src="https://github.com/user-attachments/assets/97af65da-18e5-43ed-bc51-ca0a004007b5" /></p>
+<p>In a page section layout
+<br></br></p>
+<p>Grids serve as containers for displaying record information. Great grid design allows users to quickly scan, sort, compare, and take action on large amounts of data.</p>
+<p>At its foundation, every grid will have column headers, rows of data, and pagination. Most grids will also include search and filter functionality, sorting capabilities, and record actions. Grids can take up a full page or be placed within a page section layout. They can either be read-only or editable, depending on whether users are meant to be viewing or updating the grid content.</p>
+<p>Checklist:
+|Item|Type|
+|--- |--- |
+|Use the a!gridField component for a read-only grid|Layout|
+|Use the a!gridLayout component for an editable grid|Layout|
+|Minimize content sprawl across the grid by putting more than one field in one column (e.g.: Last updated and user who updated can be in the same column)|Layout|
+|Set preventTextWrapping to true for columns with long read-only text using the a!RichTextDisplayField() component|Layout|
+|Set a fixed grid column width for icons and center align the rich text icon within the column|Layout|
+|Avoid using the “Dense” spacing option|Styling|
+|Use the “Light” border style by default, but “Standard” when sorting is involved to clearly identify which column is being sorted on|Styling|
+|Shade alternate rows for full-page grids to enhance readability. For grids with a smaller batch size (e.g. 5), it is not necessary to shade alternate rows.|Styling|
+|Avoid shading alternate rows when secondary text are used on a grid due to accessibility concerns with color contrast. Only use colors that pass color contrast against the shaded row background color for rich text icons.|Styling|
+|For multi-row selections, set the selection styling to checkbox. Avoid using the row highlight style.|Styling|
+|Avoid using row highlight as the selection styling when the row contains links or actions|Styling|
+|Use row highlight for single-row selection grids|Styling|
+|For full page grids, use 25 as the batch size|Pagination|
+|For grids in larger sections, use 10 as the batch size|Pagination|
+|For grids within smaller cards, use 5 as the batch size|Pagination|
+|Apply a default sort order such that the most important information shows up at the top of the list (e.g.: most recent updated first)|Search, Filter and Sort|
+|Provide commonly used filters to let users narrow down the list to what they are looking for|Search, Filter and Sort|
+|Match the filter order to the order of the grid columns|Search, Filter and Sort|
+|Use the menu style for record actions if there is only one action that applies to a grid row|Record Actions|
+|Use the menu (icon) style if there are multiple actions that apply to a grid row|Record Actions|
+|If most of the record actions can be bulk applied to multiple rows, display them as buttons above a selectable grid|Record Actions|
+|If the title specifies the entity, avoid mentioning that in the button label. For example: if the tab name is Line items, then the button label should be "Import" and not "Import Line Items"|Record Actions|
+|For guidance on phrasing record actions, see Voice and Tone|Record Actions|
+|Left align text, including icons and secondary text|Column Alignments|
+|Right align dollar and numeric amounts|Column Alignments|
+|Left align ID and phone numbers|Column Alignments|
+|Left align dates, date ranges and timestamps if an icon is used, otherwise keep it right aligned|Column Alignments|
+|Ensure that every cell must have an icon if status icons are to be used for overdue items. By default, use the “calendar-o” icon in gray 3 color with a caption that says “Due”. Reference the Icons page for more guidance on using icons to signify date stat|Column Alignments|
+|Left align tags and use "Standard" size|Column Alignments|
+|Center align rich text icon links, buttons and record actions|Column Alignments|
+|Left align user profile images|Column Alignments|
+|Left align input fields|Column Alignments|
+|Use hyphen (-) when displaying cells with no value|Empty States|
+|For full page grids, use a custom illustration or stamp / icon with a message that explains how the user can take action to populate the grid. Because the text clearly states the message, do not provide a text alternative or caption for the image / stamp|Empty States|
+|For grids within smaller section layouts or card containers, use the out of the box empty state message (e.g.: “No [objects] available”)|Empty States|
+|Try to have at most 6 columns. To maximize the use of available space, use text formatting to consolidate logical groupings of fields into a grid column or minimize the number of columns to the ones necessary.|Column Alignments|
+|Keep column labels to a minimum. Avoid wrapping of labels. Use a tooltip to provide additional context if necessary.|Column Alignments|
+|Use the Rich Text Component's PreventWrapping parameter to optimize column widths especially for values with long text|Styling|</p>
+<h2 id="development">Development</h2>
+<h3 id="page-section-grid">Page Section Grid</h3>
+<pre><code>a!headerContentLayout(
+  backgroundColor: &quot;#FAFAFC&quot;,
+  contents: a!columnsLayout(
+    columns: {
+      /* Main Content Column */
+      a!columnLayout(
+        width: &quot;AUTO&quot;,
+        contents: {
+          a!sectionLayout(
+            contents: {
+              /* Top Overview Section */
+              a!columnsLayout(
+                showDividers: true,
+                marginBelow: &quot;MORE&quot;,
+                columns: {
+                  a!columnLayout(
+                    contents: {
+                      a!richTextDisplayField(
+                        value: {
+                          a!richTextItem(text: &quot;Status&quot;, style: &quot;STRONG&quot;),
+                          a!richTextItem(text: char(10)),
+                          a!richTextItem(text: &quot;Draft&quot;, style: &quot;PLAIN&quot;)
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    }
+                  ),
+                  a!columnLayout(
+                    contents: {
+                      a!richTextDisplayField(
+                        value: {
+                          a!richTextItem(
+                            text: &quot;Period of Performance&quot;,
+                            style: &quot;STRONG&quot;
+                          ),
+                          a!richTextItem(text: char(10)),
+                          a!richTextItem(
+                            text: &quot;Nov 26, 2023 - Nov 30, 2034&quot;,
+                            style: &quot;PLAIN&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    }
+                  ),
+                  a!columnLayout(
+                    contents: {
+                      a!richTextDisplayField(
+                        value: {
+                          a!richTextItem(text: &quot;Total Amount&quot;, style: &quot;STRONG&quot;),
+                          a!richTextItem(text: char(10)),
+                          a!richTextItem(text: &quot;$394,429,745.4&quot;, style: &quot;PLAIN&quot;)
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    }
+                  )
+                }
+              )
+            }
+          ),
+          a!sectionLayout(
+            label: &quot;Checklist Tasks&quot;,
+            labelSize: &quot;SMALL&quot;,
+            labelHeadingTag: &quot;H2&quot;,
+            labelColor: &quot;STANDARD&quot;,
+            contents: a!cardLayout(
+              shape: &quot;SEMI_ROUNDED&quot;,
+              borderColor: &quot;#EDEEFA&quot;,
+              contents: {
+                /* Filters section:
+                  * Uses a!columnsLayout to place filter fields side-by-side.
+                  * These filters would typically be defined in the userFilters parameter in the a!gridField()
+                  * Filters would be defined based on record filter references 
+                */
+                a!columnsLayout(
+                  marginBelow: &quot;NONE&quot;,
+                  columns: {
+                    a!columnLayout(
+                      contents: {
+                        a!sideBySideLayout(
+                          marginAbove: &quot;EVEN_LESS&quot;,
+                          spacing: &quot;DENSE&quot;,
+                          items: {
+                            a!sideBySideItem(
+                              item: a!textField(
+                                label: &quot;Search Tasks&quot;,
+                                labelPosition: &quot;COLLAPSED&quot;,
+                                placeholder: &quot;Search Tasks&quot;
+                              )
+                            ),
+                            a!sideBySideItem(
+                              width: &quot;MINIMIZE&quot;,
+                              item: a!buttonArrayLayout(
+                                buttons: a!buttonWidget(
+                                  label: &quot;Search&quot;,
+                                  style: &quot;OUTLINE&quot;,
+                                  color: &quot;SECONDARY&quot;,
+                                  size: &quot;SMALL&quot;,
+                                  saveInto: {} /* No action for mockup */
+                                )
+                              )
+                            )
+                          }
+                        )
+                      }
+                    ),
+                    a!columnLayout(
+                      contents: {
+                        a!dropdownField(
+                          marginAbove: &quot;EVEN_LESS&quot;,
+                          label: &quot;Select an Assignee&quot;,
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          placeholder: &quot;Select an Assignee&quot;,
+                          choiceLabels: { &quot;Assignee 1&quot;, &quot;Assignee 2&quot; },
+                          choiceValues: { &quot;Assignee 1&quot;, &quot;Assignee 2&quot; },
+                          value: null,
+                          saveInto: {}
+                        )
+                      }
+                    )
+                  }
+                ),
+                a!buttonArrayLayout(
+                  buttons: {
+                    a!buttonWidget(
+                      label: &quot;Add Checklist&quot;,
+                      icon: &quot;plus&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      saveInto: {}
+                    ),
+                    a!buttonWidget(
+                      label: &quot;Mark Complete&quot;,
+                      icon: &quot;check&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      disabled: true,
+                      saveInto: {}
+                    ),
+                    a!buttonWidget(
+                      label: &quot;Mark Not Needed&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      icon: &quot;times&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      disabled: true,
+                      saveInto: {}
+                    ),
+                    a!buttonWidget(
+                      label: &quot;Reassign&quot;,
+                      icon: &quot;hand-o-right&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      disabled: true,
+                      saveInto: {}
+                    ),
+                    a!buttonWidget(
+                      label: &quot;Claim Item&quot;,
+                      icon: &quot;user-plus&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      disabled: true,
+                      saveInto: {}
+                    ),
+                    a!buttonWidget(
+                      label: &quot;Cancel&quot;,
+                      icon: &quot;ban&quot;,
+                      style: &quot;OUTLINE&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      disabled: true,
+                      saveInto: {}
+                    )
+                  },
+                  align: &quot;START&quot;
+                ),
+                a!gridField(
+                  selectable: true,
+                  showSearchBox: {}, /* This parameter is typically where you'd define the search field */
+                  userFilters: {}, /* This parameter is typically where you'd define grid filters */
+                  data: {
+                    /*
+                     * Sample checklist data. In a real application, this data would typically come
+                     * from a database query (e.g., a!queryEntity).
+                    */
+                    a!map(
+                      task: &quot;Schedule kick off&quot;,
+                      dueDate: &quot;Aug 30, 2023&quot;,
+                      type: &quot;Confirmation&quot;,
+                      assignee: &quot;Sara Daniels&quot;,
+                      icon: &quot;stamp&quot;,
+                      color: &quot;#31808B&quot;
+                    ),
+                    a!map(
+                      task: &quot;Review SOW&quot;,
+                      dueDate: &quot;Aug 30, 2023&quot;,
+                      type: &quot;Review&quot;,
+                      assignee: &quot;Sara Daniels&quot;,
+                      icon: &quot;user-check&quot;,
+                      color: &quot;#962FEA&quot;
+                    ),
+                    a!map(
+                      task: &quot;Establish timeframes&quot;,
+                      dueDate: &quot;Aug 30, 2023&quot;,
+                      type: &quot;Confirmation&quot;,
+                      assignee: &quot;Sara Daniels&quot;,
+                      icon: &quot;stamp&quot;,
+                      color: &quot;#31808B&quot;
+                    ),
+                    a!map(
+                      task: &quot;Send Pricing&quot;,
+                      dueDate: &quot;Aug 30, 2023&quot;,
+                      type: &quot;Attach Document&quot;,
+                      assignee: &quot;Sara Daniels&quot;,
+                      icon: &quot;link&quot;,
+                      color: &quot;#115EBB&quot;
+                    ),
+                    a!map(
+                      task: &quot;Develop Task List&quot;,
+                      dueDate: &quot;Aug 30, 2023&quot;,
+                      type: &quot;Create Document from Template&quot;,
+                      assignee: &quot;Sara Daniels&quot;,
+                      icon: &quot;copy&quot;,
+                      color: &quot;#CC7600&quot;
+                    )
+                  },
+                  columns: {
+                    a!gridColumn(
+                      label: &quot;Task&quot;,
+                      value: a!richTextDisplayField(
+                        value: a!richTextItem(
+                          text: fv!row.task,
+                          link: a!dynamicLink(),
+                          linkStyle: &quot;STANDALONE&quot;
+                        )
+                      )
+                    ),
+                    a!gridColumn(label: &quot;Due Date&quot;, value: fv!row.dueDate),
+                    a!gridColumn(
+                      label: &quot;Type&quot;,
+                      value: a!richTextDisplayField(
+                        value: {
+                          a!richTextIcon(icon: fv!row.icon, color: fv!row.color),
+                          &quot; &quot;,
+                          fv!row.type
+                        }
+                      )
+                    ),
+                    a!gridColumn(label: &quot;Assignee&quot;, value: fv!row.assignee),
+                    a!gridColumn(
+                      label: &quot;&quot;,
+                      width: &quot;ICON&quot;,
+                      /* For the three dots icon */
+                      value: a!richTextDisplayField(
+                        value: a!richTextIcon(icon: &quot;ellipsis-v&quot;, color: &quot;SECONDARY&quot;)
+                      )
+                    )
+                  }
+                )
+              }
+            )
+          )
+        }
+      ),
+      a!columnLayout(
+        width: &quot;NARROW_PLUS&quot;,
+        contents: {
+          a!sectionLayout(
+            label: &quot;Details&quot;,
+            labelSize: &quot;SMALL&quot;,
+            labelHeadingTag: &quot;H2&quot;,
+            labelColor: &quot;STANDARD&quot;,
+            contents: a!cardLayout(
+              shape: &quot;SEMI_ROUNDED&quot;,
+              borderColor: &quot;#EDEEFA&quot;,
+              padding: &quot;STANDARD&quot;,
+              contents: {
+                a!richTextDisplayField(
+                  marginBelow: &quot;NONE&quot;,
+                  value: {
+                    a!richTextItem(
+                      text: &quot;Purchase Requisition Number&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      size: &quot;SMALL&quot;
+                    ),
+                    a!richTextItem(text: char(10)),
+                    a!richTextItem(text: &quot;1999382&quot;, style: &quot;PLAIN&quot;)
+                  },
+                  align: &quot;LEFT&quot;
+                ),
+                a!richTextDisplayField(
+                  marginBelow: &quot;NONE&quot;,
+                  value: {
+                    a!richTextItem(
+                      text: &quot;Authority&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      size: &quot;SMALL&quot;
+                    ),
+                    a!richTextItem(text: char(10)),
+                    a!richTextItem(
+                      text: &quot;Brand New Description (62.03)&quot;,
+                      style: &quot;PLAIN&quot;
+                    )
+                  },
+                  align: &quot;LEFT&quot;
+                ),
+                a!richTextDisplayField(
+                  marginBelow: &quot;NONE&quot;,
+                  value: {
+                    a!richTextItem(
+                      text: &quot;Type&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      size: &quot;SMALL&quot;
+                    ),
+                    a!richTextItem(text: char(10)),
+                    a!richTextItem(text: &quot;Prototype&quot;, style: &quot;PLAIN&quot;)
+                  },
+                  align: &quot;LEFT&quot;
+                ),
+                a!richTextDisplayField(
+                  value: {
+                    a!richTextItem(
+                      text: &quot;Effective Date&quot;,
+                      color: &quot;SECONDARY&quot;,
+                      size: &quot;SMALL&quot;
+                    ),
+                    a!richTextItem(text: char(10)),
+                    a!richTextItem(text: &quot;09/03/2023&quot;, style: &quot;PLAIN&quot;),
+                    a!richTextItem(text: char(10))
+                  },
+                  align: &quot;LEFT&quot;
+                ),
+                a!richTextDisplayField(
+                  align: &quot;CENTER&quot;,
+                  value: {
+                    a!richTextItem(
+                      text: &quot;View All&quot;,
+                      link: a!dynamicLink(),
+                      linkStyle: &quot;STANDALONE&quot;
+                    )
+                  }
+                )
+              }
+            )
+          ),
+          a!sectionLayout(
+            label: &quot;Funding&quot;,
+            labelSize: &quot;SMALL&quot;,
+            labelHeadingTag: &quot;H2&quot;,
+            labelColor: &quot;STANDARD&quot;,
+            contents: a!cardLayout(
+              shape: &quot;SEMI_ROUNDED&quot;,
+              borderColor: &quot;#EDEEFA&quot;,
+              padding: &quot;STANDARD&quot;,
+              contents: {
+                /* Placeholder for funding progress bar and details */
+                a!progressBarField(
+                  label: &quot;Progress&quot;,
+                  labelPosition: &quot;COLLAPSED&quot;,
+                  percentage: 75,
+                  style: &quot;THICK&quot;,
+                  showPercentage: false,
+                  color: &quot;ACCENT&quot;
+                ),
+                a!richTextDisplayField(
+                  value: {
+                    a!richTextItem(text: &quot;Obligated Amount&quot;, style: &quot;PLAIN&quot;),
+                    a!richTextItem(text: char(10)),
+                    a!richTextItem(text: &quot;$394,429,745.4&quot;, style: &quot;STRONG&quot;)
+                  },
+                  align: &quot;LEFT&quot;
+                )
+              }
+            )
+          )
+        }
+      )
+    }
+  )
+)
+</code></pre>
+<h3 id="full-grid-with-side-content">Full Grid with Side Content</h3>
+<pre><code>a!headerContentLayout(
+  header: {},
+  contents: {
+    a!columnsLayout(
+      columns: {
+        a!columnLayout(
+          contents: {
+            a!sectionLayout(
+              label: &quot;Active Awards&quot;,
+              labelSize: &quot;SMALL&quot;,
+              labelHeadingTag: &quot;H2&quot;,
+              labelColor: &quot;STANDARD&quot;,
+              contents: {
+                a!cardLayout(
+                  contents: {
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!pickerFieldCustom(
+                              labelPosition: &quot;COLLAPSED&quot;,
+                              placeholder: &quot;Search Awards&quot;
+                            )
+                          },
+                          width: &quot;NARROW_PLUS&quot;
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!dropdownField(
+                              labelPosition: &quot;COLLAPSED&quot;,
+                              placeholder: &quot;Select Contracting Officer(s)&quot;
+                            )
+                          },
+                          width: &quot;NARROW_PLUS&quot;
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!dropdownField(
+                              labelPosition: &quot;COLLAPSED&quot;,
+                              placeholder: &quot;Select Contracting Specialist(s)&quot;
+                            )
+                          },
+                          width: &quot;NARROW_PLUS&quot;
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sideBySideLayout(
+                              items: {
+                                a!sideBySideItem(
+                                  item: a!dateField(labelPosition: &quot;COLLAPSED&quot;)
+                                ),
+                                a!sideBySideItem(
+                                  item: a!richTextDisplayField(labelPosition: &quot;COLLAPSED&quot;, value: { &quot;to&quot; }),
+                                  width: &quot;MINIMIZE&quot;
+                                ),
+                                a!sideBySideItem(
+                                  item: a!dateField(labelPosition: &quot;COLLAPSED&quot;)
+                                )
+                              },
+                              alignVertical: &quot;MIDDLE&quot;
+                            )
+                          },
+                          width: &quot;NARROW_PLUS&quot;
+                        )
+                      },
+                      marginAbove: &quot;EVEN_LESS&quot;
+                    ),
+                    a!buttonArrayLayout(
+                      buttons: {
+                        a!buttonWidget(
+                          label: &quot;Add&quot;,
+                          icon: &quot;plus&quot;,
+                          size: &quot;SMALL&quot;,
+                          style: &quot;OUTLINE&quot;,
+                          color: &quot;SECONDARY&quot;
+                        ),
+                        a!buttonWidget(
+                          label: &quot;Import&quot;,
+                          icon: &quot;upload&quot;,
+                          size: &quot;SMALL&quot;,
+                          style: &quot;OUTLINE&quot;,
+                          color: &quot;SECONDARY&quot;
+                        ),
+                        a!buttonWidget(
+                          label: &quot;Update&quot;,
+                          icon: &quot;pencil-square-o&quot;,
+                          size: &quot;SMALL&quot;,
+                          style: &quot;OUTLINE&quot;,
+                          color: &quot;SECONDARY&quot;,
+                          disabled: true
+                        )
+                      },
+                      align: &quot;START&quot;,
+                      marginBelow: &quot;STANDARD&quot;
+                    ),
+                    a!gridField(
+                      label: &quot;Employee Directory&quot;,
+                      labelPosition: &quot;COLLAPSED&quot;,
+                      /* Replace the dummy data with a query, rule, or function that returns a datasubset and uses fv!pagingInfo as the paging configuration. */
+                      data: todatasubset(
+                        {
+                          a!map(
+                            id: 11,
+                            award_name: &quot;&quot;,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$546,988.00&quot;,
+                            text_color: &quot;NEGATIVE&quot;,
+                            tag_color: &quot;#FFD8D8&quot;,
+                            tag_text_color: &quot;#800322&quot;,
+                            risk_color: &quot;#E2143F&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expired 2 days ago&quot;,
+                            award: &quot;Expired&quot;,
+                            icon: &quot;spinner&quot;,
+                            color: &quot;SECONDARY&quot;,
+                            name: &quot;80AFRC17F0239&quot;,
+                            cs: &quot;Kevin Lu&quot;,
+                            dept: &quot;Theresa Jones&quot;,
+                            role: &quot;Type 1&quot;,
+                            team: &quot;Front-End Components&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 22,
+                            company: &quot;Lockheed Martin Corporation&quot;,
+                            amount: &quot;$288,471,393.48&quot;,
+                            text_color: &quot;&quot;,
+                            tag_color: &quot;#FFF6C9&quot;,
+                            tag_text_color: &quot;#7E5D0F&quot;,
+                            risk_color: &quot;#FFDC3F&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 30 days&quot;,
+                            award: &quot;Expires soon&quot;,
+                            icon: &quot;spinner&quot;,
+                            color: &quot;SECONDARY&quot;,
+                            name: &quot;80AFRC17P0011&quot;,
+                            dept: &quot;Theresa Jones&quot;,
+                            cs: &quot;Kevin Lu&quot;,
+                            role: &quot;Type 2&quot;,
+                            team: &quot;Accounts Payable&quot;,
+                            pto: 2,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 33,
+                            company: &quot;Lockheed Martin Corporation&quot;,
+                            amount: &quot;$3,224,578.50&quot;,
+                            text_color: &quot;&quot;,
+                            tag_color: &quot;#FFF6C9&quot;,
+                            tag_text_color: &quot;#7E5D0F&quot;,
+                            risk_color: &quot;#FFDC3F&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 60 days&quot;,
+                            award: &quot;Expires soon&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18C0018&quot;,
+                            cs: &quot;Kevin Lu&quot;,
+                            dept: &quot;Charles Parker&quot;,
+                            role: &quot;Type 3&quot;,
+                            team: &quot;User Acceptance Testing&quot;,
+                            pto: 5,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 44,
+                            company: &quot;Blue Origin LLC.&quot;,
+                            amount: &quot;$109,129.36&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 67 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18C0036&quot;,
+                            dept: &quot;Charles Parker&quot;,
+                            role: &quot;Type 4&quot;,
+                            cs: &quot;Anne Williams&quot;,
+                            team: &quot;User Experience&quot;,
+                            pto: 49,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 55,
+                            company: &quot;Cutting Edge Concrete Services, Inc.&quot;,
+                            amount: &quot;$11,712,193.32&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 90 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18F0085&quot;,
+                            dept: &quot;Charles Parker&quot;,
+                            cs: &quot;Anne Williams&quot;,
+                            role: &quot;Type 5&quot;,
+                            team: &quot;Commercial North America&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 66,
+                            company: &quot;Integration Innovation Inc.&quot;,
+                            amount: &quot;$580,870.02&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 120 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18F0100&quot;,
+                            dept: &quot;Charles Parker&quot;,
+                            cs: &quot;Anne Williams&quot;,
+                            role: &quot;Type 6&quot;,
+                            team: &quot;Front-End Components&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 77,
+                            company: &quot;Development One Inc.&quot;,
+                            amount: &quot;$29,558.00&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 180 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18F0160&quot;,
+                            dept: &quot;Charles Parker&quot;,
+                            role: &quot;Type 7&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Accounts Payable&quot;,
+                            pto: 2,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 44,
+                            company: &quot;Rolls Royce Corp.&quot;,
+                            amount: &quot;$658,000.00&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 67 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18P0007&quot;,
+                            dept: &quot;Theresa Jones&quot;,
+                            role: &quot;Type 4&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;User Experience&quot;,
+                            pto: 49,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 55,
+                            company: &quot;Sherwood Avionics Inc.&quot;,
+                            amount: &quot;$1,188,748.00&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 90 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC18P0021&quot;,
+                            dept: &quot;Theresa Jones&quot;,
+                            role: &quot;Type 5&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Commercial North America&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 66,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 120 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19C0004&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 6&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Front-End Components&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 77,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 180 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19C0013&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 7&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Accounts Payable&quot;,
+                            pto: 2,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 44,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 67 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19C0018&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 4&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;User Experience&quot;,
+                            pto: 49,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 55,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 90 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19C0031&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 5&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Commercial North America&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 66,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 120 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19F0025&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 6&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            team: &quot;Front-End Components&quot;,
+                            pto: 15,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          ),
+                          a!map(
+                            id: 77,
+                            company: &quot;Sherwood Avionics Inc&quot;,
+                            amount: &quot;$500,000,000&quot;,
+                            text_color: &quot;&quot;,
+                            risk_color: &quot;SECONDARY&quot;,
+                            risk_icon: &quot;clock-o&quot;,
+                            risk: &quot;Expires in 180 days ago&quot;,
+                            award: &quot;&quot;,
+                            icon: &quot;check-circle&quot;,
+                            color: &quot;POSITIVE&quot;,
+                            name: &quot;80AFRC19F0164&quot;,
+                            dept: &quot;Jane Doe&quot;,
+                            role: &quot;Type 7&quot;,
+                            team: &quot;Accounts Payable&quot;,
+                            cs: &quot;Will Robbins&quot;,
+                            pto: 2,
+                            startDate: &quot;01/01/2020 - 12/31/2021&quot;
+                          )
+                        },
+                        fv!pagingInfo
+                      ),
+                      columns: {
+                        a!gridColumn(
+                          label: &quot;Award&quot;,
+                          sortField: &quot;name&quot;,
+                          value: a!richTextDisplayField(
+                            value: {
+                              a!richTextItem(
+                                text: fv!row.name,
+                                color: &quot;ACCENT&quot;,
+                                style: &quot;STRONG&quot;
+                              ),
+                              char(10),
+                              a!richTextIcon(
+                                icon: &quot;building&quot;,
+                                color: &quot;SECONDARY&quot;,
+                                size: &quot;SMALL&quot;
+                              ),
+                              &quot; &quot;,
+                              a!richTextItem(
+                                text: fv!row.company,
+                                color: &quot;SECONDARY&quot;,
+                                size: &quot;SMALL&quot;
+                              )
+                            }
+                          )
+                        ),
+                        a!gridColumn(
+                          label: &quot;Contracting Officer&quot;,
+                          value: a!richTextDisplayField(
+                            value: { a!richTextItem(text: fv!row.dept) }
+                          )
+                        ),
+                        a!gridColumn(
+                          label: &quot;Contracting Specialist&quot;,
+                          value: a!richTextDisplayField(value: { a!richTextItem(text: fv!row.cs) })
+                        ),
+                        a!gridColumn(
+                          label: &quot;&quot;,
+                          value: a!tagField(
+                            tags: {
+                              a!tagItem(
+                                text: fv!row.award,
+                                backgroundColor: fv!row.tag_color,
+                                textColor: fv!row.tag_text_color
+                              )
+                            },
+                            size: &quot;&quot;
+                          ),
+                          align: &quot;CENTER&quot;
+                        ),
+                        a!gridColumn(
+                          label: &quot;Period of Performance&quot;,
+                          sortField: &quot;startDate&quot;,
+                          value: a!richTextDisplayField(
+                            value: {
+                              a!richTextItem(text: fv!row.startDate, ),
+                              char(10),
+                              a!richTextIcon(
+                                icon: &quot;clock-o&quot;,
+                                color: fv!row.risk_color,
+                                size: &quot;SMALL&quot;
+                              ),
+                              &quot; &quot;,
+                              a!richTextItem(
+                                text: fv!row.risk,
+                                color: fv!row.text_color,
+                                size: &quot;SMALL&quot;
+                              )
+                            }
+                          ),
+                          align: &quot;END&quot;
+                        ),
+                        a!gridColumn(
+                          label: &quot;Award Amount&quot;,
+                          value: a!richTextDisplayField(
+                            value: { a!richTextItem(text: fv!row.amount, ) }
+                          ),
+                          align: &quot;END&quot;
+                        )
+                      },
+                      pageSize: 15,
+                      selectable: true,
+                      borderStyle: &quot;LIGHT&quot;,
+                      shadeAlternateRows: false
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;NONE&quot;,
+                  shape: &quot;SEMI_ROUNDED&quot;,
+                  padding: &quot;STANDARD&quot;,
+                  marginBelow: &quot;NONE&quot;,
+                  borderColor: &quot;#EDEEFA&quot;
+                )
+              }
+            )
+          },
+          width: &quot;AUTO&quot;
+        ),
+        a!columnLayout(
+          contents: {
+            a!sectionLayout(
+              label: &quot;Awards by Status&quot;,
+              labelSize: &quot;SMALL&quot;,
+              labelHeadingTag: &quot;H2&quot;,
+              labelColor: &quot;STANDARD&quot;,
+              contents: {
+                a!cardLayout(
+                  contents: {
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;ABOVE&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;112&quot; },
+                                color: &quot;#2c3365&quot;,
+                                size: &quot;LARGE&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(
+                                text: {
+                                  a!richTextItem(
+                                    text: { &quot; &quot; },
+                                    size: &quot;MEDIUM&quot;,
+                                    style: { &quot;STRONG&quot; }
+                                  ),
+                                  a!richTextItem(text: { &quot;TOTAL ACTIVE&quot; }, size: &quot;STANDARD&quot;)
+                                },
+                                color: &quot;SECONDARY&quot;
+                              )
+                            },
+                            align: &quot;LEFT&quot;
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            label: &quot;Rich Text&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextIcon(icon: &quot;circle&quot;, color: &quot;#173AB6&quot;),
+                              &quot; On Track &quot;,
+                              a!richTextItem(text: { &quot;76&quot; }, style: { &quot;STRONG&quot; }),
+                              char(10),
+                              a!richTextIcon(icon: &quot;circle&quot;, color: &quot;#BCC9F3&quot;),
+                              &quot; Expiring Soon &quot;,
+                              a!richTextItem(text: { &quot;13&quot; }, style: { &quot;STRONG&quot; }),
+                              char(10),
+                              a!richTextIcon(icon: &quot;circle&quot;, color: &quot;#F6A53F&quot;),
+                              &quot; Expired &quot;,
+                              a!richTextItem(text: { &quot;23&quot; }, style: { &quot;STRONG&quot; })
+                            }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      marginBelow: &quot;NONE&quot;
+                    ),
+                    a!barChartField_21r4(
+                      categories: &quot;Customer Satisfaction&quot;,
+                      series: {
+                        a!chartSeries(label: &quot;Expired&quot;, data: { 23 }),
+                        a!chartSeries(label: &quot;Expiring Soon&quot;, data: { 13 }),
+                        a!chartSeries(label: &quot;On Track&quot;, data: { 76 })
+                      },
+                      yAxisMax: 110,
+                      stacking: &quot;NORMAL&quot;,
+                      showLegend: false,
+                      showTooltips: true,
+                      labelPosition: &quot;ABOVE&quot;,
+                      colorScheme: a!colorSchemeCustom(
+                        colors: {
+                          &quot;#173AB6&quot;,
+                          &quot;#BCC9F3&quot;,
+                          &quot;#F6A53F&quot;,
+                          &quot;#FFD393&quot;,
+                          &quot;#9D4DE3&quot;
+                        }
+                      ),
+                      height: &quot;MICRO&quot;,
+                      xAxisStyle: &quot;NONE&quot;,
+                      yAxisStyle: &quot;NONE&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;NONE&quot;,
+                  shape: &quot;SEMI_ROUNDED&quot;,
+                  padding: &quot;STANDARD&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  borderColor: &quot;#EDEEFA&quot;
+                )
+              }
+            ),
+            a!sectionLayout(
+              label: &quot;Funds Obligated&quot;,
+              labelSize: &quot;SMALL&quot;,
+              labelHeadingTag: &quot;H2&quot;,
+              labelColor: &quot;STANDARD&quot;,
+              contents: {
+                a!cardLayout(
+                  contents: {
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!gaugeField(
+                            label: &quot;Gauge&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            percentage: 80.0,
+                            primaryText: a!gaugePercentage(),
+                            color: &quot;#173AB6&quot;,
+                            size: &quot;SMALL&quot;
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;FY 2021&quot; },
+                                color: &quot;STANDARD&quot;,
+                                size: &quot;STANDARD&quot;
+                              ),
+                              char(10),
+                              a!richTextItem(
+                                text: { &quot;$400M&quot; },
+                                color: &quot;STANDARD&quot;,
+                                size: &quot;LARGE&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(
+                                text: {
+                                  a!richTextItem(text: { &quot; &quot; }, style: { &quot;STRONG&quot; }),
+                                  a!richTextItem(text: { &quot;/ $500M&quot; }, size: &quot;MEDIUM&quot;)
+                                },
+                                color: &quot;SECONDARY&quot;
+                              )
+                            }
+                          )
+                        )
+                      },
+                      alignVertical: &quot;MIDDLE&quot;,
+                      spacing: &quot;SPARSE&quot;,
+                      marginBelow: &quot;NONE&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;NONE&quot;,
+                  shape: &quot;SEMI_ROUNDED&quot;,
+                  padding: &quot;STANDARD&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  borderColor: &quot;#EDEEFA&quot;
+                )
+              }
+            ),
+            a!sectionLayout(
+              label: &quot;Funds Spent&quot;,
+              labelSize: &quot;SMALL&quot;,
+              labelHeadingTag: &quot;H2&quot;,
+              labelColor: &quot;STANDARD&quot;,
+              contents: {
+                a!cardLayout(
+                  contents: {
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!gaugeField(
+                            label: &quot;Gauge&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            percentage: 62.5,
+                            primaryText: a!gaugePercentage(),
+                            color: &quot;#173AB6&quot;,
+                            size: &quot;SMALL&quot;
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              &quot;FY 2021&quot;,
+                              char(10),
+                              a!richTextItem(
+                                text: { &quot;$250M&quot; },
+                                color: &quot;STANDARD&quot;,
+                                size: &quot;LARGE&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(
+                                text: {
+                                  a!richTextItem(text: { &quot; &quot; }, style: { &quot;STRONG&quot; }),
+                                  a!richTextItem(text: { &quot;/ $400M&quot; }, size: &quot;MEDIUM&quot;)
+                                },
+                                color: &quot;SECONDARY&quot;
+                              )
+                            }
+                          )
+                        )
+                      },
+                      alignVertical: &quot;MIDDLE&quot;,
+                      spacing: &quot;SPARSE&quot;,
+                      marginBelow: &quot;NONE&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;NONE&quot;,
+                  shape: &quot;SEMI_ROUNDED&quot;,
+                  padding: &quot;STANDARD&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  borderColor: &quot;#EDEEFA&quot;
+                )
+              },
+              marginBelow: &quot;STANDARD&quot;
+            ),
+            a!sectionLayout(
+              label: &quot;Socio-Economic Targets&quot;,
+              labelSize: &quot;SMALL&quot;,
+              labelHeadingTag: &quot;H2&quot;,
+              labelColor: &quot;STANDARD&quot;,
+              contents: {
+                a!cardLayout(
+                  contents: {
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(text: { &quot;8(a)&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;$150M&quot; },
+                                color: &quot;#173AB6&quot;,
+                                size: &quot;STANDARD&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(text: { &quot; / $200M&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      marginAbove: &quot;EVEN_LESS&quot;,
+                      marginBelow: &quot;LESS&quot;
+                    ),
+                    a!progressBarField(
+                      label: &quot;Progress Bar&quot;,
+                      labelPosition: &quot;COLLAPSED&quot;,
+                      percentage: 75,
+                      color: &quot;#173AB6&quot;,
+                      style: &quot;THICK&quot;
+                    ),
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;Small Business&quot; },
+                                size: &quot;STANDARD&quot;
+                              )
+                            }
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;$40M&quot; },
+                                color: &quot;#173AB6&quot;,
+                                size: &quot;STANDARD&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(text: { &quot; / $100M&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      marginBelow: &quot;LESS&quot;
+                    ),
+                    a!progressBarField(
+                      label: &quot;Progress Bar&quot;,
+                      labelPosition: &quot;COLLAPSED&quot;,
+                      percentage: 40,
+                      color: &quot;#173AB6&quot;,
+                      style: &quot;THICK&quot;
+                    ),
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(text: { &quot;WOSB&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;$90M&quot; },
+                                color: &quot;#173AB6&quot;,
+                                size: &quot;STANDARD&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(text: { &quot; / $100M&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      marginBelow: &quot;LESS&quot;
+                    ),
+                    a!progressBarField(
+                      label: &quot;Progress Bar&quot;,
+                      labelPosition: &quot;COLLAPSED&quot;,
+                      percentage: 90,
+                      color: &quot;#173AB6&quot;,
+                      style: &quot;THICK&quot;
+                    ),
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(text: { &quot;SDVOSB&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: { &quot;$50M&quot; },
+                                color: &quot;#173AB6&quot;,
+                                size: &quot;STANDARD&quot;,
+                                style: { &quot;STRONG&quot; }
+                              ),
+                              a!richTextItem(text: { &quot; / $100M&quot; }, size: &quot;STANDARD&quot;)
+                            }
+                          ),
+                          width: &quot;MINIMIZE&quot;
+                        )
+                      },
+                      marginBelow: &quot;LESS&quot;
+                    ),
+                    a!progressBarField(
+                      label: &quot;Progress Bar&quot;,
+                      labelPosition: &quot;COLLAPSED&quot;,
+                      percentage: 50,
+                      color: &quot;#173AB6&quot;,
+                      style: &quot;THICK&quot;,
+                      marginBelow: &quot;LESS&quot;
+                    )
+                  },
+                  height: &quot;AUTO&quot;,
+                  style: &quot;NONE&quot;,
+                  shape: &quot;SEMI_ROUNDED&quot;,
+                  padding: &quot;STANDARD&quot;,
+                  marginBelow: &quot;STANDARD&quot;,
+                  borderColor: &quot;#EDEEFA&quot;
+                )
+              }
+            ),
+            a!cardLayout(
+              contents: {
+                a!columnsLayout(
+                  columns: {
+                    a!columnLayout(
+                      contents: {
+                        a!pickerFieldCustom(
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          placeholder: &quot;Search To-Dos&quot;
+                        )
+                      }
+                    ),
+                    a!columnLayout(
+                      contents: {
+                        a!dropdownField(
+                          label: &quot;Dropdown&quot;,
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          placeholder: &quot;Select a Type&quot;,
+                          choiceLabels: {
+                            &quot;Option 1&quot;,
+                            &quot;Option 2&quot;,
+                            &quot;Option 3&quot;,
+                            &quot;Option 4&quot;,
+                            &quot;Option 5&quot;,
+                            &quot;Option 6&quot;,
+                            &quot;Option 7&quot;,
+                            &quot;Option 8&quot;,
+                            &quot;Option 9&quot;,
+                            &quot;Option 10&quot;,
+                            &quot;Option 11&quot;,
+                            &quot;Option 12&quot;
+                          },
+                          choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+                          saveInto: {},
+                          searchDisplay: &quot;AUTO&quot;,
+                          validations: {}
+                        )
+                      }
+                    )
+                  }
+                ),
+                a!buttonArrayLayout(
+                  buttons: {
+                    a!buttonWidget(
+                      label: &quot;Mark Complete&quot;,
+                      icon: &quot;plus&quot;,
+                      size: &quot;SMALL&quot;,
+                      style: &quot;SECONDARY&quot;,
+                      disabled: true
+                    )
+                  },
+                  align: &quot;START&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Schedule Kickoff Meeting&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Review SOW&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Establish timeframes&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Send Pricing&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Develop Task List&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Legal Check&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Issue GFE&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Sign NDA&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Send Vendor Notice&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Finalize SOW&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Confirm Deadlines&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Schedule Kickoff Meeting&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Schedule Kickoff Meeting&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                ),
+                a!sideBySideLayout(
+                  items: {
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { a!richTextIcon(icon: &quot;square-o&quot;) },
+                            color: &quot;ACCENT&quot;,
+                            size: &quot;MEDIUM_PLUS&quot;,
+                            style: { &quot;STRONG&quot; }
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextItem(
+                            text: { &quot;Schedule Kickoff Meeting&quot; },
+                            size: &quot;STANDARD&quot;,
+                            style: { &quot;STRONG&quot; }
+                          ),
+                          char(10),
+                          a!richTextItem(
+                            text: { &quot;Confirmation  • 80AFRC17F0239&quot; },
+                            color: &quot;SECONDARY&quot;,
+                            size: &quot;SMALL&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      )
+                    ),
+                    a!sideBySideItem(
+                      item: a!richTextDisplayField(
+                        label: &quot;&quot;,
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: {
+                          a!richTextIcon(
+                            icon: &quot;exclamation-circle&quot;,
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot; &quot; },
+                            color: &quot;STANDARD&quot;,
+                            size: &quot;STANDARD&quot;
+                          ),
+                          a!richTextItem(
+                            text: { &quot;-2d &quot; },
+                            color: &quot;NEGATIVE&quot;,
+                            size: &quot;STANDARD&quot;
+                          )
+                        },
+                        align: &quot;LEFT&quot;
+                      ),
+                      width: &quot;MINIMIZE&quot;
+                    )
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  marginBelow: &quot;STANDARD&quot;
+                )
+              },
+              height: &quot;AUTO&quot;,
+              showWhen: false,
+              style: &quot;NONE&quot;,
+              marginBelow: &quot;STANDARD&quot;,
+              showBorder: false
+            )
+          },
+          width: &quot;MEDIUM&quot;
+        )
+      }
+    )
+  },
+  backgroundColor: &quot;#FAFAFC&quot;
+)
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

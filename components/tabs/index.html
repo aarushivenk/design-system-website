@@ -1,0 +1,2248 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/components/tabs/">
+      
+      
+        <link rel="prev" href="../more-less-link/">
+      
+      
+        <link rel="next" href="../tags/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Tabs - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tabs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tabs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#record-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Record Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs-as-side-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabs as Side Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-toggle-using-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Toggle Using Tabs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabs-as-side-navigation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabs as Side Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-tabs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-toggle-using-tabs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Toggle Using Tabs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#record-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Record Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs-as-side-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabs as Side Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-toggle-using-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Toggle Using Tabs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabs-as-side-navigation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabs as Side Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-tabs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Tabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-toggle-using-tabs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Toggle Using Tabs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tabs">Tabs</h1>
+<p>Tabs are used to navigate between alternate views within a user interface</p>
+<p><img alt="" src="https://github.com/user-attachments/assets/60220bf3-2e91-4908-975f-983b5e769498" /></p>
+<h2 id="design">Design</h2>
+<h3 id="variants">Variants</h3>
+<h4 id="record-tabs">Record Tabs</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/27c88807-6a38-48f1-add7-4fc17ddcc55e" /></p>
+<p>Use the platform’s record tabs to establish views within a record. Avoid designing custom view tabs when using an Appian record.</p>
+<blockquote>
+<p>[!Note]
+<strong>Accessibility:</strong> The platform's record tabs have accessibility features available out of the box — nothing more is necessary.</p>
+</blockquote>
+<h4 id="tabs-as-side-navigation">Tabs as Side Navigation</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/0bb4dabd-ca89-42ca-9697-b1a408623e11" /></p>
+<p>Use this option when there are 4 or more tabs.</p>
+<p><strong>Note:</strong> When using this option, keep in mind that the components within the tab will have lesser page width and the design will need to be adjusted accordingly</p>
+<blockquote>
+<p>[!Note]
+<strong>Accessibility:</strong> Specify “Selected” in the <code>accessibilityText</code> parameter of the tab’s card layout to ensure screen readers identify the selected tab. Avoid using the word “tab” in the accessibility text.</p>
+</blockquote>
+<h4 id="horizontal-tabs">Horizontal Tabs</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/88d1c232-396e-47d6-a6bd-52f968bea8c2" /></p>
+<p>Use horizontal tabs to implement views within a page or section. Avoid using more than 4 tabs.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>This layout could work for showing lists based on different statuses</li>
+<li>Ensure the tabs have a wrapping container in order to establish the appropriate hierarchy</li>
+</ul>
+<blockquote>
+<p>[!Note]
+<strong>Accessibility:</strong> Specify “Selected” in the <code>accessibilityText</code> parameter of the tab’s card layout to ensure screen readers identify the selected tab. Avoid using the word “tab” in the accessibility text.</p>
+</blockquote>
+<h4 id="chart-toggle-using-tabs">Chart Toggle Using Tabs</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/021a6869-eb40-4829-a148-de92b89dfa59" /></p>
+<p>Use this pattern to toggle data display between a chart view and list view.</p>
+<blockquote>
+<p>[!Note]
+<strong>Accessibility:</strong> Specify “Selected” in the <code>accessibilityText</code> parameter of the <code>a!buttonWidget</code> to ensure screen readers identify the selected button/tab. Avoid using the word “tab“ in the accessibility text. The button names should be “chart view“ and “list view“, respectively.</p>
+</blockquote>
+<h3 id="accessibility">Accessibility</h3>
+<p>Specify “Selected” in the <code>accessibilityText</code> parameter of the tab’s <code>a!cardLayout</code> to ensure screen readers identify the selected tab. Avoid using the word “tab“ in the accessibility text.</p>
+<h2 id="development">Development</h2>
+<h3 id="variants_1">Variants</h3>
+<h4 id="tabs-as-side-navigation_1">Tabs as Side Navigation</h4>
+<pre><code>a!localVariables(
+  local!tabs: {
+    &quot;Tab 1&quot;,
+    &quot;Tab 2&quot;,
+    &quot;Tab 3&quot;,
+    &quot;Tab 4&quot;,
+    &quot;Tab 5&quot;
+  },
+  local!selectedTab: 1,
+  local!backgroundColor: &quot;#FFFFFF&quot;,
+  a!forEach(
+    items: local!tabs,
+    expression: {
+      a!cardLayout(
+        showBorder: false,
+        contents: {
+          a!richTextDisplayField(
+            labelPosition: &quot;COLLAPSED&quot;,
+            value: a!richTextItem(
+              text: fv!item,
+              style: if(
+                fv!index = local!selectedTab,
+                &quot;STRONG&quot;,
+                &quot;PLAIN&quot;
+              )
+            )
+          )
+        },
+        decorativeBarColor: if(
+          fv!index = local!selectedTab,
+          &quot;ACCENT&quot;,
+          local!backgroundColor
+        ),
+        accessibilityText: if(
+          fv!index = local!selectedTab,
+          &quot;Selected&quot;,
+          &quot;&quot;
+        ),
+        link: a!dynamicLink(),
+        decorativeBarPosition: &quot;START&quot;,
+        marginBelow: &quot;LESS&quot;
+      )
+    }
+  )
+)
+</code></pre>
+<h4 id="horizontal-tabs_1">Horizontal Tabs</h4>
+<pre><code>a!localVariables(
+  local!tabs: {
+    a!map(title: &quot;Applied Clauses&quot;, tag: &quot;5&quot;),
+    a!map(title: &quot;Questionnaire&quot;, tag: &quot;2&quot;),
+    a!map(title: &quot;Excluded Clauses&quot;, tag: &quot;1&quot;),
+    a!map(title: &quot;Log History&quot;, tag: &quot;0&quot;)
+  },
+  local!selectedTab: 1,
+  local!backgroundColor: &quot;#FFFFFF&quot;,
+  a!cardLayout(
+    contents: {
+      a!cardLayout(
+        contents: {
+          a!columnsLayout(
+            columns: {
+              a!forEach(
+                items: local!tabs,
+                expression: {
+                  a!columnLayout(
+                    contents: {
+                      a!cardLayout(
+                        contents: {
+                          a!sideBySideLayout(
+                            items: {
+                              a!sideBySideItem(),
+                              a!sideBySideItem(
+                                item: a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: {
+                                    a!richTextItem(
+                                      text: { fv!item.title },
+                                      color: &quot;STANDARD&quot;,
+                                      size: &quot;STANDARD&quot;,
+                                      style: if(
+                                        fv!index = local!selectedTab,
+                                        &quot;STRONG&quot;,
+                                        &quot;PLAIN&quot;
+                                      )
+                                    )
+                                  },
+                                  align: &quot;CENTER&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                ),
+                                width: &quot;MINIMIZE&quot;
+                              ),
+                              a!sideBySideItem(
+                                item: a!tagField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  tags: {
+                                    a!tagItem(
+                                      text: fv!item.tag,
+                                      backgroundColor: &quot;#EDEEF2&quot;,
+                                      textColor: &quot;#2E2E35&quot;
+                                    )
+                                  },
+                                  size: &quot;SMALL&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                ),
+                                width: &quot;MINIMIZE&quot;
+                              ),
+                              a!sideBySideItem()
+                            },
+                            alignVertical: &quot;BOTTOM&quot;,
+                            spacing: &quot;&quot;,
+                            marginAbove: &quot;STANDARD&quot;,
+                            marginBelow: &quot;LESS&quot;
+                          )
+                        },
+                        link: if(
+                          fv!index = local!selectedTab,
+                          {},
+                          a!dynamicLink(
+                            value: fv!index,
+                            saveInto: local!selectedTab
+                          )
+                        ),
+                        height: &quot;AUTO&quot;,
+                        style: &quot;NONE&quot;,
+                        padding: &quot;EVEN_LESS&quot;,
+                        marginBelow: &quot;NONE&quot;,
+                        showBorder: false,
+                        decorativeBarPosition: &quot;BOTTOM&quot;,
+                        decorativeBarColor: if(
+                          fv!index = local!selectedTab,
+                          &quot;ACCENT&quot;,
+                          local!backgroundColor
+                        ),
+                        accessibilityText: if(
+                          fv!index = local!selectedTab,
+                          &quot;Selected&quot;,
+                          &quot;&quot;
+                        )
+                      )
+                    },
+                    width: &quot;NARROW&quot;
+                  )
+                }
+              )
+            },
+            marginBelow: &quot;NONE&quot;,
+            spacing: &quot;NONE&quot;,
+            showDividers: false
+          )
+        },
+        height: &quot;AUTO&quot;,
+        style: &quot;NONE&quot;,
+        padding: &quot;NONE&quot;,
+        marginBelow: &quot;NONE&quot;,
+        showBorder: false,
+        showShadow: false
+      ),
+      a!cardLayout(padding: &quot;NONE&quot;),
+      a!cardLayout(
+        contents: {},
+        height: &quot;AUTO&quot;,
+        style: &quot;NONE&quot;,
+        padding: &quot;STANDARD&quot;,
+        marginBelow: &quot;STANDARD&quot;,
+        showBorder: false
+      )
+    },
+    height: &quot;AUTO&quot;,
+    style: &quot;NONE&quot;,
+    shape: &quot;SEMI_ROUNDED&quot;,
+    padding: &quot;NONE&quot;,
+    marginBelow: &quot;STANDARD&quot;,
+    showBorder: false,
+    showShadow: true
+  )
+)
+</code></pre>
+<h4 id="chart-toggle-using-tabs_1">Chart Toggle Using Tabs</h4>
+<pre><code>{
+  a!sideBySideLayout(
+    alignVertical: &quot;MIDDLE&quot;,
+    spacing: &quot;NONE&quot;,
+    items: {
+      a!sideBySideItem(
+        item: a!headingField(
+          text: &quot;Users by Funding&quot;,
+          headingTag: &quot;H2&quot;,
+          color: &quot;STANDARD&quot;,
+          fontWeight: &quot;SEMI_BOLD&quot;,
+          size: &quot;SMALL&quot;,
+          marginAbove: &quot;LESS&quot;
+        )
+      ),
+      a!sideBySideItem(
+        width: &quot;MINIMIZE&quot;,
+        item: a!buttonArrayLayout(
+          align: &quot;END&quot;,
+          buttons: {
+            a!buttonWidget(
+              size: &quot;SMALL&quot;,
+              icon: &quot;table&quot;,
+              style: &quot;SOLID&quot;,
+              accessibilityText: &quot;Table view selected&quot;
+            )
+          },
+          marginBelow: &quot;NONE&quot;
+        )
+      ),
+      a!sideBySideItem(
+        width: &quot;MINIMIZE&quot;,
+        item: a!buttonArrayLayout(
+          align: &quot;END&quot;,
+          buttons: {
+            a!buttonWidget(
+              size: &quot;SMALL&quot;,
+              icon: &quot;area-chart&quot;,
+              style: &quot;LINK&quot;,
+              accessibilityText: &quot;Chart view&quot;
+            )
+          },
+          marginBelow: &quot;NONE&quot;
+        )
+      )
+    },
+    marginBelow: &quot;LESS&quot;
+  ),
+  a!cardLayout(
+    contents: {
+      {
+        a!localVariables(
+          local!requirement: {
+            a!map(
+              id: 1,
+              name: &quot;Kari Becker&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 2,
+              name: &quot;Tom Smith&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 3,
+              name: &quot;Bree Mercer&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 4,
+              name: &quot;Kevin Lu&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 5,
+              name: &quot;Diana Hellstrom&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 6,
+              name: &quot;Francois Morin&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            ),
+            a!map(
+              id: 7,
+              name: &quot;Maya Kapoor&quot;,
+              dept: &quot;Contracting Officer&quot;,
+              icon: &quot;$11,234.00&quot;
+            )
+          },
+          {
+            a!sectionLayout(
+              contents: {
+                a!gridField(
+                  /* Replace the dummy data with a query, rule, or function that returns a datasubset and uses fv!pagingInfo as the paging configuration. */
+                  data: todatasubset(local!requirement, fv!pagingInfo),
+                  columns: {
+                    a!gridColumn(
+                      label: &quot;Assignment&quot;,
+                      value: a!richTextDisplayField(
+                        labelPosition: &quot;COLLAPSED&quot;,
+                        value: { a!richTextItem(text: fv!row.name) }
+                      )
+                    ),
+                    a!gridColumn(label: &quot;Role&quot;, value: fv!row.dept),
+                    a!gridColumn(
+                      label: &quot;Total Funding&quot;,
+                      value: fv!row.icon
+                    )
+                  },
+                  pageSize: 10,
+                  shadeAlternateRows: false,
+                  rowHeader: 1
+                )
+              },
+              marginBelow: &quot;EVEN_LESS&quot;
+            )
+          }
+        )
+      }
+    },
+    height: &quot;AUTO&quot;,
+    style: &quot;NONE&quot;,
+    padding: &quot;STANDARD&quot;,
+    shape: &quot;SEMI_ROUNDED&quot;,
+    marginBelow: &quot;STANDARD&quot;,
+    borderColor: &quot;#EDEEFA&quot;
+  )
+}
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3250 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/patterns/document-cards/">
+      
+      
+        <link rel="prev" href="../comment-thread/">
+      
+      
+        <link rel="next" href="../document-summary/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Document Cards - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#document-cards" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Document Cards
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#most-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Most Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Least Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-rationale-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Rationale / Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Icons &amp; Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#most-components_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Most Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-components_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Least Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons-alignment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Icons &amp; Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#most-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Most Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Least Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-rationale-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Rationale / Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Icons &amp; Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variants_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variants
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#most-components_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Most Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#least-components_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Least Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icons-alignment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Icons &amp; Alignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="document-cards">Document Cards</h1>
+<p>Cards that represent documents and their respective actions</p>
+<p><img alt="" src="https://github.com/user-attachments/assets/ed687393-8cc2-4d99-979c-3e660382ffe7" /></p>
+<h2 id="design">Design</h2>
+<h3 id="variants">Variants</h3>
+<h4 id="most-components">Most Components</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/92afe3ca-e300-49b5-a005-a1cc4242a872" /></p>
+<p>This variant has the most components — a file type icon, metadata, statuses, and actions</p>
+<h4 id="least-components">Least Components</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/a03a6aff-06ef-44e2-aacd-edeb83ba6826" /></p>
+<p>The simplest version of the document card</p>
+<h4 id="ai-rationale-summary">AI Rationale / Summary</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/ff2367b7-42f9-42fc-b28a-e7d6d80c225a" /></p>
+<p>The metadata section of the document card doesn't just need to include data about the document. It can also include other subsidiary information like information from AI summarizing the document or explaining why it was returned in a search.</p>
+<h4 id="actions">Actions</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/8f5ead65-ef4d-4000-93bd-e014591a897a" /></p>
+<p>Whether or not you denote actions with icons in the top right or text on the bottom on your card depends on your use case. If you need more than one action opt for the text variant. If there is not a convincing icon for your action, use text.</p>
+<h4 id="icons-alignment">Icons &amp; Alignment</h4>
+<p><img alt="" src="https://github.com/user-attachments/assets/fb885d7a-b7bc-4d4c-905c-6b7b70b749aa" /></p>
+<p>Icons and text will be middle aligned only if there are 2 lines of text. Otherwise, it will be top aligned.</p>
+<h2 id="development">Development</h2>
+<h3 id="variants_1">Variants</h3>
+<h4 id="most-components_1">Most Components</h4>
+<pre><code>a!columnsLayout(
+  columns: {
+    a!columnLayout(
+      width: &quot;MEDIUM&quot;,
+      contents: {
+        a!cardLayout(
+          shape: &quot;ROUNDED&quot;,
+          /* Gray 1 */ 
+          borderColor: &quot;#EDEEFA&quot;,
+          contents: {
+            a!columnsLayout(
+              columns: {
+                a!columnLayout(
+                  width: &quot;MEDIUM_PLUS&quot;,
+                  contents: {
+                    a!columnsLayout(
+                      alignVertical: &quot;TOP&quot;,
+                      spacing: &quot;NONE&quot;,
+                      columns: {
+                        /*ICON*/
+                        a!columnLayout(
+                          width: &quot;1X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: a!richTextIcon(
+                                    icon: &quot;file-word-o&quot;,
+                                    /* Gray 3 */ 
+                                    color: &quot;#6C6C75&quot;, 
+                                    size: &quot;LARGE&quot;
+                                  ),
+                                  align: &quot;CENTER&quot;,
+                                  marginAbove: &quot;LESS&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                )
+                              },
+                              padding: &quot;EVEN_LESS&quot;,
+                              showBorder: false
+                            )
+                          },
+                        ),
+                        /*CONTENT*/
+                        a!columnLayout(
+                          width: &quot;10X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                /*TITLE*/
+                                a!headingField(
+                                  headingTag: &quot;H3&quot;,
+                                  text: &quot;Document Title&quot;,
+                                  size: &quot;EXTRA_SMALL&quot;,
+                                  fontWeight: &quot;BOLD&quot;,
+                                  marginAbove: &quot;EVEN_LESS&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                ),
+                                /*METADATA*/
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: {
+                                    a!richTextItem(
+                                      text: &quot;Uploaded on Apr 2nd, 2024 by Julie Park&quot;,
+                                      /* Gray 3 */ 
+                                      color: &quot;#6C6C75&quot;, 
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      size: &quot;SMALL&quot;
+                                    )
+                                  },
+                                  preventWrapping: true,
+                                  marginBelow: &quot;LESS&quot;
+                                ),
+                                /*STATUS &amp; FILE TYPE*/
+                                a!tagField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  marginAbove: &quot;NONE&quot;,
+                                  marginBelow: &quot;EVEN_LESS&quot;,
+                                  size: &quot;SMALL&quot;,
+                                  tags: {
+                                    a!tagItem(
+                                      /* Purple 1 */ 
+                                      backgroundColor: &quot;#F2E9FF&quot;, 
+                                      /* Purple 4 */ 
+                                      textColor: &quot;#790DA1&quot;, 
+                                      text: &quot;Pending&quot;,
+                                      tooltip: &quot;Status&quot;
+                                    ),
+                                    a!tagItem(
+                                      /* Gray 1 */ 
+                                      backgroundColor: &quot;#EDEDF2&quot;, 
+                                      /* Gray 4 */ 
+                                      textColor: &quot;#2E2E35&quot;, 
+                                      text: &quot;DOCX&quot;,
+                                      tooltip: &quot;Document format&quot;
+                                    ),
+                                  }
+                                ),
+                                /*ACTIONS*/
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  marginAbove: &quot;LESS&quot;,
+                                  value: {
+                                    a!richTextItem(
+                                      text: &quot;Go to Contract&quot;,
+                                      link: a!dynamicLink(),
+                                      linkStyle: &quot;STANDALONE&quot;
+                                    ),
+                                    a!richTextItem(
+                                      size: &quot;SMALL&quot;,
+                                      text: &quot;   •   &quot;,
+                                      /* Gray 3 */ 
+                                      color: &quot;#6C6C75&quot;, 
+                                    ),
+                                    a!richTextItem(
+                                      text: &quot;Download&quot;,
+                                      link: a!dynamicLink(),
+                                      linkStyle: &quot;STANDALONE&quot;
+                                    )
+                                  }
+                                )
+                              },
+                              showBorder: false
+                            )
+                          },
+                        ),
+                      }
+                    )
+                  }
+                ),
+              },
+              alignVertical: &quot;MIDDLE&quot;,
+              spacing: &quot;NONE&quot;
+            )
+          },
+        ),
+      }
+    ),
+    a!columnLayout(
+      width: &quot;MEDIUM&quot;,
+      contents: {
+        a!cardLayout(
+          shape: &quot;ROUNDED&quot;,
+          borderColor: &quot;#EDEEFA&quot;, 
+          contents: {
+            a!columnsLayout(
+              columns: {
+                a!columnLayout(
+                  width: &quot;MEDIUM_PLUS&quot;,
+                  contents: {
+                    a!columnsLayout(
+                      alignVertical: &quot;TOP&quot;,
+                      spacing: &quot;NONE&quot;,
+                      columns: {
+                        /*ICON*/
+                        a!columnLayout(
+                          width: &quot;1X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: a!richTextIcon(
+                                    icon: &quot;file-word-o&quot;,
+                                    /* Gray 3 */ 
+                                    color: &quot;#6C6C75&quot;, 
+                                    size: &quot;LARGE&quot;
+                                  ),
+                                  align: &quot;CENTER&quot;,
+                                  marginAbove: &quot;LESS&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                )
+                              },
+                              padding: &quot;EVEN_LESS&quot;,
+                              showBorder: false
+                            )
+                          },
+                        ),
+                        /*CONTENT*/
+                        a!columnLayout(
+                          width: &quot;10X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                /*TITLE*/
+                                a!sideBySideLayout(
+                                  alignVertical: &quot;MIDDLE&quot;,
+                                  marginAbove: &quot;NONE&quot;,
+                                  marginBelow: &quot;NONE&quot;,
+                                  items: {
+                                    a!sideBySideItem(
+                                      width: &quot;AUTO&quot;,
+                                      item: a!headingField(
+                                        headingTag: &quot;H3&quot;,
+                                        text: &quot;Document Title&quot;,
+                                        size: &quot;EXTRA_SMALL&quot;,
+                                        fontWeight: &quot;BOLD&quot;,
+                                        marginAbove: &quot;EVEN_LESS&quot;,
+                                        marginBelow: &quot;NONE&quot;
+                                      )
+                                    ),
+                                    a!sideBySideItem(
+                                      width: &quot;MINIMIZE&quot;,
+                                      item: a!richTextDisplayField(
+                                        labelPosition: &quot;COLLAPSED&quot;,
+                                        align: &quot;RIGHT&quot;,
+                                        marginAbove: &quot;EVEN_LESS&quot;,
+                                        marginBelow: &quot;NONE&quot;,
+                                        value: {
+                                          a!richTextIcon(
+                                            icon: &quot;download&quot;,
+                                            /*size: &quot;SMALL&quot;,*/
+                                            link: a!dynamicLink(),
+                                            linkStyle: &quot;STANDALONE&quot;
+                                          )
+                                        }
+                                      )
+                                    )
+                                  }
+                                ),
+                                /*METADATA*/
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: {
+                                    a!richTextItem(
+                                      text: &quot;Uploaded on Apr 2nd, 2024 by Julie Park&quot;,
+                                      /* Gray 3 */ 
+                                      color: &quot;#6C6C75&quot;, 
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      size: &quot;SMALL&quot;
+                                    )
+                                  },
+                                  preventWrapping: true,
+                                  marginBelow: &quot;LESS&quot;
+                                ),
+                                /*STATUS &amp; FILE TYPE*/
+                                a!tagField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  marginAbove: &quot;NONE&quot;,
+                                  marginBelow: &quot;EVEN_LESS&quot;,
+                                  size: &quot;SMALL&quot;,
+                                  tags: {
+                                    a!tagItem(
+                                      /* Purple 1 */ 
+                                      backgroundColor: &quot;#F2E9FF&quot;, 
+                                      /* Purple 4 */ 
+                                      textColor: &quot;#790DA1&quot;, 
+                                      text: &quot;Pending&quot;,
+                                      tooltip: &quot;Status&quot;
+                                    ),
+                                    a!tagItem(
+                                      /* Gray 1 */ 
+                                      backgroundColor: &quot;#EDEDF2&quot;, 
+                                      /* Gray 4 */ 
+                                      textColor: &quot;#2E2E35&quot;, 
+                                      text: &quot;DOCX&quot;,
+                                      tooltip: &quot;Document format&quot;
+                                    ),
+                                  }
+                                ),
+                              },
+                              showBorder: false
+                            )
+                          },
+                        ),
+                      }
+                    )
+                  }
+                ),
+              },
+              alignVertical: &quot;MIDDLE&quot;,
+              spacing: &quot;NONE&quot;
+            )
+          },
+        ),
+      }
+    ),
+  }
+)
+</code></pre>
+<h4 id="least-components_1">Least Components</h4>
+<pre><code>a!columnsLayout(
+  marginAbove: &quot;NONE&quot;,
+  marginBelow: &quot;NONE&quot;,
+  columns: {
+    a!columnLayout(
+      width: &quot;MEDIUM&quot;,
+      contents: {
+        a!cardLayout(
+          shape: &quot;ROUNDED&quot;,
+          borderColor: &quot;#EDEDF2&quot;, 
+          contents: {
+            a!columnsLayout(
+              columns: {
+                a!columnLayout(
+                  width: &quot;MEDIUM_PLUS&quot;,
+                  contents: {
+                    a!cardLayout(
+                      contents: {
+                        /*TITLE*/
+                        a!headingField(
+                          headingTag: &quot;H3&quot;,
+                          text: &quot;Document Title&quot;,
+                          size: &quot;EXTRA_SMALL&quot;,
+                          fontWeight: &quot;BOLD&quot;,
+                          marginAbove: &quot;EVEN_LESS&quot;,
+                          marginBelow: &quot;NONE&quot;
+                        ),
+                        /*METADATA*/
+                        a!richTextDisplayField(
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          value: {
+                            a!richTextItem(
+                              text: &quot;Uploaded on Apr 2nd, 2024 by Julie Park&quot;,
+                              /* Gray 3 */ 
+                              color: &quot;#6C6C75&quot;, 
+                              linkStyle: &quot;STANDALONE&quot;,
+                              size: &quot;SMALL&quot;
+                            )
+                          },
+                          preventWrapping: true,
+                          marginBelow: &quot;LESS&quot;
+                        ),
+                      },
+                      showBorder: false
+                    )
+                  }
+                ),
+              },
+              alignVertical: &quot;MIDDLE&quot;,
+              spacing: &quot;NONE&quot;
+            )
+          },
+        ),
+      }
+    )
+  }
+)
+</code></pre>
+<h4 id="ai-metadata">AI Metadata</h4>
+<pre><code>a!columnsLayout(
+  marginAbove: &quot;NONE&quot;,
+  marginBelow: &quot;NONE&quot;,
+  columns: {
+    a!columnLayout(
+      width: &quot;MEDIUM_PLUS&quot;,
+      contents: {
+        a!cardLayout(
+          shape: &quot;ROUNDED&quot;,
+          /* Gray 1 */
+          borderColor: &quot;#EDEDF2&quot;, 
+          contents: {
+            a!columnsLayout(
+              columns: {
+                a!columnLayout(
+                  width: &quot;MEDIUM_PLUS&quot;,
+                  contents: {
+                    a!columnsLayout(
+                      alignVertical: &quot;TOP&quot;,
+                      spacing: &quot;NONE&quot;,
+                      columns: {
+                        /*ICON*/
+                        a!columnLayout(
+                          width: &quot;1X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: a!richTextIcon(
+                                    icon: &quot;file-pdf-o&quot;,
+                                    /* Gray 3 */
+                                    color: &quot;#6C6C75&quot;, 
+                                    size: &quot;LARGE&quot;
+                                  ),
+                                  align: &quot;CENTER&quot;,
+                                  marginAbove: &quot;LESS&quot;,
+                                  marginBelow: &quot;NONE&quot;
+                                )
+                              },
+                              padding: &quot;EVEN_LESS&quot;,
+                              showBorder: false
+                            )
+                          },
+                        ),
+                        /*CONTENT*/
+                        a!columnLayout(
+                          width: &quot;10X&quot;,
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                /*TITLE*/
+                                a!sideBySideLayout(
+                                  alignVertical: &quot;MIDDLE&quot;,
+                                  marginAbove: &quot;NONE&quot;,
+                                  marginBelow: &quot;NONE&quot;,
+                                  items: {
+                                    a!sideBySideItem(
+                                      width: &quot;AUTO&quot;,
+                                      item: a!headingField(
+                                        headingTag: &quot;H3&quot;,
+                                        text: &quot;Document Title&quot;,
+                                        size: &quot;EXTRA_SMALL&quot;,
+                                        fontWeight: &quot;BOLD&quot;,
+                                        marginAbove: &quot;EVEN_LESS&quot;,
+                                        marginBelow: &quot;NONE&quot;
+                                      )
+                                    ),
+                                    a!sideBySideItem(
+                                      width: &quot;MINIMIZE&quot;,
+                                      item: a!richTextDisplayField(
+                                        labelPosition: &quot;COLLAPSED&quot;,
+                                        align: &quot;RIGHT&quot;,
+                                        marginAbove: &quot;EVEN_LESS&quot;,
+                                        marginBelow: &quot;NONE&quot;,
+                                        value: {
+                                          a!richTextIcon(
+                                            icon: &quot;bookmark-o&quot;,
+                                            /*size: &quot;SMALL&quot;,*/
+                                            link: a!dynamicLink(),
+                                            linkStyle: &quot;STANDALONE&quot;
+                                          )
+                                        }
+                                      )
+                                    )
+                                  }
+                                ),
+                                /*METADATA*/
+                                a!richTextDisplayField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  value: {
+                                    a!richTextIcon(
+                                      icon: &quot;circle&quot;,
+                                      color: &quot;#E9EDFC&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                    a!richTextIcon(
+                                      icon: &quot;circle&quot;,
+                                      color: &quot;#AFBFF8&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                    a!richTextIcon(
+                                      icon: &quot;circle&quot;,
+                                      color: &quot;#AFBFF8&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                    a!richTextIcon(
+                                      icon: &quot;circle&quot;,
+                                      color: &quot;#08088D&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                    a!richTextIcon(
+                                      icon: &quot;circle-o&quot;,
+                                      color: &quot;#DCDCE5&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                    &quot;  &quot;,
+                                    a!richTextItem(
+                                      text: &quot;Apr 2nd, 2024&quot;,
+                                      /* Gray 3 */
+                                      color: &quot;#6C6C75&quot;, 
+                                      linkStyle: &quot;STANDALONE&quot;,
+                                      size: &quot;SMALL&quot;
+                                    ),
+                                  },
+                                  preventWrapping: true,
+                                  marginBelow: &quot;LESS&quot;
+                                ),
+                                /*ACTIONS AND/OR MISC INFO*/
+                                a!cardLayout(
+                                  shape: &quot;ROUNDED&quot;,
+                                  showBorder: false,
+                                  /* Default background */
+                                  style: &quot;#FAFAFC&quot;, 
+                                  marginAbove: &quot;EVEN_LESS&quot;,
+                                  marginBelow: &quot;EVEN_LESS&quot;,
+                                  contents: {
+                                    a!sideBySideLayout(
+                                      items: {
+                                        a!sideBySideItem(
+                                          item: a!imageField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            images: {
+                                              a!webImage(
+                                                source:&quot;https://raw.githubusercontent.com/pglevy/design-system-docs/main/assets/images/ai-imagery/sparkle-light-1.png&quot;
+                                              )
+                                            },
+                                            size: &quot;ICON&quot;,
+                                            marginBelow: &quot;NONE&quot;
+                                          ),
+                                          width: &quot;MINIMIZE&quot;
+                                        ),
+                                        a!sideBySideItem(
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: &quot;Blurb about why we matched on this document/why this is relevant to the search query.&quot;,
+                                                size: &quot;SMALL&quot;,
+                                                color: &quot;#020A50&quot;,
+                                              )
+                                            },
+                                            marginBelow: &quot;NONE&quot;
+                                          ),
+                                        )
+
+                                      },
+                                      spacing: &quot;STANDARD&quot;,
+                                      marginBelow: &quot;NONE&quot;
+                                    ),
+                                  }
+                                ),
+                              },
+                              showBorder: false
+                            )
+                          },
+                        ),
+                      }
+                    )
+                  }
+                ),
+              },
+              alignVertical: &quot;MIDDLE&quot;,
+              spacing: &quot;NONE&quot;
+            )
+          },
+        ),
+      }
+    ),
+    a!columnLayout()
+  }
+)
+</code></pre>
+<h4 id="actions_1">Actions</h4>
+<pre><code>a!cardLayout(
+  shape: &quot;ROUNDED&quot;,
+  /* Default background */
+  style: &quot;#FAFAFC&quot;, 
+  showBorder: false,
+  padding: &quot;EVEN_MORE&quot;,
+  contents: {
+    a!columnsLayout(
+      columns: {
+        a!columnLayout(
+          width: &quot;MEDIUM&quot;,
+          contents: {
+            a!cardLayout(
+              shape: &quot;ROUNDED&quot;,
+              /* Gray 1 */
+              borderColor: &quot;#EDEDF2&quot;, 
+              contents: {
+                a!columnsLayout(
+                  columns: {
+                    a!columnLayout(
+                      width: &quot;MEDIUM_PLUS&quot;,
+                      contents: {
+                        a!columnsLayout(
+                          alignVertical: &quot;TOP&quot;,
+                          spacing: &quot;NONE&quot;,
+                          columns: {
+                            /*ICON*/
+                            a!columnLayout(
+                              width: &quot;1X&quot;,
+                              contents: {
+                                a!cardLayout(
+                                  contents: {
+                                    a!richTextDisplayField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      value: a!richTextIcon(
+                                        icon: &quot;file-word-o&quot;,
+                                        /* Gray 3 */
+                                        color: &quot;#6C6C75&quot;, 
+                                        size: &quot;LARGE&quot;
+                                      ),
+                                      align: &quot;CENTER&quot;,
+                                      marginAbove: &quot;LESS&quot;,
+                                      marginBelow: &quot;NONE&quot;
+                                    )
+                                  },
+                                  padding: &quot;EVEN_LESS&quot;,
+                                  showBorder: false
+                                )
+                              },
+                            ),
+                            /*CONTENT*/
+                            a!columnLayout(
+                              width: &quot;10X&quot;,
+                              contents: {
+                                a!cardLayout(
+                                  contents: {
+                                    /*TITLE*/
+                                    a!headingField(
+                                      headingTag: &quot;H3&quot;,
+                                      text: &quot;Document Title&quot;,
+                                      size: &quot;EXTRA_SMALL&quot;,
+                                      fontWeight: &quot;BOLD&quot;,
+                                      marginAbove: &quot;EVEN_LESS&quot;,
+                                      marginBelow: &quot;NONE&quot;
+                                    ),
+                                    /*METADATA*/
+                                    a!richTextDisplayField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      value: {
+                                        a!richTextItem(
+                                          text: &quot;Uploaded on Apr 2nd, 2024 by Julie Park&quot;,
+                                          /* Gray 3 */
+                                          color: &quot;#6C6C75&quot;, 
+                                          linkStyle: &quot;STANDALONE&quot;,
+                                          size: &quot;SMALL&quot;
+                                        )
+                                      },
+                                      preventWrapping: true,
+                                      marginBelow: &quot;LESS&quot;
+                                    ),
+                                    /*STATUS &amp; FILE TYPE*/
+                                    a!tagField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      marginAbove: &quot;NONE&quot;,
+                                      marginBelow: &quot;EVEN_LESS&quot;,
+                                      size: &quot;SMALL&quot;,
+                                      tags: {
+                                        a!tagItem(
+                                          /* Purple 1 */
+                                          backgroundColor: &quot;#F2E9FF&quot;, 
+                                          /* Purple 4 */
+                                          textColor: &quot;#790DA1&quot;, 
+                                          text: &quot;Pending&quot;,
+                                          tooltip: &quot;Status&quot;
+                                        ),
+                                        a!tagItem(
+                                          /* Gray 1 */
+                                          backgroundColor: &quot;#EDEDF2&quot;, 
+                                          /* Gray 4 */
+                                          textColor: &quot;#2E2E35&quot;, 
+                                          text: &quot;DOCX&quot;,
+                                          tooltip: &quot;Document format&quot;
+                                        ),
+                                      }
+                                    ),
+                                    /*ACTIONS*/
+                                    a!richTextDisplayField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      marginAbove: &quot;LESS&quot;,
+                                      value: {
+                                        a!richTextItem(
+                                          /*size: &quot;SMALL&quot;,*/
+                                          text: &quot;Go to Contract&quot;,
+                                          link: a!dynamicLink(),
+                                          linkStyle: &quot;STANDALONE&quot;
+                                        ),
+                                        a!richTextItem(
+                                          size: &quot;SMALL&quot;,
+                                          text: &quot;   •   &quot;,
+                                          /* Gray 3 */
+                                          color: &quot;#6C6C75&quot;, 
+                                        ),
+                                        a!richTextItem(
+                                          /*size: &quot;SMALL&quot;,*/
+                                          text: &quot;Download&quot;,
+                                          link: a!dynamicLink(),
+                                          linkStyle: &quot;STANDALONE&quot;
+                                        )
+                                      }
+                                    )
+                                  },
+                                  showBorder: false
+                                )
+                              },
+                            ),
+                          }
+                        )
+                      }
+                    ),
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  spacing: &quot;NONE&quot;
+                )
+              },
+            ),
+          }
+        ),
+        a!columnLayout(
+          width: &quot;MEDIUM&quot;,
+          contents: {
+            a!cardLayout(
+              shape: &quot;ROUNDED&quot;,
+              /* Gray 1 */ 
+              borderColor: &quot;#EDEDF2&quot;, 
+              contents: {
+                a!columnsLayout(
+                  columns: {
+                    a!columnLayout(
+                      width: &quot;MEDIUM_PLUS&quot;,
+                      contents: {
+                        a!columnsLayout(
+                          alignVertical: &quot;TOP&quot;,
+                          spacing: &quot;NONE&quot;,
+                          columns: {
+                            /*ICON*/
+                            a!columnLayout(
+                              width: &quot;1X&quot;,
+                              contents: {
+                                a!cardLayout(
+                                  contents: {
+                                    a!richTextDisplayField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      value: a!richTextIcon(
+                                        icon: &quot;file-word-o&quot;,
+                                        /* Gray 3 */
+                                        color: &quot;#6C6C75&quot;, 
+                                        size: &quot;LARGE&quot;
+                                      ),
+                                      align: &quot;CENTER&quot;,
+                                      marginAbove: &quot;LESS&quot;,
+                                      marginBelow: &quot;NONE&quot;
+                                    )
+                                  },
+                                  padding: &quot;EVEN_LESS&quot;,
+                                  showBorder: false
+                                )
+                              },
+                            ),
+                            /*CONTENT*/
+                            a!columnLayout(
+                              width: &quot;10X&quot;,
+                              contents: {
+                                a!cardLayout(
+                                  contents: {
+                                    /*TITLE*/
+                                    a!sideBySideLayout(
+                                      alignVertical: &quot;MIDDLE&quot;,
+                                      marginAbove: &quot;NONE&quot;,
+                                      marginBelow: &quot;NONE&quot;,
+                                      items: {
+                                        a!sideBySideItem(
+                                          width: &quot;AUTO&quot;,
+                                          item: a!headingField(
+                                            headingTag: &quot;H3&quot;,
+                                            text: &quot;Document Title&quot;,
+                                            size: &quot;EXTRA_SMALL&quot;,
+                                            fontWeight: &quot;BOLD&quot;,
+                                            marginAbove: &quot;EVEN_LESS&quot;,
+                                            marginBelow: &quot;NONE&quot;
+                                          )
+                                        ),
+                                        a!sideBySideItem(
+                                          width: &quot;MINIMIZE&quot;,
+                                          item: a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            align: &quot;RIGHT&quot;,
+                                            marginAbove: &quot;EVEN_LESS&quot;,
+                                            marginBelow: &quot;NONE&quot;,
+                                            value: {
+                                              a!richTextIcon(
+                                                icon: &quot;download&quot;,
+                                                /*size: &quot;SMALL&quot;,*/
+                                                link: a!dynamicLink(),
+                                                linkStyle: &quot;STANDALONE&quot;
+                                              )
+                                            }
+                                          )
+                                        )
+                                      }
+                                    ),
+                                    /*METADATA*/
+                                    a!richTextDisplayField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      value: {
+                                        a!richTextItem(
+                                          text: &quot;Uploaded on Apr 2nd, 2024 by Julie Park&quot;,
+                                          /* Gray 3 */
+                                          color: &quot;#6C6C75&quot;, 
+                                          linkStyle: &quot;STANDALONE&quot;,
+                                          size: &quot;SMALL&quot;
+                                        )
+                                      },
+                                      preventWrapping: true,
+                                      marginBelow: &quot;LESS&quot;
+                                    ),
+                                    /*STATUS &amp; FILE TYPE*/
+                                    a!tagField(
+                                      labelPosition: &quot;COLLAPSED&quot;,
+                                      marginAbove: &quot;NONE&quot;,
+                                      marginBelow: &quot;EVEN_LESS&quot;,
+                                      size: &quot;SMALL&quot;,
+                                      tags: {
+                                        a!tagItem(
+                                          /* Purple 1 */
+                                          backgroundColor: &quot;#F2E9FF&quot;, 
+                                          /* Purple 4 */
+                                          textColor: &quot;#790DA1&quot;, 
+                                          text: &quot;Pending&quot;,
+                                          tooltip: &quot;Status&quot;
+                                        ),
+                                        a!tagItem(
+                                          /* Gray 1 */ 
+                                          backgroundColor: &quot;#EDEDF2&quot;,
+                                          /* Gray 4 */
+                                          textColor: &quot;#2E2E35&quot;,
+                                          text: &quot;DOCX&quot;,
+                                          tooltip: &quot;Document format&quot;
+                                        ),
+                                      }
+                                    ),
+                                  },
+                                  showBorder: false
+                                )
+                              },
+                            ),
+                          }
+                        )
+                      }
+                    ),
+                  },
+                  alignVertical: &quot;MIDDLE&quot;,
+                  spacing: &quot;NONE&quot;
+                )
+              },
+            ),
+          }
+        ),
+      }
+    ),
+  }
+)
+</code></pre>
+<h4 id="icons-alignment_1">Icons &amp; Alignment</h4>
+<pre><code>{
+  a!cardLayout(
+    shape: &quot;ROUNDED&quot;,
+    /* Default background */
+    style: &quot;#FAFAFC&quot;,
+    showBorder: false,
+    padding: &quot;EVEN_MORE&quot;,
+    contents: {
+      a!sideBySideLayout(
+        alignVertical: &quot;MIDDLE&quot;,
+        marginAbove: &quot;LESS&quot;,
+        marginBelow: &quot;STANDARD&quot;,
+        items: {
+          a!sideBySideItem(
+            width: &quot;AUTO&quot;,
+            item: a!headingField(
+              text: &quot;Attachments&quot;,
+              size: &quot;EXTRA_SMALL&quot;,
+              fontWeight: &quot;SEMI_BOLD&quot;,
+              marginAbove: &quot;NONE&quot;,
+              marginBelow: &quot;NONE&quot;
+            ),
+
+          ),
+
+        }
+      ),
+      a!cardGroupLayout(
+        labelPosition: &quot;COLLAPSED&quot;,
+        marginAbove: &quot;NONE&quot;,
+        marginBelow: &quot;NONE&quot;,
+        cardWidth: &quot;NARROW_PLUS&quot;,
+        spacing: &quot;DENSE&quot;,
+        cards: {
+          a!localVariables(
+            local!kristelCards1: a!refreshVariable(
+              value: {
+                a!map(
+                  title: &quot;Statement of Work&quot;,
+                  status: &quot;Required&quot;,
+                  date: &quot;May 05, 2025&quot;,
+                  type: &quot;PDF&quot;
+                ),
+                a!map(
+                  title: &quot;Performance Work Statement&quot;,
+                  status: &quot;Optional&quot;,
+                  date: &quot;Mar 25, 2025&quot;,
+                  type: &quot;DOCX&quot;
+                ),
+                a!map(
+                  title: &quot;Pricing Template&quot;,
+                  status: &quot;Required&quot;,
+                  date: &quot;Mar 19, 2025&quot;,
+                  type: &quot;PDF&quot;
+                ),
+                a!map(
+                  title: &quot;Technical Proposal Template&quot;,
+                  status: &quot;Required&quot;,
+                  date: &quot;Feb 28, 2025&quot;,
+                  type: &quot;PDF&quot;
+                ),
+
+              },
+              refreshAlways: true
+            ),
+            {
+              a!forEach(
+                items: local!kristelCards1,
+                expression: {
+                  a!cardLayout(
+                    shape: &quot;ROUNDED&quot;,
+                    /* Gray 1 */
+                    borderColor: &quot;#EDEDF2&quot;,
+                    contents: {
+                      a!columnsLayout(
+                        columns: {
+                          a!columnLayout(
+                            width: &quot;MEDIUM_PLUS&quot;,
+                            contents: {
+                              a!columnsLayout(
+                                alignVertical: &quot;TOP&quot;,
+                                spacing: &quot;NONE&quot;,
+                                columns: {
+                                  /*ICON*/
+                                  a!columnLayout(
+                                    width: &quot;1X&quot;,
+                                    contents: {
+                                      a!cardLayout(
+                                        contents: {
+                                          a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: if(
+                                              fv!item.type = &quot;PDF&quot;,
+                                              a!richTextIcon(
+                                                icon: &quot;file-pdf-o&quot;,
+                                                /* Gray 3 */
+                                                color: &quot;#6C6C75&quot;,
+                                                size: &quot;LARGE&quot;
+                                              ),
+                                              a!richTextIcon(
+                                                icon: &quot;file-word-o&quot;,
+                                                /* Gray 3 */
+                                                color: &quot;#6C6C75&quot;,
+                                                size: &quot;LARGE&quot;
+                                              ),
+
+                                            ),
+                                            align: &quot;CENTER&quot;,
+                                            marginAbove: &quot;LESS&quot;,
+                                            marginBelow: &quot;NONE&quot;
+                                          )
+                                        },
+                                        padding: &quot;EVEN_LESS&quot;,
+                                        showBorder: false
+                                      )
+                                    },
+
+                                  ),
+                                  /*CONTENT*/
+                                  a!columnLayout(
+                                    width: &quot;10X&quot;,
+                                    contents: {
+                                      a!cardLayout(
+                                        contents: {
+                                          /*TITLE*/
+                                          a!sideBySideLayout(
+                                            alignVertical: &quot;MIDDLE&quot;,
+                                            marginAbove: &quot;NONE&quot;,
+                                            marginBelow: &quot;NONE&quot;,
+                                            items: {
+                                              a!sideBySideItem(
+                                                width: &quot;AUTO&quot;,
+                                                item: a!headingField(
+                                                  headingTag: &quot;H3&quot;,
+                                                  text: fv!item.title,
+                                                  size: &quot;EXTRA_SMALL&quot;,
+                                                  fontWeight: &quot;BOLD&quot;,
+                                                  marginAbove: &quot;EVEN_LESS&quot;,
+                                                  marginBelow: &quot;NONE&quot;
+                                                )
+                                              ),
+                                              a!sideBySideItem(
+                                                width: &quot;MINIMIZE&quot;,
+                                                item: a!richTextDisplayField(
+                                                  labelPosition: &quot;COLLAPSED&quot;,
+                                                  align: &quot;RIGHT&quot;,
+                                                  marginAbove: &quot;EVEN_LESS&quot;,
+                                                  marginBelow: &quot;NONE&quot;,
+                                                  value: {
+                                                    a!richTextIcon(
+                                                      icon: &quot;download&quot;,
+                                                      /*size: &quot;SMALL&quot;,*/
+                                                      link: a!dynamicLink(),
+                                                      linkStyle: &quot;STANDALONE&quot;
+                                                    )
+                                                  }
+                                                )
+                                              )
+                                            }
+                                          ),
+                                          /*METADATA*/
+                                          a!richTextDisplayField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            value: {
+                                              a!richTextItem(
+                                                text: fv!item.date,
+                                                /* Gray 3 */
+                                                color: &quot;#6C6C75&quot;,
+                                                linkStyle: &quot;STANDALONE&quot;,
+                                                size: &quot;SMALL&quot;
+                                              )
+                                            },
+                                            preventWrapping: true,
+                                            marginBelow: &quot;LESS&quot;
+                                          ),
+                                          /*STATUS &amp; FILE TYPE*/
+                                          a!tagField(
+                                            labelPosition: &quot;COLLAPSED&quot;,
+                                            marginAbove: &quot;NONE&quot;,
+                                            marginBelow: &quot;EVEN_LESS&quot;,
+                                            size: &quot;SMALL&quot;,
+                                            tags: {
+                                              a!tagItem(
+                                                text: fv!item.status,
+                                                tooltip: &quot;Status&quot;,
+                                                textColor: if(
+                                                  fv!item.status = &quot;Required&quot;,
+                                                  /* Green 4 */
+                                                  &quot;#117C00&quot;,
+                                                  /* Gray 4 */
+                                                  &quot;#2E2E35&quot;,
+
+                                                ),
+                                                backgroundColor: if(
+                                                  fv!item.status = &quot;Required&quot;,
+                                                  /* Green 1 */
+                                                  &quot;#E3FBDF&quot;,
+                                                  /* Gray 1 */
+                                                  &quot;#EDEDF2&quot;,
+
+                                                )
+                                              ),
+                                              a!tagItem(
+                                                /* Gray 1 */
+                                                backgroundColor: &quot;#EDEDF2&quot;,
+                                                /* Gray 4 */
+                                                textColor: &quot;#2E2E35&quot;,
+                                                text: if(fv!item.type = &quot;PDF&quot;, &quot;PDF&quot;, &quot;DOCX&quot;),
+                                                tooltip: &quot;Document format&quot;
+                                              ),
+
+                                            }
+                                          ),
+
+                                        },
+                                        showBorder: false
+                                      )
+                                    },
+
+                                  ),
+
+                                }
+                              )
+                            }
+                          ),
+
+                        },
+                        alignVertical: &quot;MIDDLE&quot;,
+                        spacing: &quot;NONE&quot;
+                      )
+                    },
+
+                  ),
+
+                }
+              )
+            }
+          )
+        }
+      ),
+      a!columnsLayout(
+        columns: {
+          a!columnLayout(
+            width: &quot;MEDIUM_PLUS&quot;,
+            contents: {
+              a!headingField(
+                text: &quot;Documents&quot;,
+                size: &quot;SMALL&quot;,
+                fontWeight: &quot;BOLD&quot;,
+                marginAbove: &quot;MORE&quot;,
+                marginBelow: &quot;NONE&quot;
+              ),
+              a!localVariables(
+                local!kristelCards3: a!refreshVariable(
+                  value: {
+                    a!map(
+                      title: &quot;Technical Proposal&quot;,
+                      size: &quot;344 KB&quot;
+                    ),
+                    a!map(
+                      title: &quot;Executive Summary&quot;,
+                      size: &quot;365 KB&quot;
+                    ),
+                    a!map(title: &quot;Business License&quot;, size: &quot;205 KB&quot;),
+
+                  },
+                  refreshAlways: true
+                ),
+                local!kristelCards4: a!refreshVariable(
+                  value: {
+                    a!map(title: &quot;Criteria&quot;, size: &quot;523 KB&quot;),
+                    a!map(
+                      title: &quot;Evaluation Instructions&quot;,
+                      size: &quot;102 KB&quot;
+                    ),
+
+                  },
+                  refreshAlways: true
+                ),
+                {
+                  a!headingField(
+                    text: &quot;Vendor&quot;,
+                    size: &quot;EXTRA_SMALL&quot;,
+                    fontWeight: &quot;SEMI_BOLD&quot;,
+                    marginAbove: &quot;STANDARD&quot;,
+                    marginBelow: &quot;NONE&quot;
+                  ),
+                  a!forEach(
+                    items: local!kristelCards3,
+                    expression: {
+                      a!cardLayout(
+                        shape: &quot;ROUNDED&quot;,
+                        /* Gray 1 */
+                        borderColor: &quot;#EDEDF2&quot;,
+                        marginAbove: &quot;LESS&quot;,
+                        marginBelow: &quot;NONE&quot;,
+                        contents: {
+                          a!columnsLayout(
+                            columns: {
+                              a!columnLayout(
+                                width: &quot;MEDIUM_PLUS&quot;,
+                                contents: {
+                                  a!cardLayout(
+                                    contents: {
+                                      a!columnsLayout(
+                                        marginAbove: &quot;NONE&quot;,
+                                        marginBelow: &quot;NONE&quot;,
+                                        alignVertical: &quot;MIDDLE&quot;,
+                                        columns: {
+                                          a!columnLayout(
+                                            contents: {
+                                              /*TITLE*/
+                                              a!headingField(
+                                                headingTag: &quot;H3&quot;,
+                                                text: fv!item.title,
+                                                size: &quot;EXTRA_SMALL&quot;,
+                                                fontWeight: &quot;BOLD&quot;,
+                                                marginAbove: &quot;EVEN_LESS&quot;,
+                                                marginBelow: &quot;NONE&quot;
+                                              ),
+                                              /*METADATA*/
+                                              a!richTextDisplayField(
+                                                labelPosition: &quot;COLLAPSED&quot;,
+                                                value: {
+                                                  a!richTextItem(
+                                                    text: fv!item.size,
+                                                    /* Gray 3 */
+                                                    color: &quot;#6C6C75&quot;,
+                                                    linkStyle: &quot;STANDALONE&quot;,
+                                                    size: &quot;SMALL&quot;
+                                                  )
+                                                },
+                                                preventWrapping: true,
+                                                marginBelow: &quot;LESS&quot;
+                                              ),
+
+                                            }
+                                          ),
+                                          a!columnLayout(
+                                            width: &quot;EXTRA_NARROW&quot;,
+                                            contents: {
+                                              a!richTextDisplayField(
+                                                labelPosition: &quot;COLLAPSED&quot;,
+                                                align: &quot;RIGHT&quot;,
+                                                marginAbove: &quot;EVEN_LESS&quot;,
+                                                marginBelow: &quot;NONE&quot;,
+                                                value: {
+                                                  a!richTextIcon(
+                                                    icon: &quot;download&quot;,
+                                                    /*size: &quot;SMALL&quot;,*/
+                                                    link: a!dynamicLink(),
+                                                    linkStyle: &quot;STANDALONE&quot;
+                                                  )
+                                                }
+                                              )
+                                            }
+                                          )
+                                        }
+                                      ),
+
+                                    },
+                                    showBorder: false
+                                  )
+                                }
+                              ),
+
+                            },
+                            alignVertical: &quot;MIDDLE&quot;,
+                            spacing: &quot;NONE&quot;
+                          )
+                        },
+
+                      )
+                    }
+                  ),
+                  a!headingField(
+                    text: &quot;Evaluation&quot;,
+                    size: &quot;EXTRA_SMALL&quot;,
+                    fontWeight: &quot;SEMI_BOLD&quot;,
+                    marginAbove: &quot;MORE&quot;,
+                    marginBelow: &quot;NONE&quot;
+                  ),
+                  a!forEach(
+                    items: local!kristelCards4,
+                    expression: {
+                      a!cardLayout(
+                        shape: &quot;ROUNDED&quot;,
+                        /* Gray 1 */
+                        borderColor: &quot;#EDEDF2&quot;,
+                        marginAbove: &quot;LESS&quot;,
+                        marginBelow: &quot;NONE&quot;,
+                        contents: {
+                          a!columnsLayout(
+                            columns: {
+                              a!columnLayout(
+                                width: &quot;MEDIUM_PLUS&quot;,
+                                contents: {
+                                  a!cardLayout(
+                                    contents: {
+                                      /*TITLE*/
+                                      a!sideBySideLayout(
+                                        alignVertical: &quot;MIDDLE&quot;,
+                                        marginAbove: &quot;NONE&quot;,
+                                        marginBelow: &quot;NONE&quot;,
+                                        items: {
+                                          a!sideBySideItem(
+                                            width: &quot;AUTO&quot;,
+                                            item: a!headingField(
+                                              headingTag: &quot;H3&quot;,
+                                              text: fv!item.title,
+                                              size: &quot;EXTRA_SMALL&quot;,
+                                              fontWeight: &quot;BOLD&quot;,
+                                              marginAbove: &quot;EVEN_LESS&quot;,
+                                              marginBelow: &quot;NONE&quot;
+                                            )
+                                          ),
+                                          a!sideBySideItem(
+                                            width: &quot;MINIMIZE&quot;,
+                                            item: a!richTextDisplayField(
+                                              labelPosition: &quot;COLLAPSED&quot;,
+                                              align: &quot;RIGHT&quot;,
+                                              marginAbove: &quot;EVEN_LESS&quot;,
+                                              marginBelow: &quot;NONE&quot;,
+                                              value: {
+                                                a!richTextIcon(
+                                                  icon: &quot;download&quot;,
+                                                  /*size: &quot;SMALL&quot;,*/
+                                                  link: a!dynamicLink(),
+                                                  linkStyle: &quot;STANDALONE&quot;
+                                                )
+                                              }
+                                            )
+                                          )
+                                        }
+                                      ),
+                                      /*METADATA*/
+                                      a!richTextDisplayField(
+                                        labelPosition: &quot;COLLAPSED&quot;,
+                                        value: {
+                                          a!richTextItem(
+                                            text: fv!item.size,
+                                            /* Gray 3 */
+                                            color: &quot;#6C6C75&quot;,
+                                            linkStyle: &quot;STANDALONE&quot;,
+                                            size: &quot;SMALL&quot;
+                                          )
+                                        },
+                                        preventWrapping: true,
+                                        marginBelow: &quot;LESS&quot;
+                                      ),
+
+                                    },
+                                    showBorder: false
+                                  )
+                                }
+                              ),
+
+                            },
+                            alignVertical: &quot;MIDDLE&quot;,
+                            spacing: &quot;NONE&quot;
+                          )
+                        }
+                      )
+                    }
+                  )
+                }
+              )
+            }
+          )
+        }
+      )
+    }
+  )
+}
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

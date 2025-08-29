@@ -1,0 +1,1916 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/accessibility/checklist/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../branding/approach-to-ai/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Accessibility Checklist - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#accessibility-checklist" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Accessibility Checklist
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/pick-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="accessibility-checklist">Accessibility Checklist</h1>
+<p>Guidance for how to make your interfaces accessible</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Success Criteria</th>
+<th>How To Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form Inputs</td>
+<td>Every enabled and disabled input MUST have a label set via the input label parameter. The label must accurately convey the purpose of the input.</td>
+<td><strong>SAIL Testing</strong>: Inspect the label parameter for a value, it must not be null.<br><br><strong>Screen Reader Testing</strong>: Navigate to the input using the TAB or SHIFT + TAB keys. The screen reader must announce the field label.<br><br><strong>Tool Testing</strong>: <br>• <strong>axe DevTools</strong>: Run a page scan. Works for all inputs except text and paragraph fields. Scan must be run in a browser, must not be run in Appian Designer. Possible errors: ARIA input fields must have an accessible name; Form elements must have labels<br>• <strong>ARC Toolkit</strong>: Run the Interactive Controls or Custom Widgets test. Scan must be run in a browser, must not be run in Appian Designer. Possible errors: Invalid aria-labelledby; Input has no accessible name; Empty label text<br><br><strong>Manual DOM Inspection</strong>: What to check varies on the type of input. Check the value being used or referenced by the following: The string used for the aria-label attribute set on the input; A string contained in the node referenced by the ID used for the aria-labelledby attribute; OR the value contained in the <code>&lt;label&gt;</code> element that has a FOR attribute value set equal to the ID of the input.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Placeholder text alone MUST NOT be used to convey important information for form inputs.</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Every input MUST have a persistently visible label (using placeholder text or currently selected values does not meet this requirement). Passes by default when the input uses a label parameter value and a labelPosition parameter value of any value other than COLLAPSED.</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>The label parameter value for each input MUST contain at least the same string used for the visible label. Passes by default when the input uses a label parameter value and a labelPosition parameter value of any value other than COLLAPSED.</td>
+<td><strong>SAIL Testing</strong>: Inspect the label parameter value used for the input. If the label parameter uses a labelPosition of COLLAPSED, compare the value of the label parameter to the rich text used for the visual label.<br><br><strong>Screen Reader Testing</strong>: Navigate to the input using the TAB or SHIFT + TAB keys. The screen reader must announce a label for the input that includes at least the same string as the visible label.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Duplicated controls having the same name in the same interface have additional context provided by accessibility text, icon altText, or other means. The context should indicate what content the input is associated with or performs an action on. Does not apply to controls output in grids.</td>
+<td><strong>Visual Inspection</strong>: Identify controls in the interface that use the same input label text, link text, button text, or single icon.<br><br><strong>SAIL Testing</strong>: Inspect the label and accessibilityText parameter values used for the inputs. If icons are used in the controls, inspect the altText and caption parameter values set on the icons.<br><br><strong>Screen Reader Testing</strong>: Navigate to the inputs/controls using the TAB or SHIFT + TAB keys, note if the screen reader announces the same name for each duplicated input/control. Put the screen reader into Browse mode and read any hidden content immediately prior to or after the input/control and note if the hidden content provides context for the input/control.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Each individual checkbox and radio button MUST have a label set via the choiceLabels parameter.</td>
+<td><strong>SAIL Testing</strong>: Inspect the choiceLabels parameter on a!checkboxfield or a!radioButtonField and ensure the labels do not use a null value.<br><br><strong>Screen Reader Testing</strong>: <br>• <strong>Checkboxes</strong>: Navigate to the individual checkbox using the TAB or SHIFT + TAB keys<br>• <strong>Radio Buttons</strong>: Use the Up or Down arrow key to navigate to additional radio buttons once the selected radio button receives keyboard focus via the TAB or SHIFT + TAB keys<br>• The screen reader should announce the same name for each control that is output adjacent to the control<br><br><strong>Manual DOM Inspection</strong>: Locate the checkbox or radio button in the DOM. Inspect the <code>&lt;label&gt;</code> element used for the input. The <code>&lt;label&gt;</code> FOR attribute must match the ID of the checkbox or radio button and the value in the <code>&lt;label&gt;</code> element must not be null and must not equal "&ZeroWidthSpace;".</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Checkbox and radio button components MUST have a label parameter set when more than one checkbox or radio button is present in the group.</td>
+<td><strong>SAIL Testing</strong>: Inspect the label parameter on a!checkboxField or a!radioButton field and ensure it has a value.<br><br><strong>Screen Reader Testing</strong>: <br>• <strong>Checkboxes</strong>: Navigate to the first checkbox in the group using the TAB key or to the last checkbox in the group using the SHIFT + TAB keys<br>• <strong>Radio buttons</strong>: Navigate to the currently selected radio button using the TAB or SHIFT + TAB keys. If no radio buttons are selected, use the same approach indicated above for checkboxes<br>• The screen reader should announce the label value and identify the checkbox or radio button as being a "grouping" or "group"<br><br><strong>Manual DOM Inspection</strong>: <br>• <strong>Checkboxes</strong>: Locate the element that has role="group" set on it<br>• <strong>Radio buttons</strong>: Locate the element that has role="radiogroup" set on it<br>• Locate the DOM node referenced by the ID used for the aria-labelledby attribute set on the element having role="group" or role="radiogroup". This DOM node must contain the label text.</td>
+</tr>
+<tr>
+<td>Form Inputs</td>
+<td>Text fields that accept PERSONAL information from the user MUST have the appropriate inputPurpose parameter set on the input. Note that the "Name" input purpose should only be used for a single input that accepts the user's entire name.</td>
+<td><strong>SAIL Testing</strong>: Inspect that the text field (a!textField) has an appropriate inputPurpose parameter value.<br><br><strong>Keyboard Testing</strong>: Navigate to the input using the TAB or SHIFT + TAB keys. A list with previously-supplied input values (that YOU have entered previously) should become visible when the input receives keyboard focus.<br><br><strong>Manual DOM Inspection</strong>: Ensure the input (<code>&lt;input type="text"&gt;</code>) has an appropriate autocomplete attribute value.</td>
+</tr>
+<tr>
+<td>Validations</td>
+<td>Inputs that are required MUST have the required parameter set to TRUE.</td>
+<td><strong>SAIL Testing</strong>: Ensure the input required attribute is set to TRUE.<br><br><strong>Screen Reader Testing</strong>: Navigate to the input using the TAB or SHIFT + TAB keys. The screen reader should announce "required" in addition to the input name, role, etc.<br><br><strong>Manual DOM Inspection</strong>: Ensure the input has aria-required="true" set on it.</td>
+</tr>
+<tr>
+<td>Validations</td>
+<td>OOTB validation MUST be used for all form input error messaging/validation.</td>
+<td><strong>SAIL Testing</strong>: Ensure the appropriate validations, validationGroup, and validationMessage parameters are set.<br><br><strong>Screen Reader Testing</strong>: Navigate to the input that has an error using the TAB or SHIFT + TAB keys. The screen reader should announce the visible error message text and the input as having an "invalid entry" when the input receives keyboard focus.<br><br><strong>Manual DOM Inspection</strong>: When an error is present, ensure the aria-describedby attribute set on the input references the ID of the DOM node that contains the visible error message.</td>
+</tr>
+<tr>
+<td>Validations</td>
+<td>The input name MUST be included in the error message text. The typical format is "[input name] requires a value.".</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Instructions</td>
+<td>The input instructions parameter MUST be used for visible form input instructions, expected formats, valid input ranges, etc.</td>
+<td><strong>SAIL Testing</strong>: Inspect the input instructions parameter and ensure it is set to the same value used for the instructions that appear on the screen.<br><br><strong>Screen Reader Testing</strong>: Navigate to the input using the TAB or SHIFT + TAB keys. The screen reader should announce the visible onscreen instructions when the input receives keyboard focus.<br><br><strong>Manual DOM Inspection</strong>: Ensure the aria-describedby attribute set on the input references the ID of the DOM node that contains the instructions.</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Forms having required inputs that use an asterisk MUST have a visible legend at the beginning of the form prior to the first input. The typical format is "Required fields are marked with an asterisk (*)".</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Keyboard focus MUST NOT be moved to a form input when the form initializes if there is important information positioned before the input. Set focusOnFirstInput="FALSE" on the form.</td>
+<td><strong>Visual Inspection</strong>: Identify important information at the beginning of or prior to the form and observe if focus is being moved to an input positioned after that information.<br><br><strong>Screen Reader Testing</strong>: When the form is initialized, the screen reader announces only the page title or dialog name, it does not announce the name of an input when there is important information presented prior to the input that receives keyboard focus.</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>Information that a user must re-enter to complete a wizard/milestone MUST be auto-populated or available for the user to select.</td>
+<td>Visual inspection. Note any information that a user has entered in an earlier step in the process that must be re-entered in a later step.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Every grid MUST have a label set via the label parameter on the grid. The label can use a labelPosition of COLLAPSED if the grid is preceded by a visible heading that describes the content in or purpose of the grid.</td>
+<td><strong>SAIL Testing</strong>: Inspect the label parameter on a!gridField and ensure it uses a value that summarizes or describes the content in the grid.<br><br><strong>Screen Reader Testing</strong>: Put the screen reader into Browse mode and navigate to the grid by pressing the T key (Windows screen readers) or VO + Command + T (VoiceOver). The screen reader should announce a value that summarizes or describes the content in the grid when the grid is navigated to.<br><br><strong>Manual DOM Inspection</strong>: Locate the <code>&lt;table&gt;</code> element. Ensure the DOM node referenced by the aria-labelledby attribute set on the <code>&lt;table&gt;</code> element contains the grid label text.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Each grid column that contains data or a single form input MUST have column header text. Columns that contain multiple controls such as an action menu, links that move rows up/down, download link, etc. do not need a column header as long as non-sighted users can understand the cell information based on the controls in the cell.</td>
+<td><strong>SAIL Testing</strong>: Inspect the label parameter on a!gridColumn for each column in the grid and ensure it is not null.<br><br><strong>Visual Inspection</strong>: Inspect the first cell at the top of each column for text.<br><br><strong>Screen Reader Testing</strong>: Using the screen reader table navigation keys, read each cell in a grid row using left or right cell navigation (CTRL + ALT + Left/Right arrow keys).<br><br><strong>Manual DOM Inspection</strong>: Examine each <code>&lt;th&gt;</code> tag within the <code>&lt;thead&gt;</code> tag and ensure they contain a value.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>The grid row header MUST be defined using the rowHeader parameter when the content in the cell is unique and summarizes all content in the row. NOTE: Be careful with setting row headers on editable grids. All information associated with an input that is contained within the cell that is defined as the row header is announced by screen readers as part of the row header value, such as character counters, hidden instructions for operating dropdowns, etc. Setting the row header in this case must take into account how much information will be announced by the screen reader as grid cells are navigated.</td>
+<td>SAIL: Inspect the rowHeader parameter for a!gridField and ensure it is set to a numeric value (the position of the cell within the row). Screen Reader: Using the screen reader table navigation keys, navigate to any column to the right of the column that should have the row header set. Navigate cells in those columns up and down (CTRL + ALT + Up/Down arrow keys). The screen reader should announce the row header cell value prior to announcing the value in the cell currently navigated to. Manual DOM Inspection: Ensure the cell that should be defined as the row header is defined as a  <code>&lt;tr&gt;</code> having scope="row" set on it.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Empty grid columns MUST NOT be used for spacing.</td>
+<td>SAIL: Inspect each a!gridColumn or a!gridLayoutHeaderCell for a label value and valid value parameter setting. Screen Reader: Put the screen reader into Browse mode and navigate to the grid by pressing the T key (Windows screen readers) or VO + Command + T (VoiceOver). The screen reader should announce the same number of columns as are visible. Table navigation keys can also be used to navigate a grid row from left to right or right to left (CTRL + ALT + Left/Right arrow keys). The name of each column should be announced by the screen reader prior to any value in the cell that has been navigated to. Manual DOM Inspection: Ensure each  <code>&lt;tr&gt;</code> used for column headers contains a text value.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Grid instructions MUST be associated with the grid using the grid instructions parameter. Do not use the word "grid" in instructions, use "table".</td>
+<td><strong>SAIL Testing</strong>: Inspect the grid for the instructions parameter. It should contain the same instruction text as the text output visually.<br><br><strong>Screen Reader Testing</strong>: Put the screen reader into Browse mode and navigate to the grid by pressing the T key (Windows screen readers) or VO + Command + T (VoiceOver). The screen reader should announce the instructions when the grid is navigated to.<br><br><strong>Manual DOM Inspection</strong>: Locate the <code>&lt;table&gt;</code> element. Ensure the DOM node ID referenced by the aria-describedby attribute set on the <code>&lt;table&gt;</code> element contains the instruction text.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Accessibility text MUST be set on the grid when controls above the grid become enabled based on grid row selections. Do not use the word "grid" in the accessibility text, use "table".</td>
+<td>SAIL: Inspect the grid for the accessibilityText parameter. The parameter should contain text that indicates controls positioned above the table become enabled when rows are selected. The text should not indicate that the controls prior to the table become disabled when all rows are deselected. Screen Reader: Put the screen reader into Browse mode and navigate to the grid by pressing the T key (Windows screen readers) or VO + Command + T (VoiceOver). The screen reader should announce the accessibility text instructions when the grid is navigated to. Manual DOM Inspection: Locate the  <code>&lt;table&gt;</code> element. Ensure the DOM node referenced by the aria-describedby attribute set on the  <code>&lt;table&gt;</code> element contains the accessibility text.</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Links used to move grid rows up and down MUST have a target size of at least 24 x 24 pixels OR when a 24 x 24 pixel circle is centered on each link, the circles do not intersect. Can be met by using 3 spaces between each link or buttons of any allowable size.</td>
+<td><strong>Testing Overview</strong>: There are two phases to testing. First, the target size of the links needs to be verified as being at least 24 x 24 pixels. If that test fails, then the spacing between the undersized targets needs to be verified. If both tests fail, then an accessibility failure is present.<br><br><strong>Phase 1 - Verify Target Size</strong>: <br>• Open the browser DOM Inspect feature and select the active grid row ordering controls that are defined as links and are output adjacent to each other<br>• Hover over the link anchor in the DOM explorer, producing the popup in the browser for the link, note the link size indicated in the popup (you must examine the link anchor size, not the icon)<br>• If this test yields a link size smaller than 24 x 24 pixels, then proceed to Phase 2. Otherwise, there is no failure present<br><br><strong>Phase 2 - Verify Spacing</strong>: <br>• Because of restrictions by Appian, this target size bookmarklet (https://cdpn.io/pen/debug/YzdwWZw) needs to be used to create a visual representation of the targets that overlap on a page<br>• Install this bookmarklet and run it over the page. The bookmarklet will output 24 x 24 pixel circles on many elements on the page<br>• Pay specific attention to the circles that are output over the grid row ordering links, and note if they overlap. An overlap indicates a failure of the requirement<br>• Once the bookmarklet is run, refresh the browser to clear the onscreen results<br>• <strong>NOTE</strong>: If the links are being tested within a dialog, the bookmarklet output will be present in the parent page that spawned the dialog, positioned exactly where the links were present in the dialog</td>
+</tr>
+<tr>
+<td>Grids</td>
+<td>Grid row drag and drop MUST also use a single-click alternative such as links that allow the row to be moved up or down by activating the link (applies to editable grids only).</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Headings</td>
+<td>Text headings MUST be defined as semantic headings using the Heading component.</td>
+<td><strong>SAIL Testing</strong>: Verify the text is defined using a!HeadingField.<br><br><strong>Screen Reader Testing</strong>: Put the screen reader into Browse mode and navigate to the text by pressing the H key (Windows screen readers) or VO + Command + H (VoiceOver). The screen reader should identify the text as a heading in addition to announcing the heading text when the heading is navigated to.<br><br><strong>Manual DOM Inspection</strong>: Examine the text to determine if it is contained within an HTML heading tag (H1-H6).</td>
+</tr>
+<tr>
+<td>Headings</td>
+<td>Headings use appropriate heading levels set via the headingTag parameter that reflect the structure or importance of the content.</td>
+<td>SAIL: Verify the text is defined using a!HeadingField and uses an appropriate headingTag parameter value. Screen Reader: Put the screen reader into Browse mode and navigate to the text by pressing the H key (Windows screen readers) or VO + Command + H (VoiceOver). The screen reader should identify the text as a heading and indicate the appropriate heading level, in addition to announcing the heading text when the heading is navigated to. Manual DOM Inspection: Examine the text to determine if it uses the correct HTML heading tag (H1-H6).</td>
+</tr>
+<tr>
+<td>Lists</td>
+<td>Text and other elements that are output as list items using visual styling (bullets, checkmark icons, or other notation) MUST be defined as semantic lists using Use a!richTextBulletedList or a!richTextNumberedList (excludes navigation links).</td>
+<td><strong>SAIL Testing</strong>: Ensure a!richTextDisplayField is used, and ensure the list is defined using a!richTextBulletedList or a!richTextNumberedList (a!styledTextEditorField does not expose parameters for values provided).<br><br><strong>Screen Reader Testing</strong>: Put the screen reader into Browse mode and navigate to the text by pressing the L key (Windows screen readers) or VO + Command + X (VoiceOver). The screen reader should identify the area as a list and may or may not identify how many items are in the list. List items may be read one at a time with Browse mode. Some screen readers will identify the position within the list (e.g. "item 3 of 7"). All screen readers will announce that the list is being exited when navigating out of the list.<br><br><strong>Manual DOM Inspection</strong>: Examine the text and ensure it is contained with <code>&lt;ul&gt;</code>/<code>&lt;li&gt;</code> or <code>&lt;ol&gt;</code>/<code>&lt;li&gt;</code> markup.</td>
+</tr>
+<tr>
+<td>Modal Dialog</td>
+<td>Keyboard focus MUST NOT be moved to a form input when a modal dialog opens if there is important information positioned before the form input. Set focusOnFirstInput="FALSE" on the form.</td>
+<td>Visual inspection. Identify important information at the beginning of or prior to the form and observe if focus is being moved to an input positioned after that information. Screen Reader: When the dialog is initialized, the screen reader announces only the dialog name and identifies the dialog ("dialog"), it does not announce the name of an input when there is important information presented prior to the input that receives keyboard focus. Note that the dialog name is typically set to the name of the control that opened the dialog.</td>
+</tr>
+<tr>
+<td>Pane Layout</td>
+<td>Each pane layout MUST have a label set via accessibility text. Do not use the following terms in the accessibility text: pane, main, navigation, section, form, search, header, footer, article or region.</td>
+<td>SAIL: Ensure the accessibilityText parameter is set on a!pane. Screen Reader: Put the screen reader into Browse mode and navigate to the text by pressing the R key (JAWS), D key (NVDA) or VO + Shift + Dwn Arrow/Up Arrow (or the Rotor can be used) (VoiceOver). The screen reader should identify the pane as a "region" or landmark and announce the name/title of the pane. ARC Toolkit: Run the Interactive Controls test. Panes without a label will have an error of "Invalid aria-labelledby". Run the test in a browser, do not run it in Appian Designer. Note that if a label was provided for the pane and then removed via designer, this test will not produce an error in this case. Manual DOM Inspection: Search the DOM for "region". On the resulting element having role="region", ensure the aria-labelledby attribute references the DOM node that contains the pane accessibility text value.</td>
+</tr>
+<tr>
+<td>Section Layout</td>
+<td>Each expandable section layout MUST have a label provided by the label parameter and use an appropriate labelHeadingTag parameter value to indicate the heading level.</td>
+<td>SAIL: Inspect the label parameter is set on a!sectionLayout. Inspect the labelHeadingTag parameter is set on a!sectionLayout. A value must be present for both parameters. Screen Reader: Put the screen reader into Browse mode and navigate to the section by pressing the H key (Windows screen readers) or VO + Command + H (VoiceOver). The screen reader should identify the section label text as a heading and announce the text. For expandable/collapsible sections, the text can be navigated to using the TAB or SHIFT + TAB keys. In this case the screen reader should identify a button, heading, and announce the section name/label. Manual DOM Inspection: Inspect the section label text and verify it is contained within heading markup (H1-H6).</td>
+</tr>
+<tr>
+<td>Box Layout</td>
+<td>Each expandable box layout MUST have a label provided by the label parameter and use an appropriate labelHeadingTag parameter value to indicate the heading level.</td>
+<td>SAIL: Inspect the label parameter is set on a!boxLayout. Inspect the labelHeadingTag parameter is set on a!boxLayout. Both parameters should have a value. Screen Reader: Put the screen reader into Browse mode and navigate to the box by pressing the H key (Windows screen readers) or VO + Command + H (VoiceOver). The screen reader should identify the box label text as a heading and announce the text. For expandable/collapseable boxes, the text can be navigated to using the TAB or SHIFT + TAB keys. In this case the screen reader should identify a button, heading, and announce the box name/label. Manual DOM Inspection: Inspect the section label text and verify it is contained within a  <code>&lt;div&gt;</code> that has both role="heading" and the aria-level attribute set to the appropriate heading level.</td>
+</tr>
+<tr>
+<td>Cards</td>
+<td>Cards having a link set on the card MUST NOT contain other controls or inputs within the card.</td>
+<td>SAIL: Ensure that if a link parameter value is provided for a!cardLayout that no other components within the card use a link, button, or any other input type. Screen Reader/Keyboard: Navigate to the card using the TAB key. Once the card has keyboard focus, press the TAB key again. Keyboard focus must not move to any other element inside of the card except to open a tooltip or caption. Manual DOM Inspection: Search for an element that has role="link" and tabindex="1" set on it. This element will use CSS classes beginning with the text "CardLayout". Examine the nodes within this element for active controls such as links, buttons, or other form inputs.</td>
+</tr>
+<tr>
+<td>Cards</td>
+<td>A label parameter value MUST NOT be used for a link that is set on a card.</td>
+<td>SAIL: Ensure that if a link parameter value is provided for a!cardLayout that the label parameter value is null for the link. Screen Reader: Navigate to the card using the TAB key. The screen reader should announce "link" only once in addition to any other content within the card when the card receives keyboard focus. Manual DOM Inspection: Search for an element that has role="link" and tabindex="1" set on it. This element will use CSS classes beginning with the text "CardLayout". Ensure the first child node of this element is not an  <code>&lt;a&gt;</code> tag.</td>
+</tr>
+<tr>
+<td>Cards</td>
+<td>When color or a decorative bar is used to indicate the card is the current selection, accessibility text of "Selected" MUST be set on the card. Cards that are not selected MUST NOT be indicated as such.</td>
+<td>SAIL: Ensure the accessibilityText parameter on a!cardLayout is set to "Selected". Screen Reader: If the card has a link definition, navigate to the card link using the TAB or SHIFT + TAB keys. The screen reader should announce "Selected" in addition to all content within the card. If the card does not have a link definition, read the entire card using browse mode with the screen reader. The screen reader should announce "Selected" in addition to all content within the card. Manual DOM Inspection: Search for an element that has role="link" and tabindex="1" set on it. This element will use CSS classes beginning with the text "CardLayout". Ensure the LAST child node of this element contains the text "Selected".</td>
+</tr>
+<tr>
+<td>Links</td>
+<td>Links embedded in text MUST use a method other than only color to differentiate the link from the surrounding text, such as a persistent underline (linkStyle: "INLINE"), font style change, icon positioned after the link, OR have at least a 3:1 color contrast between the link text and the surrounding text. The link can also be repositioned on a new line where there is no text present on either side of the link.</td>
+<td>Visual inspection. SAIL: The linkStyle parameter on a!richTextItem is set to INLINE or other formatting is used to differentiate the link from the surrounding text.</td>
+</tr>
+<tr>
+<td>Links</td>
+<td>When color or styling is used to indicate a RICH TEXT link is currently selected, accessibility text of "Selected" MUST NOT be set on the link UNLESS the rich text does not contain an icon. If an icon is used, set the altText parameter value of "Selected" on the icon. Links that are not selected MUST NOT be indicated as such. Setting the accessibility text parameter on the rich text link should be used only as a last resort.</td>
+<td>SAIL: Inspect the component. If no icon is used in the link, check for the accessibilityText parameter value of "Selected" set on a!richTextDisplayField. If the link uses an icon, ensure the accessibilityText parameter is not set on a!richTextDisplayField and instead, the altText OR caption parameter value of "Selected" is set on the icon. Screen Reader: For active elements, navigate to the element using the TAB or SHIFT + TAB keys. For inactive elements, put the screen reader into Browse mode and read the content. Regardless of how the element is accessed, the screen reader should announce the element as being "Selected" in addition to any content used in the element.</td>
+</tr>
+<tr>
+<td>Breadcrumbs</td>
+<td>Breadcrumbs MUST use accessibility text to identify the breadcrumb and the current (last) page in the breadcrumb.</td>
+<td>SAIL: Esnure that the accessibilityText parameter value is set on a!richTextDisplayField that indicates the element is a breadcrumb and includes identification of the current (last) page in the breadcrumb, e.g., "Breadcrumbs, corporate is the current page". Screen Reader: Put the screen reader into Browse mode and read the breadcrumb. The screen reader should identify the element as a breadcrumb and indicate the current page prior to announcing all elements within the breadcrumb. Depending on the configuration, it is also OK if the screen reader identifies the current page directly before announcing the current page value. Manual DOM Inspection: Search for the paragraph ( <code>&lt;p&gt;</code> tag) that contains the entire breadcrumb content. Traverse the DOM upward two  <code>&lt;div&gt;</code> nodes and expand the second  <code>&lt;div&gt;</code>. Verify that the text in the  <code>&lt;span&gt;</code> contained in the second  <code>&lt;div&gt;</code> contains text that indicates the element is a breadcrumb and indicates the current (last) page in the breadcrumb.</td>
+</tr>
+<tr>
+<td>Progress Bar</td>
+<td>Each progress bar MUST have a label defined by setting the label parameter on a!progressBarField.</td>
+<td>SAIL: Ensure a label parameter value is provided for a!progressBarField. Screen Reader: Read the progress bar using Browse mode. A name/label for the progress bar should be announced by the screen reader prior to announcing the value in the progress bar. axe DevTools: Run a page scan in a browser, do not run the scan in Appian Designer. If a label is not provided for the progress bar, the identified error is "ARIA progressbar nodes must have an accessible name". ARC Toolkit: Run the Interactive Controls test in a browser, do not run the test in Appian Designer. If a label is not provided for the progress bar, the identified error is "Invalid aria-labelledby". Manual DOM Inspection: Search for "progressbar". Ensure the DOM node referenced by the aria-labelledby attribute set on the element having role="progressbar" contains text.</td>
+</tr>
+<tr>
+<td>File Upload</td>
+<td>The file upload MUST have a label set via the label parameter on a!fileUploadField.</td>
+<td>SAIL: Ensure a label parameter value is provided for a!fileUploadField. Screen Reader: Navigate to the Upload button using the TAB or SHIFT + TAB keys. The screen reader should announce a name/label for the button in addition to "upload" and "drop files here". ARC Toolkit: Run the Interactive Controls test in a browser, do not run the test in Appian Designer. If a label is not provided for the file upload button, the identified error is "Invalid aria-describedby". Manual DOM Inspection: Search for the Upload button. Ensure the DOM node referenced by the aria-describedby attribute set on the button contains text.</td>
+</tr>
+<tr>
+<td>File Upload</td>
+<td>Visible instructions for file upload MUST be set via the instructions parameter on a!fileUploadField.</td>
+<td>SAIL: Ensure an instructions parameter value is provided for a!fileUploadField and it is set to the instruction text that is output on the screen. Screen Reader: Navigate to the Upload button using the TAB or SHIFT + TAB keys. The screen reader should announce the instructions in addition to a name/label for the button and "upload" and "drop files here". Manual DOM Inspection: Search for the Upload button. Ensure the DOM node referenced by the aria-describedby attribute set on the button contains the instruction text. This should be referenced by the second, space-delimited ID used by the aria-describedby attribute where the ID ends with the text "-instructions".</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>An alternative keyboard method of acquiring a signature or indicating acceptance MUST be provided for the Signature component.</td>
+<td>Visual inspection. Use an alternative method such as an accessible checkbox, dropdown, third-party element such as DocuSign, etc. Values should not be defaulted.</td>
+</tr>
+<tr>
+<td>Simulated Grid</td>
+<td>Data that is visually output as a grid but does not use a grid MUST have accessibility text set on each grid cell that contains the column "header" text and row header text (if appropriate).</td>
+<td>SAIL: Confirm there is an accessibilityText parameter value output as the first element in each "cell" that indicates what the visual "column header" is and the text of the cell used for the row header (if applicable). Screen Reader: Put the screen reader into Browse mode and read the content in a forward reading order. The screen reader should announce the visual "column header" text and the text of the cell used for the row header (if applicable) prior to announcing the value in the "cell". Manual DOM Inspection: Not recommended for larger grids.</td>
+</tr>
+<tr>
+<td>Custom Pagination Links</td>
+<td>Links that are inactive/non-applicable MUST NOT use accessibility text that indicates the element(s) is a disabled link and accessibility text that was used when the element was applicable and defined as a link (e.g. "First Page", "Previous Page", etc.) must be removed.</td>
+<td>SAIL: Inspect the accessibilityText parameter of the link and the altText or caption parameter values on the icon if present. Each parameter should have a null value or not be included in the SAIL. Screen Reader: Put the screen reader in Browse mode and read the non-applicable pagination elements. The screen reader should ignore the elements and announce nothing. Manual DOM Inspection: Locate the non-applicable elements, they are defined as SVG. The SVG should have focusable="false", aria-hidden="true" and tabindex="-1" set on it/them.</td>
+</tr>
+<tr>
+<td>Custom Pagination Links</td>
+<td>The active/available pagination links output immediately adjacent to each other MUST have a target size of at least 24 x 24 pixels OR when a 24 x 24 pixel circle is centered on each link, the circles do not intersect.</td>
+<td><strong>Testing Overview</strong>: There are two phases to testing. First, the target size of the links needs to be verified as being at least 24 x 24 pixels. If that test fails, then the spacing between the undersized targets needs to be verified. If both tests fail, then an accessibility failure is present.<br><br><strong>Phase 1 - Verify Target Size</strong>: <br>• Open the browser DOM Inspect feature and select the active pagination links that are output adjacent to each other<br>• Hover over the link anchor in the DOM explorer, producing the popup in the browser for the link, note the link size indicated in the popup (you must examine the link anchor size, not the icon)<br>• If this test yields a link size smaller than 24 x 24 pixels, then proceed to Phase 2. Otherwise, there is no failure present<br><br><strong>Phase 2 - Verify Spacing</strong>: <br>• Because of restrictions by Appian, this target size bookmarklet (https://cdpn.io/pen/debug/YzdwWZw) needs to be used to create a visual representation of the targets that overlap on a page<br>• Install this bookmarklet and run it over the page. The bookmarklet will output 24 x 24 pixel circles on many elements on the page<br>• Pay specific attention to the circles that are output over the active, adjacent pagination links, and note if they overlap. An overlap indicates a failure of the requirement<br>• Once the bookmarklet is run, refresh the browser to clear the onscreen results<br>• <strong>NOTE</strong>: If the links are being tested within a dialog, the bookmarklet output will be present in the parent page that spawned the dialog, positioned exactly where the links were present in the dialog</td>
+</tr>
+<tr>
+<td>Workflow Visualization Plugin</td>
+<td>An alternative view of content in the Workflow Visualization plugin MUST be provided when the plugin is used.</td>
+<td>Visual inspection. Alternative views can include a grid, rich text, cards, or other means that convey the same information as the visualization. This can be a toggled view, appear on the same page, or linked to on a separate page. The alternate view must include any node information present in the visualization including the node name, immediate dependencies, and the next node in the process from the current node.</td>
+</tr>
+<tr>
+<td>Date &amp; Time Component</td>
+<td>The Date &amp; Time component MUST NOT be used.</td>
+<td>SAIL: Determine if a!dateTimeField is present in the interface. Visual inspection.</td>
+</tr>
+<tr>
+<td>Card Choice Field</td>
+<td>The card choice field component MUST have a label parameter set when more than one card is present in the group.</td>
+<td>SAIL: Verify a label parameter value has been provided for a!cardChoiceField when more than one card is present in the group. Screen Reader: Navigate to the first card in the group using the TAB key or to the last card in the group using the SHIFT + TAB keys. The screen reader should announce the label parameter value prior to announcing "grouping" and any other information in or associated with the card. Manual DOM Inspection: Search for "group". The result should be a  <code>&lt;div&gt;</code> having role="group" set on it. Ensure the DOM node referenced by the aria-labelledby attribute set on the element having role="group" contains text.</td>
+</tr>
+<tr>
+<td>Color Contrast - Text</td>
+<td>Regular-sized text MUST have at least a 4.5:1 color contrast between the text and background it is used on.</td>
+<td><strong>Manual Testing</strong>: Use the Colour Contrast Analyser (https://www.tpgi.com/color-contrast-checker/)<br><br><strong>Tool Testing</strong>: Use axe DevTools - Run a page scan in a browser, do not scan the page in Appian designer.</td>
+</tr>
+<tr>
+<td>Color Contrast - Text</td>
+<td>Large text (at least 18 point or 14 point bold) MUST have at least a 3:1 color contrast between the text and background it is used on.</td>
+<td><strong>Manual Testing</strong>: Use the Colour Contrast Analyser (https://www.tpgi.com/color-contrast-checker/)<br><br><strong>Tool Testing</strong>: Use axe DevTools - Run a page scan in a browser, do not scan the page in Appian designer.</td>
+</tr>
+<tr>
+<td>Color Contrast - Image/Icon</td>
+<td>Images/icons that convey information and are not redundant to other text MUST have a color contrast ratio of at least 3:1 between the part of the image that conveys information and any adjacent color(s).</td>
+<td>Manual: Use the Colour Contrast Analyser (https://www.tpgi.com/color-contrast-checker/)</td>
+</tr>
+<tr>
+<td>Color Contrast - Selected State</td>
+<td>Color that indicates an element as being currently selected MUST have at least a 3:1 color contrast between the color used to indicate the selected state and the default color used for the same area of an adjacent, unselected element.</td>
+<td>Manual: Use the Colour Contrast Analyser (https://www.tpgi.com/color-contrast-checker/)</td>
+</tr>
+<tr>
+<td>Color Use - General</td>
+<td>Color MUST NOT be used as the only means of identifying visual elements, e.g. statements such as "Click the red button", "content is below the blue heading", etc.</td>
+<td>Visual inspection.</td>
+</tr>
+<tr>
+<td>Magnification - 200%</td>
+<td>All text content MUST be readable, functional, and does not overlap when the browser is magnified to 200% with the interface tested in a browser (not Appian Designer), use CTRL+"+" five times. If text is truncated, a method is provided for accessing the text.</td>
+<td><strong>Browser Testing</strong>: <br>• Test in a web browser, do not test in Appian Designer<br>• Use the built-in browser zoom<br>• Magnify the content to 200% by pressing CTRL + "+" five times (a browser popup will inform you when you reach 200%)<br>• Reset to default magnification by pressing CTRL+0</td>
+</tr>
+<tr>
+<td>Magnification - 400%</td>
+<td>Loss of content or functionality MUST NOT occur AND content MUST NOT require both vertical and horizontal scrolling when the browser width is set to 1280 pixels and the browser window is magnified to 400% with the interface tested in a browser (not Appian Designer), use CTRL+"+" eight times. Grids and complex images are exempt from this requirement.</td>
+<td>Test in a web browser, do not test in Appian Designer. Set the browser width to 1280 pixels. Use the built-in browser zoom. Magnify the content to 400% by pressing CTRL + "+" eight times (a browser popup will inform you when you reach 400%). Reset to default magnification by pressing CTRL+0.</td>
+</tr>
+<tr>
+<td>Dynamically-Added Content</td>
+<td>Inputs and controls that are dynamically added to the page MUST occur in the tab order after the control that added the content unless visible instructions warn the user of the positioning prior to the content being added.</td>
+<td><strong>Keyboard Testing</strong>: After activating the control that adds the new content, use the TAB key to navigate forward to the newly-added content.<br><br><strong>Screen Reader Testing</strong>: If content is not added in the forward tab order, navigate to the control that adds the content using the TAB or SHIFT + TAB keys. The screen reader must indicate where the content will be added when the control receives keyboard focus, not when surrounding content is read in screen reader Browse mode. The screen reader must convey a semantic location, such as "after the XX heading". It must not indicate references such as "left" or "right". A screen reader announcement is considered as a last resort - it is preferred that the content be added downstream from the user (in the forward tab order).</td>
+</tr>
+<tr>
+<td>Link Focus</td>
+<td>When a rich text link receives keyboard focus, there MUST be a visual indication of focus, such as a change in the color of the underline used for the link.</td>
+<td>Keyboard: Navigate to the link using the TAB or SHIFT+TAB keys. Visually inspect if there is a visual change to the link when it receives keyboard focus.</td>
+</tr>
+<tr>
+<td>Charts</td>
+<td>The chart MUST have a label provided by setting the label parameter on the chart (can use a labelPosition of COLLAPSED if a heading that describes the chart is output above the chart).</td>
+<td><strong>SAIL Testing</strong>: Verify the chart component has a label parameter value set.<br><br><strong>Screen Reader Testing</strong>: Navigate to the chart using the TAB or SHIFT + TAB keys. The screen reader should announce a name/label for the chart (may announce this several times).<br><br><strong>Manual DOM Inspection</strong>: Search for "highcharts-container". Ensure the aria-label attribute set on this <code>&lt;div&gt;</code> has a string value that describes/summarizes the chart.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[STANDALONE USED IN A LINK] A text alternative MUST be provided for the icon when it is the only element used in a link, set via the altText or caption parameter on the icon.</td>
+<td>SAIL: Verify the altText or caption parameter value used for the icon. Screen Reader: Navigate to the link using the TAB or SHIFT + TAB keys. The screen reader should announce a text alternative for the icon. axe DevTools: Run a page scan, run the scan in a browser and not in Appian Designer. If an error is present, it will be indicated as "Links must have discernable text". ARC Toolkit: Run the Interactive Controls test, run the test in a browser and not in Appian Designer. If an error is present, it will be indicated as "No link text". Manual DOM Inspection: Locate the icon. Verify the string value used for the aria-label attribute set on the SVG. In some cases, the text alternative may also be inside of a node contained within the link.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[USED WITH TEXT IN A LINK] A text alternative MUST be provided for the icon ONLY if the link text does not already convey the same information as the icon. If a text alternative is needed for the icon, it MUST be set via the altText or caption parameter on the icon (do not use accessibility text or a tooltip set on the link).</td>
+<td>SAIL: Verify the altText or caption parameter value used for the icon. Screen Reader: Navigate to the link using the TAB or SHIFT + TAB keys. The screen reader should announce a text alternative for the icon in addition to other text included in the link. Manual DOM Inspection: Locate the icon. Verify the string value used for the aria-label attribute set on the SVG. In some cases, the text alternative may also be inside of a node contained within the link.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[STANDALONE USED IN A BUTTON] A text alternative MUST be provided for the icon when it is the only element used in a button, set via the accessibilityText OR tooltip parameter on the button.</td>
+<td>SAIL: Verify the accessibilityText or tooltip parameter value used for the button. Screen Reader: Navigate to the button using the TAB or SHIFT+TAB keys. The screen reader should announce a text alternative for the icon. axe DevTools: Run a page scan, run the scan in a browser, not Appian Designer. If the icons has no text alternative, the error will be identified as "Buttons must have discernable text". ARC Toolkit: Run the Interactive Controls test, run the test in a browser, not Appian Designer. If the icon has no text alternative, the error will be identified as "No label for button element". Manual DOM Inspection: Locate the button. Verify the presence of a <code>&lt;span&gt;</code> node within the button that contains a text alternative for the icon. This <code>&lt;span&gt;</code> will use the CSS class of will "button---accessibilityhidden" and should contain either the accessibilityText or tooltip parameter value.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[USED WITH TEXT IN A BUTTON] A text alternative MUST be provided for the icon ONLY if the button label text does not already convey the same information as the icon. If a text alternative is needed for the icon, it MUST be set via the accessibilityText parameter on the button.</td>
+<td>SAIL: Verify the accessibilityText or tooltip parameter value that describes the icon is used for the button. Screen Reader: Navigate to the button using the TAB or SHIFT + TAB keys. The screen reader should announce a text alternative for the icon in addition to other text included in the button. Manual DOM Inspection: Locate the button. Verify the presence of a <code>&lt;span&gt;</code> node within the button that contains a text alternative for the icon. This <code>&lt;span&gt;</code> will use the CSS class of will "button---accessibilityhidden" and should contain either the accessibilityText or tooltip parameter value.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[STANDALONE, CONVEYS INFORMATION] A text alternative that conveys the same information as the icon MUST be provided for the icon via the altText, caption, or accessibilityText parameter when there is no adjacent text that conveys the same information. Use a caption only if the purpose of the icon may not be universally understood based on its appearance.</td>
+<td>SAIL: Verify the altText or caption parameter value used for the icon and it is set to a value that conveys the same information as the icon. Screen Reader: Put the screen reader into Browse mode and read the icon. The screen reader should announce a text alternative for the icon that conveys the same information as the icon. Manual DOM Inspection: Locate the icon. Verify the string value used for the aria-label attribute set on the SVG.</td>
+</tr>
+<tr>
+<td>Icon</td>
+<td>[DECORATIVE/REDUNDANT] A text alternative MUST NOT be provided for icons that are purely decorative or where text is output adjacent to the icon that conveys the same information as the icon.</td>
+<td>SAIL: Verify the altText and caption parameters used for the icon are null. Screen Reader: Put the screen reader into Browse mode and read the icon. The screen reader should ignore the icon and announce nothing. Manual DOM Inspection: Locate the SVG icon. Verify the SVG has focusable="false", tabindex="-1", and aria-hidden="true" set on it, and there is no aria-label attribute set on the SVG.</td>
+</tr>
+<tr>
+<td>Image of Text</td>
+<td>Images that contain text MUST NOT be used unless the image is a logo or the font used in the image cannot be accurately rendered by a web browser.</td>
+<td>Visual inspection. Manual DOM Inspection: Locate the image, determine the image source. Determine if the text is embedded in the image or if it uses CSS to be overlaid on the image.</td>
+</tr>
+<tr>
+<td>Tooltip</td>
+<td>Tooltips made visible on mouse hover MUST be able to become visible using only a keyboard (typically by navigating to the tooltip with the TAB or SHIFT+TAB keys).</td>
+<td>Identify where tooltips are used in the interface. For each tooltip, navigate to the element that spawns the tooltip on mouse hover using the TAB or SHIFT + TAB keys with the keyboard.</td>
+</tr>
+<tr>
+<td>Stamp</td>
+<td>Tooltips that convey important information MUST NOT be set via the tooltip and helpTooltip parameters on a!stampField.</td>
+<td>SAIL: Inspect a!stampField and ensure the tooltip and helpTooltip parameters either do not exist or are set to a null value. Screen Reader: Put the screen reader into Browse mode and read the stamp. This is an important testing method because some tooltips set on stamps cannot be made visible on mouse hover or with a keyboard, they are available only to screen readers.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

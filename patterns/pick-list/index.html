@@ -1,0 +1,2388 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aarushivenk.github.io/design-system-website/patterns/pick-list/">
+      
+      
+        <link rel="prev" href="../notifications/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Pick List - Design System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pick-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Design System Docs" class="md-header__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Design System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pick List
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Design System Docs" class="md-nav__button md-logo" aria-label="Design System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Design System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Accessibility
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accessibility
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessibility/checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessibility Checklist
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Branding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Branding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/approach-to-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach to AI
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/colors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Colors
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/icons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/logo-and-favicon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logo and Favicon
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../branding/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typography
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/breadcrumbs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadcrumbs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/confirmation-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confirmation Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Milestones
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/more-less-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    More / Less Link
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags Guidance
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Content style guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Content style guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content-style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice and Tone Principles
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Layouts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Layouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/empty-states/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empty States
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/grids/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grids
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/landing-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Pages
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/messaging-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Messaging Module
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/pane-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pane Layouts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layouts/record-views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Record Views
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Banners
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calendar-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendar Widget
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comment-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comment Thread
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Cards
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Summary
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inline-dialog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inline Dialog
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key-performance-indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key Performance Indicators
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notifications
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pick List
+    
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--stable"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Guidance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Guidance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Styling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Guidance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Guidance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#styling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Styling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pick-list">Pick List</h1>
+<p>Pick Lists are used on a form to allow users to select one or more items from a long list and additional metadata is helpful</p>
+<p><img alt="" src="https://github.com/user-attachments/assets/d5254879-4759-4db4-adb3-d38c0649612a" /></p>
+<h2 id="design">Design</h2>
+<h3 id="usage-guidance">Usage Guidance</h3>
+<h4 id="styling">Styling</h4>
+<p>The left grid is read-only and the right grid is either read-only or editable. The styling of both grids should match. By default, we recommend having a light border style and no alternatively-shaded rows. Search and filters should also be above both grids when applicable. There is an active count tag next to each grid header.</p>
+<h4 id="behavior">Behavior</h4>
+<p>When an item is selected, the selected item will automatically appear on the right side and stay selected on the left. The user should be able to remove selected items by deselecting it in the left grid or removing it on the right using the “X” icon.</p>
+<h3 id="empty-state">Empty State</h3>
+<p><img alt="" src="https://github.com/user-attachments/assets/568e2120-d870-4e5b-a31c-2398ba07d383" /></p>
+<p>The OOTB grid empty state should appear when no item has been selected</p>
+<h3 id="accessibility">Accessibility</h3>
+<p>Define the headings on each side of the picker as semantic headings rather than rich text. Ensure a unique, hidden label is set for each grid that matches the semantic header.</p>
+<h2 id="development">Development</h2>
+<pre><code>a!localVariables(
+  local!lineItemData: {
+    a!map(
+      title: &quot;Laptops&quot;,
+      lineItem: &quot;0001&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;$10,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Laptop Chargers&quot;,
+      lineItem: &quot;0001 AA&quot;,
+      itemType: &quot;SLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;$10,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Keyboards&quot;,
+      lineItem: &quot;0001 AB&quot;,
+      itemType: &quot;SLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;$10,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Desks&quot;,
+      lineItem: &quot;0002&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Unexercised&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Chairs&quot;,
+      lineItem: &quot;0003&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Exercised&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Monitors&quot;,
+      lineItem: &quot;0004&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Unexercised&quot;,
+      availableValue: &quot;$8,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;An example of a much longer line item title&quot;,
+      lineItem: &quot;0005&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Service • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Exercised&quot;,
+      availableValue: &quot;$10,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Desks&quot;,
+      lineItem: &quot;0006&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Chairs&quot;,
+      lineItem: &quot;0007&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Monitors&quot;,
+      lineItem: &quot;0008&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Exercised&quot;,
+      availableValue: &quot;$8,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Laptops&quot;,
+      lineItem: &quot;0009&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Unexercised&quot;,
+      availableValue: &quot;$10,000&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Desks&quot;,
+      lineItem: &quot;0010&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Chairs&quot;,
+      lineItem: &quot;0011&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Base&quot;,
+      availableValue: &quot;5,000 units&quot;,
+      quantity: null,
+      totalAmount: null
+    ),
+    a!map(
+      title: &quot;Monitors&quot;,
+      lineItem: &quot;0012&quot;,
+      itemType: &quot;CLIN&quot;,
+      type: &quot;Product • PSC 5650&quot;,
+      periodOfPerformance: &quot;11/05/2022-11/04/2024&quot;,
+      pricingArrangement: &quot;Cost Plus Fixed Fee&quot;,
+      option: &quot;Exercised&quot;,
+      availableValue: &quot;$8,000&quot;,
+      quantity: null,
+      totalAmount: null
+    )
+  },
+  local!selectedLineItems: null,
+  a!sectionLayout(
+    labelSize: &quot;SMALL&quot;,
+    labelHeadingTag: &quot;H2&quot;,
+    labelColor: &quot;STANDARD&quot;,
+    contents: {
+      a!sectionLayout(
+        contents: {
+          a!columnsLayout(
+            columns: {
+              a!columnLayout(
+                contents: {
+                  a!sideBySideLayout(
+                    items: {
+                      a!sideBySideItem(
+                        item: a!headingField(
+                          text: &quot;Available Line Items&quot;,
+                          size: &quot;SMALL&quot;,
+                          headingTag: &quot;H2&quot;,
+                          fontWeight: &quot;SEMI_BOLD&quot;,
+                          marginBelow: &quot;NONE&quot;
+                        ),
+                        width: &quot;MINIMIZE&quot;
+                      ),
+                      a!sideBySideItem(
+                        item: a!tagField(
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          tags: a!tagItem(
+                            text: count(local!lineItemData),
+                            backgroundColor: &quot;#EDEEF2&quot;,
+                            textColor: &quot;#2E2E35&quot;
+                          )
+                        ),
+                        width: &quot;MINIMIZE&quot;
+                      )
+                    },
+                    alignVertical: &quot;MIDDLE&quot;,
+                    marginBelow: &quot;LESS&quot;
+                  ),
+                  a!columnsLayout(
+                    columns: {
+                      a!columnLayout(
+                        contents: {
+                          a!sideBySideLayout(
+                            items: {
+                              a!sideBySideItem(
+                                item: a!textField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  placeholder: &quot;Search Line Items&quot;
+                                )
+                              ),
+                              a!sideBySideItem(
+                                item: a!buttonArrayLayout(
+                                  buttons: a!buttonWidget(
+                                    label: &quot;Search&quot;,
+                                    size: &quot;SMALL&quot;,
+                                    style: &quot;OUTLINE&quot;,
+                                    color: &quot;SECONDARY&quot;
+                                  ),
+                                  marginBelow: &quot;NONE&quot;
+                                ),
+                                width: &quot;MINIMIZE&quot;
+                              )
+                            },
+                            spacing: &quot;DENSE&quot;
+                          )
+                        },
+                        width: &quot;NARROW_PLUS&quot;
+                      ),
+                      a!columnLayout(
+                        contents: {
+                          a!dropdownField(
+                            label: &quot;&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            placeholder: &quot;Period of Performance | Any - Any&quot;,
+                            choiceLabels: {
+                              &quot;Option 1&quot;,
+                              &quot;Option 2&quot;,
+                              &quot;Option 3&quot;,
+                              &quot;Option 4&quot;,
+                              &quot;Option 5&quot;,
+                              &quot;Option 6&quot;,
+                              &quot;Option 7&quot;,
+                              &quot;Option 8&quot;,
+                              &quot;Option 9&quot;,
+                              &quot;Option 10&quot;,
+                              &quot;Option 11&quot;,
+                              &quot;Option 12&quot;
+                            },
+                            choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+                            saveInto: {},
+                            searchDisplay: &quot;AUTO&quot;,
+                            validations: {}
+                          )
+                        }
+                      ),
+                      a!columnLayout(
+                        contents: {
+                          a!dropdownField(
+                            label: &quot;&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            placeholder: &quot;Option | Base, Exercised&quot;,
+                            choiceLabels: {
+                              &quot;Option 1&quot;,
+                              &quot;Option 2&quot;,
+                              &quot;Option 3&quot;,
+                              &quot;Option 4&quot;,
+                              &quot;Option 5&quot;,
+                              &quot;Option 6&quot;,
+                              &quot;Option 7&quot;,
+                              &quot;Option 8&quot;,
+                              &quot;Option 9&quot;,
+                              &quot;Option 10&quot;,
+                              &quot;Option 11&quot;,
+                              &quot;Option 12&quot;
+                            },
+                            choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+                            saveInto: {},
+                            searchDisplay: &quot;AUTO&quot;,
+                            validations: {}
+                          )
+                        }
+                      )
+                    },
+                    spacing: &quot;DENSE&quot;
+                  ),
+                  a!gridField(
+                    label: &quot;Available Line Items&quot;,
+                    labelPosition: &quot;COLLAPSED&quot;,
+                    data: local!lineItemData,
+                    columns: {
+                      a!gridColumn(
+                        label: &quot;Line Item&quot;,
+                        value: a!richTextDisplayField(
+                          value: {
+                            if(
+                              fv!row.itemType = &quot;SLIN&quot;,
+                              a!richTextItem(text: &quot;↳ &quot;),
+                              &quot;&quot;
+                            ),
+                            a!richTextItem(
+                              text: fv!row.lineItem,
+                              link: a!recordLink(),
+                              linkStyle: &quot;STANDALONE&quot;
+                            )
+                          },
+                          preventWrapping: true
+                        )
+                      ),
+                      a!gridColumn(
+                        label: &quot;Title&quot;,
+                        value: a!richTextDisplayField(
+                          value: {
+                            a!richTextItem(text: fv!row.title),
+                            char(10),
+                            a!richTextItem(
+                              text: fv!row.type,
+                              color: &quot;SECONDARY&quot;,
+                              size: &quot;SMALL&quot;
+                            )
+                          }
+                        )
+                      ),
+                      a!gridColumn(
+                        label: &quot;Period of Performance&quot;,
+                        value: fv!row.periodOfPerformance
+                      ),
+                      a!gridColumn(
+                        label: &quot;Pricing Arrangement&quot;,
+                        value: fv!row.pricingArrangement
+                      ),
+                      a!gridColumn(label: &quot;Option&quot;, value: fv!row.option)
+                    },
+                    pageSize: 10,
+                    selectable: true,
+                    selectionValue: local!selectedLineItems,
+                    selectionSaveInto: {
+                      local!selectedLineItems,
+                      if(
+                        contains(tointeger(local!selectedLineItems), { 1 }),
+                        {
+                          if(
+                            not(
+                              contains(tointeger(local!selectedLineItems), { 2 })
+                            ),
+                            a!save(
+                              target: local!selectedLineItems,
+                              value: append(local!selectedLineItems, { 2 })
+                            ),
+                            {}
+                          ),
+                          if(
+                            not(
+                              contains(tointeger(local!selectedLineItems), { 3 })
+                            ),
+                            a!save(
+                              target: local!selectedLineItems,
+                              value: append(local!selectedLineItems, { 3 })
+                            ),
+                            {}
+                          )
+                        },
+                        a!save(
+                          target: local!selectedLineItems,
+                          value: remove(
+                            remove(
+                              local!selectedLineItems,
+                              wherecontains(tointeger(local!selectedLineItems), { 2 })
+                            ),
+                            wherecontains(tointeger(local!selectedLineItems), { 3 })
+                          )
+                        )
+                      )
+                    },
+                    validations: {},
+                    borderStyle: &quot;LIGHT&quot;,
+                    emptyGridMessage: &quot;No line items available&quot;,
+                    shadeAlternateRows: false
+                  )
+                }
+              ),
+              a!columnLayout(
+                contents: {
+                  a!sideBySideLayout(
+                    items: {
+                      a!sideBySideItem(
+                        item: a!headingField(
+                          text: &quot;Selected Line Items&quot;,
+                          size: &quot;SMALL&quot;,
+                          headingTag: &quot;H2&quot;,
+                          fontWeight: &quot;SEMI_BOLD&quot;,
+                          marginBelow: &quot;NONE&quot;
+                        ),
+                        width: &quot;MINIMIZE&quot;
+                      ),
+                      a!sideBySideItem(
+                        item: a!tagField(
+                          labelPosition: &quot;COLLAPSED&quot;,
+                          tags: a!tagItem(
+                            text: count(local!selectedLineItems),
+                            backgroundColor: &quot;#EDEEF2&quot;,
+                            textColor: &quot;#2E2E35&quot;
+                          )
+                        ),
+                        width: &quot;MINIMIZE&quot;
+                      )
+                    },
+                    alignVertical: &quot;MIDDLE&quot;,
+                    marginBelow: &quot;LESS&quot;
+                  ),
+                  a!columnsLayout(
+                    columns: {
+                      a!columnLayout(
+                        contents: {
+                          a!sideBySideLayout(
+                            items: {
+                              a!sideBySideItem(
+                                item: a!textField(
+                                  labelPosition: &quot;COLLAPSED&quot;,
+                                  placeholder: &quot;Search Line Items&quot;
+                                )
+                              ),
+                              a!sideBySideItem(
+                                item: a!buttonArrayLayout(
+                                  buttons: a!buttonWidget(
+                                    label: &quot;Search&quot;,
+                                    size: &quot;SMALL&quot;,
+                                    style: &quot;OUTLINE&quot;,
+                                    color: &quot;SECONDARY&quot;
+                                  ),
+                                  marginBelow: &quot;NONE&quot;
+                                ),
+                                width: &quot;MINIMIZE&quot;
+                              )
+                            },
+                            spacing: &quot;DENSE&quot;
+                          )
+                        },
+                        width: &quot;NARROW_PLUS&quot;
+                      ),
+                      a!columnLayout(
+                        contents: {
+                          a!dropdownField(
+                            label: &quot;&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            placeholder: &quot;Period of Performance | Any - Any&quot;,
+                            choiceLabels: {
+                              &quot;Option 1&quot;,
+                              &quot;Option 2&quot;,
+                              &quot;Option 3&quot;,
+                              &quot;Option 4&quot;,
+                              &quot;Option 5&quot;,
+                              &quot;Option 6&quot;,
+                              &quot;Option 7&quot;,
+                              &quot;Option 8&quot;,
+                              &quot;Option 9&quot;,
+                              &quot;Option 10&quot;,
+                              &quot;Option 11&quot;,
+                              &quot;Option 12&quot;
+                            },
+                            choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+                            saveInto: {},
+                            searchDisplay: &quot;AUTO&quot;,
+                            validations: {}
+                          )
+                        }
+                      ),
+                      a!columnLayout(
+                        contents: {
+                          a!dropdownField(
+                            label: &quot;&quot;,
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            placeholder: &quot;Option | Base, Exercised&quot;,
+                            choiceLabels: {
+                              &quot;Option 1&quot;,
+                              &quot;Option 2&quot;,
+                              &quot;Option 3&quot;,
+                              &quot;Option 4&quot;,
+                              &quot;Option 5&quot;,
+                              &quot;Option 6&quot;,
+                              &quot;Option 7&quot;,
+                              &quot;Option 8&quot;,
+                              &quot;Option 9&quot;,
+                              &quot;Option 10&quot;,
+                              &quot;Option 11&quot;,
+                              &quot;Option 12&quot;
+                            },
+                            choiceValues: { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },
+                            saveInto: {},
+                            searchDisplay: &quot;AUTO&quot;,
+                            validations: {}
+                          )
+                        }
+                      )
+                    },
+                    spacing: &quot;DENSE&quot;
+                  ),
+                  a!gridLayout(
+                    label: &quot;Selected Line Items&quot;,
+                    labelPosition: &quot;COLLAPSED&quot;,
+                    headerCells: {
+                      a!gridLayoutHeaderCell(label: &quot;Line Item&quot;),
+                      a!gridLayoutHeaderCell(label: &quot;Title&quot;),
+                      a!gridLayoutHeaderCell(label: &quot;Period of Performance&quot;),
+                      a!gridLayoutHeaderCell(label: &quot;Pricing Arrangement&quot;),
+                      a!gridLayoutHeaderCell(label: &quot;Option&quot;),
+                      a!gridLayoutHeaderCell(label: &quot;&quot;)
+                    },
+                    columnConfigs: {
+                      a!gridLayoutColumnConfig(width: &quot;DISTRIBUTE&quot;, weight: 3),
+                      a!gridLayoutColumnConfig(width: &quot;DISTRIBUTE&quot;, weight: 7),
+                      a!gridLayoutColumnConfig(width: &quot;DISTRIBUTE&quot;, weight: 4),
+                      a!gridLayoutColumnConfig(width: &quot;DISTRIBUTE&quot;, weight: 4),
+                      a!gridLayoutColumnConfig(width: &quot;DISTRIBUTE&quot;, weight: 2),
+                      a!gridLayoutColumnConfig(width: &quot;ICON&quot;)
+                    },
+                    rows: a!forEach(
+                      items: local!selectedLineItems,
+                      expression: a!gridRowLayout(
+                        contents: {
+                          a!textField(
+                            value: index(local!lineItemData, fv!item).lineItem,
+                            saveInto: index(local!lineItemData, fv!item).lineItem
+                          ),
+                          a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: {
+                              a!richTextItem(
+                                text: index(local!lineItemData, fv!item).title
+                              ),
+                              char(10),
+                              a!richTextItem(
+                                text: index(local!lineItemData, fv!item).type,
+                                color: &quot;SECONDARY&quot;,
+                                size: &quot;SMALL&quot;
+                              )
+                            }
+                          ),
+                          a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: index(local!lineItemData, fv!item).periodOfPerformance
+                          ),
+                          a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: index(local!lineItemData, fv!item).pricingArrangement
+                          ),
+                          a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: index(local!lineItemData, fv!item).option
+                          ),
+                          a!richTextDisplayField(
+                            labelPosition: &quot;COLLAPSED&quot;,
+                            value: a!richTextIcon(
+                              icon: &quot;close&quot;,
+                              link: a!dynamicLink(
+                                value: null,
+                                saveInto: a!save(
+                                  target: local!selectedLineItems,
+                                  value: remove(local!selectedLineItems, fv!index)
+                                )
+                              ),
+                              linkStyle: &quot;STANDALONE&quot;,
+                              color: &quot;ACCENT&quot;
+                            )
+                          )
+                        }
+                      )
+                    ),
+                    height: &quot;TALL&quot;,
+                    emptyGridMessage: &quot;No line items available&quot;,
+                    validations: {},
+                    shadeAlternateRows: false,
+                    borderStyle: &quot;LIGHT&quot;
+                  )
+                }
+              )
+            },
+            marginAbove: &quot;EVEN_LESS&quot;,
+            spacing: &quot;SPARSE&quot;,
+            showDividers: true,
+            marginBelow: &quot;NONE&quot;
+          )
+        },
+        marginBelow: &quot;NONE&quot;
+      )
+    }
+  )
+)
+</code></pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
